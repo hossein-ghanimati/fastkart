@@ -1,19 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/tailwind.css">
-    <link rel="icon" href="./assets/image/icon.png" format="image/png">
-    <title>Fastkart - صفحه اصلی</title>
-</head>
-<body>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/tailwind.css">
+        <link rel="icon" href="./assets/image/icon.png" format="image/png">
+        <title>Fastkart - صفحه اصلی</title>
+    </head>
+    <body
+        class="w-full font-vazir overflow-x-hidden text-base bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100  ">
+        <svg class="hidden">
+            <symbol id="menu-icon" xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </symbol>
 
-    <header>
-        
-    </header>
+            <symbol id="user-icon" xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </symbol>
 
+            <symbol id="close-btn" xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12" />
+            </symbol>
 
-    <script src="./assets/js/app.js"></script>
-</body>
+            <symbol id="angle" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </symbol>
+        </svg>
+
+        <header>
+            <!-- Mobile Menu -->
+            <div
+                class="absolute inset-0 max-w-64 bg-gray-50 dark:bg-gray-900 z-30">
+                <!-- Mobile Menu Header -->
+                <div
+                    class="w-full h-[58.03px] flex items-center justify-between shadow dark:shadow-white p-4">
+                    <!-- Mobile Menu Header Text -->
+                    <a href="index.html"
+                        class="text-2xl font-aviny inline-flex">
+                        <span
+                            class="text-theme-color-dark dark:text-theme-color-light">فست</span>
+                        کارت
+                    </a>
+
+                    <!-- Mobile Menu Close Button -->
+                    <button type="button">
+                        <svg class="size-7">
+                            <use xlink:href="#close-btn"
+                                class="text-gray-500 dark:text-gray-300"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu List -->
+                <ul class="w-full p-3 font-vazir-medium">
+                    <!-- Dont Has Sub -->
+                    <li class="w-full flex tems-center justify-between">
+                        <a href="index.html">خانه</a>
+                    </li>
+
+                    <li class="mobile-menu__item active w-full active">
+                        <p class="flex items-center justify-between">
+                            <span>فروشگاه</span>
+                            <svg class="mobile-menu__item-icon size-5">
+                                <use xlink:href="#angle"></use>
+                            </svg>
+                        </p>
+                        <ul class="mobile-menu__item-dropdown"></ul>
+                    </li>
+
+                    <li
+                        class="w-full flex items-center justify-between">خانه</li>
+
+                    <li
+                        class="w-full flex items-center justify-between">خانه</li>
+
+                    <li
+                        class="w-full flex items-center justify-between">خانه</li>
+
+                    <li
+                        class="w-full flex items-center justify-between">خانه</li>
+
+                    <li
+                        class="w-full flex items-center justify-between">خانه</li>
+
+                </ul>
+            </div>
+
+            <!-- Top Bar -->
+            <div
+                class="w-full h-[42px] bg-theme-color-dark dark:bg-theme-color-light"></div>
+
+            <!-- Nav Bar -->
+            <nav
+                class="w-full h-12  relative flex items-center justify-between p-6 pt-8 bg-gray-200 dark:bg-gray-700">
+                <!-- Mobile Menu Icon -->
+                <button>
+                    <svg class="size-7">
+                        <use xlink:href="#menu-icon"></use>
+                    </svg>
+                </button>
+
+                <!-- Logo -->
+                <a class="text-3xl font-aviny inline-flex">
+                    <span
+                        class="text-theme-color-dark dark:text-theme-color-light">فست</span>
+                    کارت
+                </a>
+
+                <!-- Profile -->
+                <div>
+                    <!-- Profile Button -->
+                    <button>
+                        <svg class="size-11">
+                            <use xlink:href="#user-icon"
+                                class="text-gray-500 dark:text-gray-300"></use>
+                        </svg>
+                    </button>
+
+                    <!-- Profile Actions -->
+                    <div></div>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <script src="./assets/js/app.js"></script>
+    </body>
 </html>
