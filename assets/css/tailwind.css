@@ -446,6 +446,30 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: vazir;
+
+  src: url(../font/vazir/Vazirmatn-Regular.ttf);
+}
+
+@font-face {
+  font-family: "vazir-medium";
+
+  src: url(../font/vazir/Vazirmatn-Medium.ttf);
+}
+
+@font-face {
+  font-family: "vazir-bold";
+
+  src: url(../font/vazir/Vazirmatn-Bold.ttf);
+}
+
+@font-face {
+  font-family: aviny;
+
+  src: url("../font/aviny/l1x0_aviny_(1).ttf");
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
