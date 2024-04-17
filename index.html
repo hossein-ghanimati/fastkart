@@ -41,7 +41,7 @@
         <header>
             <!-- Mobile Menu -->
             <div
-                class="absolute inset-0 max-w-64 bg-gray-50 dark:bg-gray-900 z-30">
+                class="mobile-menu absolute inset-0 translate-x-full max-w-64 bg-gray-50 dark:bg-gray-900 z-30">
                 <!-- Mobile Menu Header -->
                 <div
                     class="w-full h-[58.03px] flex items-center justify-between shadow dark:shadow-white p-4">
@@ -54,7 +54,7 @@
                     </a>
 
                     <!-- Mobile Menu Close Button -->
-                    <button type="button">
+                    <button type="button" id="close-menu-btn">
                         <svg class="size-7">
                             <use xlink:href="#close-btn"
                                 class="text-gray-500 dark:text-gray-300"></use>
@@ -105,7 +105,7 @@
             <nav
                 class="w-full h-12  relative flex items-center justify-between p-6 pt-8 bg-gray-200 dark:bg-gray-700">
                 <!-- Mobile Menu Icon -->
-                <button>
+                <button id="open-menu-btn">
                     <svg class="size-7">
                         <use xlink:href="#menu-icon"></use>
                     </svg>
