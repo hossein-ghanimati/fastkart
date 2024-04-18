@@ -5,7 +5,11 @@ import {
   toggleMenuItem,
   getFromLocal,
   setDefaultTheme,
-  setNewTheme
+  setNewTheme,
+  hideElem,
+  showElem,
+  showModal,
+  hideModal,
 } from "./utils.js";
 
 const renderMobileMenuOpention = () => {
@@ -36,13 +40,34 @@ const renderToggleTheme = () => {
   setDefaultTheme();
 
   const toggleThemeBtns = document.querySelectorAll(".toggle-theme-btn");
-  toggleThemeBtns.forEach(btn => {
-    btn.addEventListener('click', setNewTheme)
-  })
+  toggleThemeBtns.forEach((btn) => {
+    btn.addEventListener("click", setNewTheme);
+  });
+};
+
+const renderModalsOpention = () => {
+  const openModalBtns = document.querySelectorAll(".open-modal-btn");
+  const modals = document.querySelectorAll(".modal");
+  const closeModalBtns = document.querySelectorAll(".close-modal-btn");
+
+  openModalBtns.forEach((openBtn) => {
+    openBtn.addEventListener("click", () => {
+      const modalID = openBtn?.dataset?.target;
+      showModal(modalID, "flex");
+    });
+  });
+
+  closeModalBtns.forEach((closeBtn) => {
+    closeBtn.addEventListener("click", () => {
+      const modalID = closeBtn?.dataset?.target;
+      hideModal(modalID);
+    });
+  });
 };
 
 export {
   renderMobileMenuOpention,
   renderMobileMenuItemOpention,
   renderToggleTheme,
+  renderModalsOpention,
 };

@@ -1,4 +1,10 @@
-import { renderMobileMenuOpention, renderMobileMenuItemOpention, renderToggleTheme } from "./shared.js";
-renderMobileMenuOpention()
-renderMobileMenuItemOpention()
-renderToggleTheme() 
+import {
+  renderMobileMenuOpention,
+  renderMobileMenuItemOpention,
+  renderToggleTheme,
+  renderModalsOpention
+} from "./shared.js";
+renderMobileMenuOpention();
+renderMobileMenuItemOpention();
+renderToggleTheme();
+renderModalsOpention()
