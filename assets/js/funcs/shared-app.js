@@ -4,7 +4,7 @@ import {
   renderToggleTheme,
   renderModalsOpention
 } from "./shared.js";
+renderToggleTheme();
 renderMobileMenuOpention();
 renderMobileMenuItemOpention();
-renderToggleTheme();
 renderModalsOpention()
