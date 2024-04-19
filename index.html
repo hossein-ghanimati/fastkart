@@ -426,16 +426,11 @@
                                         class="text-gray-700 dark:text-gray-300"></use>
                                 </svg>
                             </button>
-
-                            <!-- Favorite Actions -->
-                            <div
-                                class="hidden">
-                            </div>
                         </div>
 
                         <!-- Cart -->
                         <div
-                            class="hidden md:block">
+                            class="hidden md:block group relative">
                             <!-- Cart Button -->
                             <button
                                 class="h-full  px-3 flex items-center border-l border-gray-500 dark:border-x-gray-300 relative">
@@ -452,7 +447,98 @@
 
                             <!-- Cart Actions -->
                             <div
-                                class="hidden">
+                                class="hidden group-hover:block w-80 bg-white dark:bg-gray-900 shadow-l min-h-11 absolute left-0 p-3 rounded-xl font-vazir-medium" >
+                                <!-- Cart Last Items -->
+                                <ul class="w-full space-y-3 pb-3">
+                                    <li class="h-[72px] w-full flex items-center justify-start gap-2 relative">
+                                        <a href="#" class="h-full bg-[#f8f8f8] dark:bg-slate-950 rounded-md aspect-square">
+                                            <img src="./assets/image/cart-item-1.png" alt="cart-item" class="h-full aspect-square p-3">
+                                        </a>
+                                        
+                                        <div class="flex flex-col">
+                                            <a href="#" 
+                                                class="text-theme-color-dark dark:text-theme-color-light line-clamp-1"
+                                            >شکلات قهوه ای فرانسوی با ظرف شیشه ای</a>
+                                            <p class="dark:text-gray-200 text-[12px] font-vazir">
+                                                <span>1</span> 
+                                                <svg class="inline-block size-3">
+                                                    <use xlink:href="#close-icon" class="text-black dark:text-gray-100"></use>
+                                                </svg>
+                                                <span>80.000</span> تومان
+                                            </p>
+                                        </div>
+
+                                        <svg class="absolute top-0 left-0 inline-block size-[1.1rem]">
+                                            <use xlink:href="#close-icon" class="text-black dark:text-gray-100"></use>
+                                        </svg>
+                                    </li>
+
+                                    <li class="h-[72px] w-full flex items-center justify-start gap-2 relative">
+                                        <a href="#" class="h-full bg-[#f8f8f8] dark:bg-slate-950 rounded-md aspect-square">
+                                            <img src="./assets/image/cart-item-2.png" alt="cart-item" class="h-full aspect-square p-3">
+                                        </a>
+
+                                        <div class="flex flex-col">
+                                            <a href="#" 
+                                                class="text-theme-color-dark dark:text-theme-color-light line-clamp-1"
+                                            >بیسکویت کره بادام زمینی 600 گرمی</a>
+                                            <p class="dark:text-gray-200 text-[12px] font-vazir">
+                                                <span>2</span> 
+                                                <svg class="inline-block size-3">
+                                                    <use xlink:href="#close-icon" class="text-black dark:text-gray-100"></use>
+                                                </svg>
+                                                <span>150.000</span> تومان
+                                            </p>
+                                        </div>
+
+                                        <svg class="absolute top-0 left-0 inline-block size-[1.1rem]">
+                                            <use xlink:href="#close-icon" class="text-black dark:text-gray-100"></use>
+                                        </svg>
+                                    </li>
+
+                                    <li class="h-[72px] w-full flex items-center justify-start gap-2 relative">
+                                        <a href="#" class="h-full bg-[#f8f8f8] dark:bg-slate-950 rounded-md aspect-square">
+                                            <img src="./assets/image/cart-item-1.png" alt="cart-item" class="h-full aspect-square p-3">
+                                        </a>
+
+                                        <div class="flex flex-col">
+                                            <a href="#" 
+                                                class="text-theme-color-dark dark:text-theme-color-light line-clamp-1"
+                                            >شکلات قهوه ای فرانسوی با ظرف شیشه ای</a>
+                                            <p class="dark:text-gray-200 text-[12px] font-vazir">
+                                                <span>1</span> 
+                                                <svg class="inline-block size-3">
+                                                    <use xlink:href="#close-icon" class="text-black dark:text-gray-100"></use>
+                                                </svg>
+                                                <span>80.000</span> تومان
+                                            </p>
+                                        </div>
+
+                                        <svg class="absolute top-0 left-0 inline-block size-[1.1rem]">
+                                            <use xlink:href="#close-icon" class="text-black dark:text-gray-100"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+
+                                <!-- Cart Infos -->
+                                <div
+                                    class="pt-3 border-t border-t-gray-200 dark:border-t-gray-500 space-y-3">
+                                    <!-- Cart Price -->
+                                    <div class="w-full flex items-center justify-between">
+                                        <span class="dark:text-gray-200 font-vazir">جمع کل:</span>
+                                    
+                                        <div class="text-theme-color-dark dark:text-theme-color-light space-x-1">
+                                            <span >310.000</span>
+                                            <span>تومان</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Cart Actions -->
+                                    <div class="flex items-center justify-between">
+                                        <a href="#" class="p-1 px-2 border-2 border-theme-color-dark dark:border-theme-color-light text-theme-color-dark dark:text-theme-color-light hover:bg-theme-color-dark hover:text-white dark:hover:text-white rounded">سبد خرید</a>
+                                        <a href="#" class="bg-theme-color-dark dark:bg-theme-color-light text-stone-50 p-1 px-2 rounded">پرداخت نهایی</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
