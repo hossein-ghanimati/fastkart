@@ -480,6 +480,35 @@
                             </li>
                         </ul>
                     </li>
+                    
+                    <li class="mobile-menu__item w-full">
+                        <p class="flex items-center justify-between">
+                            <span
+                                class="mobile-menu__item-text cursor-pointer">فروشندگان</span>
+                            <svg class="mobile-menu__item-icon size-5">
+                                <use xlink:href="#angle"></use>
+                            </svg>
+                        </p>
+                        <ul
+                            class="mobile-menu__item-dropdown hidden w-full p-1 px-4 space-y-2 text-gray-400 dark:text-gray-300 text-sm">
+                            <li>
+                                <span>-</span>
+                                <a href="#">میوه ها</a>
+                            </li>
+                            <li>
+                                <span>-</span>
+                                <a href="#">سبزی جات</a>
+                            </li>
+                            <li>
+                                <span>-</span>
+                                <a href="#">قارچ ها</a>
+                            </li>
+                            <li>
+                                <span>-</span>
+                                <a href="#">تازه ترین ها</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <!-- Switch Theme Button -->
@@ -508,9 +537,9 @@
                     class="container mx-auto flex items-center justify-between">
                     <!-- Right Side -->
                     <div
-                        class="w-[62%] md:w-[50%] flex items-center justify-between md:justify-start md:gap-3">
+                        class="w-[62%] md:w-[50%] xl:w-[70%] flex items-center justify-between md:justify-start xl:justify-between md:gap-3">
                         <!-- Mobile Menu Icon -->
-                        <button id="open-menu-btn">
+                        <button id="open-menu-btn" class="xl:hidden">
                             <svg class="size-7">
                                 <use xlink:href="#menu-icon"></use>
                             </svg>
@@ -524,22 +553,39 @@
                             کارت
                         </a>
 
-                        <!-- Location Button -->
-                        <button type="button"
-                            class="open-modal-btn cursor-pointer hidden md:block p-[6px] border border-gray-300 rounded-lg dark:border-gray-200"
-                            data-target="cities-modal">
+                        <!-- Location And Searh Bar -->
+                        <div class="flex gap-3">
+                            <!-- Location Button -->
+                            <button type="button"
+                                class="open-modal-btn cursor-pointer hidden md:block p-[6px] border border-gray-300 rounded-lg dark:border-gray-200"
+                                data-target="cities-modal">
 
-                            <svg
-                                class="p-2 size-9 bg-gray-300 rounded-md dark:bg-gray-900">
-                                <use xlink:href="#location-icon"
-                                    class="text-gray-800 dark:text-gray-100"></use>
-                            </svg>
-                        </button>
+                                <svg
+                                    class="p-2 size-9 bg-gray-300 rounded-md dark:bg-gray-900">
+                                    <use xlink:href="#location-icon"
+                                        class="text-gray-800 dark:text-gray-100"></use>
+                                </svg>
+                            </button>
+
+                            <!-- Search Bar -->
+                            <div
+                                class="hidden w-[527px] h-[50px] xl:flex">
+                                <!-- Search Input -->
+                                <input type="text" class="w-[90%] h-full border border-l-0 bg-transparent p-1 px-3 border-gray-300  placeholder-gray-400 dark:placeholder-gray-200 rounded-search-input " placeholder="جستجو برای ...">
+
+                                <!-- Search Button -->
+                                <button class="w-[10%] h-full flex items-center justify-center border border-orange-400 bg-orange-400 rounded-search-button">
+                                    <svg class="size-5">
+                                        <use xlink:href="#search-icon" class="text-gray-100"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Left Side -->
                     <div
-                        class="w-[38%] md:w-[50%] flex items-center justify-end">
+                        class="w-[38%] md:w-[50%] xl:w-[25%] flex items-center justify-end">
 
                         <!-- Search Button -->
                         <button
@@ -792,9 +838,11 @@
                         class="hidden  group-hover:block absolute space-y-6 bg-white dark:bg-gray-900 rounded-lg right-0 shadow-md px-[25px] py-5 w-[300px]">
                         <li
                             class="w-full flex items-center justify-between cursor-pointer">
-                            <a href="#" class="flex gap-2 text-gray-600 dark:text-gray-200">
+                            <a href="#"
+                                class="flex gap-2 text-gray-600 dark:text-gray-200">
                                 <svg class="size-6">
-                                    <use xlink:href="#vegetable-icon" class="dark:text-gray-100"></use>
+                                    <use xlink:href="#vegetable-icon"
+                                        class="dark:text-gray-100"></use>
                                 </svg>
                                 <span
                                     class="font-vazir-bold">میوه جنوب
@@ -803,14 +851,17 @@
 
                             <svg
                                 class="size-5">
-                                <use xlink:href="#angle" class="dark:text-gray-100"></use>
+                                <use xlink:href="#angle"
+                                    class="dark:text-gray-100"></use>
                             </svg>
                         </li>
                         <li
                             class="w-full flex items-center justify-between cursor-pointer">
-                            <a href="#" class="flex gap-2 text-gray-600 dark:text-gray-200">
+                            <a href="#"
+                                class="flex gap-2 text-gray-600 dark:text-gray-200">
                                 <svg class="size-6">
-                                    <use xlink:href="#tea-icon" class="dark:text-gray-100"></use>
+                                    <use xlink:href="#tea-icon"
+                                        class="dark:text-gray-100"></use>
                                 </svg>
                                 <span
                                     class="font-vazir-bold">نوشیدنی
@@ -819,14 +870,17 @@
 
                             <svg
                                 class="size-5">
-                                <use xlink:href="#angle" class="dark:text-gray-100"></use>
+                                <use xlink:href="#angle"
+                                    class="dark:text-gray-100"></use>
                             </svg>
                         </li>
                         <li
                             class="w-full flex items-center justify-between cursor-pointer">
-                            <a href="#" class="flex gap-2 text-gray-600 dark:text-gray-200">
+                            <a href="#"
+                                class="flex gap-2 text-gray-600 dark:text-gray-200">
                                 <svg class="size-6">
-                                    <use xlink:href="#meat-icon" class="dark:text-gray-100"></use>
+                                    <use xlink:href="#meat-icon"
+                                        class="dark:text-gray-100"></use>
                                 </svg>
                                 <span
                                     class="font-vazir-bold">گوشت و پروتئین
@@ -835,14 +889,17 @@
 
                             <svg
                                 class="size-5">
-                                <use xlink:href="#angle" class="dark:text-gray-100"></use>
+                                <use xlink:href="#angle"
+                                    class="dark:text-gray-100"></use>
                             </svg>
                         </li>
                         <li
                             class="w-full flex items-center justify-between cursor-pointer">
-                            <a href="#" class="flex gap-2 text-gray-600 dark:text-gray-200">
+                            <a href="#"
+                                class="flex gap-2 text-gray-600 dark:text-gray-200">
                                 <svg class="size-6">
-                                    <use xlink:href="#bread-icon" class="dark:text-gray-100"></use>
+                                    <use xlink:href="#bread-icon"
+                                        class="dark:text-gray-100"></use>
                                 </svg>
                                 <span
                                     class="font-vazir-bold">صبحانه
@@ -851,14 +908,17 @@
 
                             <svg
                                 class="size-5">
-                                <use xlink:href="#angle" class="dark:text-gray-100"></use>
+                                <use xlink:href="#angle"
+                                    class="dark:text-gray-100"></use>
                             </svg>
                         </li>
                         <li
                             class="w-full flex items-center justify-between cursor-pointer">
-                            <a href="#" class="flex gap-2 text-gray-600 dark:text-gray-200">
+                            <a href="#"
+                                class="flex gap-2 text-gray-600 dark:text-gray-200">
                                 <svg class="size-6">
-                                    <use xlink:href="#frozen-icon" class="dark:text-gray-100"></use>
+                                    <use xlink:href="#frozen-icon"
+                                        class="dark:text-gray-100"></use>
                                 </svg>
                                 <span
                                     class="font-vazir-bold">غذای منمجد
@@ -867,14 +927,17 @@
 
                             <svg
                                 class="size-5">
-                                <use xlink:href="#angle" class="dark:text-gray-100"></use>
+                                <use xlink:href="#angle"
+                                    class="dark:text-gray-100"></use>
                             </svg>
                         </li>
                         <li
                             class="w-full flex items-center justify-between cursor-pointer">
-                            <a href="#" class="flex gap-2 text-gray-600 dark:text-gray-200">
+                            <a href="#"
+                                class="flex gap-2 text-gray-600 dark:text-gray-200">
                                 <svg class="size-6">
-                                    <use xlink:href="#biscuit-icon" class="dark:text-gray-100"></use>
+                                    <use xlink:href="#biscuit-icon"
+                                        class="dark:text-gray-100"></use>
                                 </svg>
                                 <span
                                     class="font-vazir-bold">بیسکوییت
@@ -883,14 +946,17 @@
 
                             <svg
                                 class="size-5">
-                                <use xlink:href="#angle" class="dark:text-gray-100"></use>
+                                <use xlink:href="#angle"
+                                    class="dark:text-gray-100"></use>
                             </svg>
                         </li>
                         <li
                             class="w-full flex items-center justify-between cursor-pointer">
-                            <a href="#" class="flex gap-2 text-gray-600 dark:text-gray-200">
+                            <a href="#"
+                                class="flex gap-2 text-gray-600 dark:text-gray-200">
                                 <svg class="size-6">
-                                    <use xlink:href="#grocery-icon" class="dark:text-gray-100"></use>
+                                    <use xlink:href="#grocery-icon"
+                                        class="dark:text-gray-100"></use>
                                 </svg>
                                 <span
                                     class="font-vazir-bold">مکمل های غذایی
@@ -899,14 +965,15 @@
 
                             <svg
                                 class="size-5">
-                                <use xlink:href="#angle" class="dark:text-gray-100"></use>
+                                <use xlink:href="#angle"
+                                    class="dark:text-gray-100"></use>
                             </svg>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Desktop Menu -->
-                <ul class="hidden">
+                <ul class="hidden xl:flex w-[647px] h-[52px] items-center justify-between ">
 
                 </ul>
 

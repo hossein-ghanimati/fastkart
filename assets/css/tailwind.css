@@ -629,6 +629,12 @@ video {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -842,6 +848,14 @@ video {
   height: 100%;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[52px\] {
+  height: 52px;
+}
+
 .min-h-11 {
   min-height: 2.75rem;
 }
@@ -872,6 +886,50 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[527px\] {
+  width: 527px;
+}
+
+.w-\[85\%\] {
+  width: 85%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[88\%\] {
+  width: 88%;
+}
+
+.w-\[12\%\] {
+  width: 12%;
+}
+
+.w-\[86\%\] {
+  width: 86%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[15\%\] {
+  width: 15%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[647px\] {
+  width: 647px;
 }
 
 .max-w-64 {
@@ -917,6 +975,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
@@ -983,6 +1045,14 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-search-input {
+  border-radius: 0 5px 5px 0;
+}
+
+.rounded-search-button {
+  border-radius: 5px 0 0 5px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1003,6 +1073,14 @@ video {
   border-top-width: 1px;
 }
 
+.border-r-0 {
+  border-right-width: 0px;
+}
+
+.border-l-0 {
+  border-left-width: 0px;
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1016,6 +1094,16 @@ video {
 .border-theme-color-dark {
   --tw-border-opacity: 1;
   border-color: rgb(13 164 135 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-orange-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity));
 }
 
 .border-b-gray-400 {
@@ -1076,6 +1164,15 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-orange-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1168,6 +1265,11 @@ video {
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .pb-3 {
@@ -1291,6 +1393,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder-gray-400::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-400::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
 }
 
 .shadow {
@@ -1520,6 +1632,16 @@ video {
   background-color: rgb(21 213 176 / var(--tw-bg-opacity));
 }
 
+.dark\:bg-orange-300:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-orange-500:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
 .dark\:text-gray-100:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
@@ -1538,6 +1660,16 @@ video {
 .dark\:text-theme-color-light:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(21 213 176 / var(--tw-text-opacity));
+}
+
+.dark\:placeholder-gray-200:is(.dark *)::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-placeholder-opacity));
+}
+
+.dark\:placeholder-gray-200:is(.dark *)::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-placeholder-opacity));
 }
 
 .dark\:shadow-white:is(.dark *) {
@@ -1595,5 +1727,31 @@ video {
 
   .md\:rounded-xl {
     border-radius: 0.75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .xl\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .xl\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
   }
 }
