@@ -52,12 +52,12 @@ const hideElem = (el) => {
 };
 
 const showModal = (modalID, display = "block") => {
-  let modal = document.querySelector(`#${modalID}`);
+  const modal = document.querySelector(`#${modalID}`);
   showElem(modal, display);
 };
 
 const hideModal = (modalID) => {
-  let modal = document.querySelector(`#${modalID}`);
+  const modal = document.querySelector(`#${modalID}`);
   hideElem(modal);
 };
 
