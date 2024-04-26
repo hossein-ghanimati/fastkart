@@ -1,7 +1,7 @@
 const bestSellingModalTemplate = document.createElement('template')
 bestSellingModalTemplate.innerHTML = `
     <div
-        class="pointer-events-auto relative w-full h-full md:h-[405px] md:w-[500px] bg-white dark:bg-gray-900 shadow-lg rounded-0 md:rounded-xl p-[18px] space-y-4">
+        class="pointer-events-auto relative w-full h-full md:h-[415px] md:w-[500px] bg-white dark:bg-gray-900 shadow-lg rounded-0 md:rounded-xl p-5 pb-6 space-y-4 border-b-4 border-b-theme-color-dark dark:border-b-theme-color-light">
         <!-- Close Button -->
         <button
             class="close-modal-btn size-8 rounded absolute -left-2 -top-2 flex items-center justify-center bg-theme-color-dark dark:bg-theme-color-dark"

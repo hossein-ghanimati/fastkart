@@ -1,7 +1,7 @@
 const citiesModalTemplate = document.createElement('template');
 citiesModalTemplate.innerHTML = `
 <div
-    class="pointer-events-auto  relative w-full h-full md:h-[405px] md:w-[500px] bg-white dark:bg-gray-900 shadow-lg rounded-0 md:rounded-xl p-[18px] ">
+    class="pointer-events-auto  relative w-full h-full md:h-[405px] md:w-[500px] bg-white dark:bg-gray-900 shadow-lg rounded-0 md:rounded-xl p-[18px] border-b-4 border-b-theme-color-dark dark:border-b-theme-color-dark">
     
     <!-- Close Button -->
     <button

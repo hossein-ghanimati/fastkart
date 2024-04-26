@@ -263,7 +263,7 @@ navbarTemplate.innerHTML = `
 
             <!-- Profile Actions -->
             <div
-                class="hidden group-hover:block absolute z-20 left-0 p-5 bg-white dark:bg-gray-900 rounded-lg">
+                class="hidden group-hover:block absolute z-20 left-0 p-5 bg-white dark:bg-gray-900 rounded-lg border-b-2 border-b-theme-color-dark dark:border-b-theme-color-dark">
                 <ul
                     class="w-32 flex flex-col gap-1 text-gray-700 dark:text-gray-100 ">
                     <li class="grout relative">
