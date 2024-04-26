@@ -44,6 +44,9 @@ const setNewTheme = () => {
 };
 
 const showElem = (el, display = "block") => {
+  let elTransition = el.style.transition
+  el.style.transform = "translateX(40px)"
+  console.log(elTransition);
   el.style.display = display;
 };
 
