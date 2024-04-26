@@ -17,7 +17,7 @@ mainBarTemplate.innerHTML = `
 
     <!-- Category List -->
     <ul
-        class="hidden  group-hover:block absolute space-y-6 bg-white dark:bg-gray-900 rounded-lg right-0 shadow-md px-[25px] py-5 w-[300px] border-b-4 border-b-theme-color-dark dark:border-b-theme-color-dark">
+        class="hidden  group-hover:block absolute z-10 space-y-6 bg-white dark:bg-gray-900 rounded-lg right-0 shadow-md px-[25px] py-5 w-[300px] border-b-4 border-b-theme-color-dark dark:border-b-theme-color-dark">
         <li
             class="w-full flex items-center justify-between cursor-pointer">
             <a href="#"
