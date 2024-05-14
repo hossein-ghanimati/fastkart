@@ -144,7 +144,7 @@ class CitiesModal extends HTMLElement {
     }
 
     connectedCallback(){
-        const classArr = "modal backdrop-blur pointer-events-none hidden absolute z-20 h-full w-full mx-auto items-center justify-center"
+        const classArr = "modal backdrop-blur pointer-events-none hidden absolute z-60 h-full w-full mx-auto items-center justify-center"
 
         this.className = classArr
         this.setAttribute('id', "cities-modal")        

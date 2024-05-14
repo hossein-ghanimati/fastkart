@@ -734,6 +734,14 @@ input {
   top: 0px;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -744,6 +752,10 @@ input {
 
 .z-30 {
   z-index: 30;
+}
+
+.z-60 {
+  z-index: 60;
 }
 
 .col-start-1 {
@@ -2086,6 +2098,14 @@ input {
 }
 
 @media (min-width: 768px) {
+  .md\:-left-2 {
+    left: -0.5rem;
+  }
+
+  .md\:-top-2 {
+    top: -0.5rem;
+  }
+
   .md\:block {
     display: block;
   }

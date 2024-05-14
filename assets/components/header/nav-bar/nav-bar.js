@@ -94,7 +94,7 @@ navbarTemplate.innerHTML = `
 
         <!-- Cart -->
         <div
-            class="parent hidden md:block relative z-30">
+            class="parent hidden md:block relative z-20">
             <!-- Cart Button -->
             <button
                 class="h-full  px-3 flex items-center border-l border-gray-500 dark:border-x-gray-300 relative">
@@ -252,7 +252,7 @@ navbarTemplate.innerHTML = `
 
         <!-- Profile -->
         <div
-            class="parent px-3 relative z-30">
+            class="parent px-3 relative z-10">
             <!-- Profile Button -->
             <button class="h-full flex items-center">
                 <svg class="size-9">

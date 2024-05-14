@@ -174,7 +174,7 @@ mainBarTemplate.innerHTML = `
 
 <!-- Desktop Menu -->
 <ul
-        class="hidden xl:flex w-[800px] h-[52px] items-center justify-between gap-3 relative z-20">
+        class="hidden xl:flex w-[800px] h-[52px] items-center justify-between gap-3 relative z-10">
 
         <li>
             <a href="./index.html"

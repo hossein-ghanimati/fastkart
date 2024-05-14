@@ -4,7 +4,7 @@ bestSellingModalTemplate.innerHTML = `
         class="pointer-events-auto relative w-full h-full md:h-[415px] md:w-[500px] bg-white dark:bg-gray-900 shadow-lg rounded-0 md:rounded-xl p-5 pb-6 space-y-4 border-b-4 border-b-theme-color-dark dark:border-b-theme-color-light">
         <!-- Close Button -->
         <button
-            class="close-modal-btn size-8 rounded absolute -left-2 -top-2 flex items-center justify-center bg-theme-color-dark dark:bg-theme-color-dark"
+            class="close-modal-btn size-8 rounded absolute left-2 top-2  md:-left-2 md:-top-2 flex items-center justify-center bg-theme-color-dark dark:bg-theme-color-dark"
             data-target="best-selling-modal">
             <svg class="size-6">
                 <use xlink:href="#close-icon" class="text-white"></use>
@@ -151,7 +151,7 @@ class BestSellingModal extends HTMLElement {
         
     }
     connectedCallback(){
-        const elemClass = "modal backdrop-blur pointer-events-none hidden absolute z-20 h-full w-full mx-auto items-center justify-center"
+        const elemClass = "modal backdrop-blur pointer-events-none hidden absolute z-60 h-full w-full mx-auto items-center justify-center"
         
         this.className = elemClass
         this.setAttribute('id', "best-selling-modal")
