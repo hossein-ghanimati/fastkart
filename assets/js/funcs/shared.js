@@ -53,7 +53,7 @@ const renderModalsOpention = () => {
   openModalBtns.forEach((openBtn) => {
     openBtn.addEventListener("click", () => {
       const modalID = openBtn?.dataset?.target;
-      showModal(modalID, "flex");
+      showModal(modalID);
     });
   });
 

@@ -94,7 +94,7 @@ navbarTemplate.innerHTML = `
 
         <!-- Cart -->
         <div
-            class="hidden md:block group relative z-30">
+            class="parent hidden md:block relative z-30">
             <!-- Cart Button -->
             <button
                 class="h-full  px-3 flex items-center border-l border-gray-500 dark:border-x-gray-300 relative">
@@ -109,13 +109,13 @@ navbarTemplate.innerHTML = `
                 </span>
             </button>
 
-            <!-- Cart Actions -->
+            <!-- Cart List -->
             <div
-                class="hidden group-hover:block w-80 bg-white dark:bg-gray-900 shadow-l min-h-11 absolute z-20 left-0 p-3 rounded-xl font-vazir-medium">
+                class="child hidden group-hover:opacity-100 w-80 bg-white dark:bg-gray-900 shadow-l min-h-11 absolute z-20 left-0 p-3 rounded-xl font-vazir-medium">
                                 <!-- Cart Last Items -->
                 <ul class="w-full space-y-3 pb-3">
                     <li
-                        class="h-[72px] w-full flex items-center justify-start gap-2 relative">
+                        class="transition h-[72px] w-full flex items-center justify-start gap-2 relative hover:bg-[#f8f8f8] hover:dark:bg-slate-950">
                         <a href="#"
                             class="h-full bg-[#f8f8f8] dark:bg-slate-950 rounded-md aspect-square">
                             <img
@@ -150,7 +150,7 @@ navbarTemplate.innerHTML = `
                     </li>
 
                     <li
-                        class="h-[72px] w-full flex items-center justify-start gap-2 relative">
+                        class="transition h-[72px] w-full flex items-center justify-start gap-2 relative hover:bg-[#f8f8f8] hover:dark:bg-slate-950">
                         <a href="#"
                             class="h-full bg-[#f8f8f8] dark:bg-slate-950 rounded-md aspect-square">
                             <img
@@ -184,7 +184,7 @@ navbarTemplate.innerHTML = `
                     </li>
 
                     <li
-                        class="h-[72px] w-full flex items-center justify-start gap-2 relative">
+                        class="transition h-[72px] w-full flex items-center justify-start gap-2 relative hover:bg-[#f8f8f8] hover:dark:bg-slate-950">
                         <a href="#"
                             class="h-full bg-[#f8f8f8] dark:bg-slate-950 rounded-md aspect-square">
                             <img
@@ -252,7 +252,7 @@ navbarTemplate.innerHTML = `
 
         <!-- Profile -->
         <div
-            class="px-3 group relative z-30">
+            class="parent px-3 relative z-30">
             <!-- Profile Button -->
             <button class="h-full flex items-center">
                 <svg class="size-9">
@@ -263,22 +263,28 @@ navbarTemplate.innerHTML = `
 
             <!-- Profile Actions -->
             <div
-                class="hidden group-hover:block absolute z-20 left-0 p-5 bg-white dark:bg-gray-900 rounded-lg border-b-2 border-b-theme-color-dark dark:border-b-theme-color-dark">
+                class="hidden child absolute z-20 left-0 p-5 bg-white dark:bg-gray-900 rounded-lg border-b-2 border-b-theme-color-dark dark:border-b-theme-color-dark">
                 <ul
-                    class="w-32 flex flex-col gap-1 text-gray-700 dark:text-gray-100 ">
-                    <li class="grout relative">
-                        <a href="#">
+                    class="w-32 flex flex-col gap-1 text-gray-700 dark:text-gray-100 divide-y">
+                    <li class="py-1 group">
+                        <a href="#" class="transition-all flex items-center justify-between group-hover:pr-1">
                             <span>ورود</span>
+                            <svg class="size-5">
+                                <use xlink:href="#login-icon" class="text-gray-700 dark:text-gray-300 block"></use>
+                            </svg>
                         </a>
                     </li>
-                    <li class="li relative">
-                        <a href="#">
+                    <li class="py-1 group">
+                        <a href="#" class="transition-all flex items-center justify-between group-hover:pr-1">
                             <span>عضویت</span>
+                            <svg class="size-5">
+                                <use xlink:href="#register-icon" class="text-gray-700 dark:text-gray-300 block"></use>
+                            </svg>
                         </a>
                     </li>
-                    <li class="li relative">
+                    <li class="py-1 group">
                         <a href="#">
-                            <span>فراموشی رمز عبور</span>
+                            <span class="transition-all group-hover:scale-75">فراموشی رمز عبور</span>
                         </a>
                     </li>
                 </ul>
@@ -296,6 +302,7 @@ class NavBar extends HTMLElement {
 
     connectedCallback(){
         this.className = "w-full h-14 md:h-20 flex items-center  relative bg-gray-200 dark:bg-gray-700"
+        console.log(this.innerHTML)
     }
 }
 

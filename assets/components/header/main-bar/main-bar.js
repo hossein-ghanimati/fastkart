@@ -3,7 +3,7 @@ mainBarTemplate.innerHTML = `
 
 
 <!-- category -->
-<div class="group relative">
+<div class="parent relative">
     <!-- Category Button -->
     <button type="button"
         class="flex items-center gap-1 justify-center py-[10px]  px-5 font-vazir-bold bg-gradient-to-r from-[#0e947a] to-theme-color-dark rounded text-gray-100">
@@ -17,9 +17,10 @@ mainBarTemplate.innerHTML = `
 
     <!-- Category List -->
     <ul
-        class="hidden  group-hover:block absolute z-10 space-y-6 bg-white dark:bg-gray-900 rounded-lg right-0 shadow-md px-[25px] py-5 w-[300px] border-b-4 border-b-theme-color-dark dark:border-b-theme-color-dark">
+        class="hidden child absolute z-10 bg-white dark:bg-gray-900 rounded-lg right-0 shadow-md w-[300px] border-b-4 border-b-theme-color-dark dark:border-b-theme-color-dark">
+
         <li
-            class="w-full flex items-center justify-between cursor-pointer">
+            class="transition-all w-full flex items-center justify-between py-3 px-6 hover:pr-9 cursor-pointer hover:bg-gray-100 hover:dark:bg-gray-800">
             <a href="#"
                 class="flex gap-2 text-gray-600 dark:text-gray-200">
                 <svg class="size-6">
@@ -39,7 +40,7 @@ mainBarTemplate.innerHTML = `
         </li>
     
         <li
-            class="w-full flex items-center justify-between cursor-pointer">
+            class="transition-all w-full flex items-center justify-between py-3 px-6 hover:pr-9 cursor-pointer hover:bg-gray-100 hover:dark:bg-gray-800">
             <a href="#"
                 class="flex gap-2 text-gray-600 dark:text-gray-200">
                 <svg class="size-6">
@@ -59,7 +60,7 @@ mainBarTemplate.innerHTML = `
         </li>
     
         <li
-            class="w-full flex items-center justify-between cursor-pointer">
+            class="transition-all w-full flex items-center justify-between py-3 px-6 hover:pr-9 cursor-pointer hover:bg-gray-100 hover:dark:bg-gray-800">
             <a href="#"
                 class="flex gap-2 text-gray-600 dark:text-gray-200">
                 <svg class="size-6">
@@ -79,7 +80,7 @@ mainBarTemplate.innerHTML = `
         </li>
         
         <li
-            class="w-full flex items-center justify-between cursor-pointer">
+            class="transition-all w-full flex items-center justify-between py-3 px-6 hover:pr-9 cursor-pointer hover:bg-gray-100 hover:dark:bg-gray-800">
             <a href="#"
                 class="flex gap-2 text-gray-600 dark:text-gray-200">
                 <svg class="size-6">
@@ -102,7 +103,7 @@ mainBarTemplate.innerHTML = `
         </li>
     
         <li
-            class="w-full flex items-center justify-between cursor-pointer">
+            class="transition-all w-full flex items-center justify-between py-3 px-6 hover:pr-9 cursor-pointer hover:bg-gray-100 hover:dark:bg-gray-800">
             <a href="#"
                 class="flex gap-2 text-gray-600 dark:text-gray-200">
                 <svg class="size-6">
@@ -124,7 +125,7 @@ mainBarTemplate.innerHTML = `
         </li>
     
         <li
-            class="w-full flex items-center justify-between cursor-pointer">
+            class="transition-all w-full flex items-center justify-between py-3 px-6 hover:pr-9 cursor-pointer hover:bg-gray-100 hover:dark:bg-gray-800">
             <a href="#"
                 class="flex gap-2 text-gray-600 dark:text-gray-200">
                 <svg class="size-6">
@@ -147,7 +148,7 @@ mainBarTemplate.innerHTML = `
         </li>
     
         <li
-            class="w-full flex items-center justify-between cursor-pointer">
+            class="transition-all w-full flex items-center justify-between py-3 px-6 hover:pr-9 cursor-pointer hover:bg-gray-100 hover:dark:bg-gray-800">
             <a href="#"
                 class="flex gap-2 text-gray-600 dark:text-gray-200">
                 <svg class="size-6">
@@ -181,7 +182,7 @@ mainBarTemplate.innerHTML = `
         </li>
 
         <!-- Has Sub Menu -->
-        <li class="group relative text-gray-800 dark:text-gray-50">
+        <li class="parent group relative text-gray-800 dark:text-gray-50">
 
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
@@ -196,29 +197,29 @@ mainBarTemplate.innerHTML = `
             </div>
 
             <ul
-                class="hidden group-hover:block absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
+                class="hidden child absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
                         
-                        <li
-                            class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
-                            <a href="#">سبزیجات</a>
-                        </li>
-                        <li
-                            class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
-                            <a href="#">میوه ها</a>
-                        </li>
-                        <li
-                            class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
-                            <a href="#">لبنیات</a>
-                        </li>
-                        <li
-                            class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
-                            <a href="#">تازه ترین ها</a>
-                        </li>
+                <li
+                    class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
+                    <a href="#">سبزیجات</a>
+                </li>
+                <li
+                    class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
+                    <a href="#">میوه ها</a>
+                </li>
+                <li
+                    class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
+                    <a href="#">لبنیات</a>
+                </li>
+                <li
+                    class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
+                    <a href="#">تازه ترین ها</a>
+                </li>
             </ul>
         </li>
 
         <li
-            class="group relative text-gray-800 dark:text-gray-50">
+            class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a href="./products"
@@ -231,7 +232,7 @@ mainBarTemplate.innerHTML = `
             </div>
 
             <ul
-                class="hidden group-hover:block absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
+                class="hidden child absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
                 <li
                     class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
                     <a href="#">هنوانه</a>
@@ -260,7 +261,7 @@ mainBarTemplate.innerHTML = `
         </li>
 
         <li
-            class="group relative text-gray-800 dark:text-gray-50">
+            class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a href="./products"
@@ -276,7 +277,7 @@ mainBarTemplate.innerHTML = `
             </div>
 
             <ul
-                class="hidden group-hover:block absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
+                class="hidden child absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
                 <li
                     class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
                     <a href="#">انگور</a>
@@ -300,7 +301,7 @@ mainBarTemplate.innerHTML = `
         </li>
 
         <li
-            class="group relative text-gray-800 dark:text-gray-50">
+            class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a href="./products"
@@ -314,7 +315,7 @@ mainBarTemplate.innerHTML = `
             </div>
 
             <ul
-                class="hidden group-hover:block absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
+                class="hidden child absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
                 <li
                     class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
                     <a href="#">کدو</a>
@@ -338,7 +339,7 @@ mainBarTemplate.innerHTML = `
         </li>
 
         <li
-            class="group relative text-gray-800 dark:text-gray-50">
+            class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a href="./products" class="font-vazir-medium">لبنیات</a>
@@ -350,7 +351,7 @@ mainBarTemplate.innerHTML = `
             </div>
 
             <ul
-                class="hidden group-hover:block absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
+                class="hidden child absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
                 <li
                     class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
                     <a
@@ -378,7 +379,7 @@ mainBarTemplate.innerHTML = `
         </li>
 
         <li
-            class="group relative text-gray-800 dark:text-gray-50">
+            class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a
@@ -396,7 +397,7 @@ mainBarTemplate.innerHTML = `
             </div>
 
             <ul
-                class="hidden group-hover:block absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
+                class="hidden child absolute right-0 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded-lg shadow-md w-48 p-2 space-y-1 border-b-2 border-b-theme-color-dark dark:border-b-theme-color-light">
                 <li
                     class="hover:text-gray-900 dark:hover:text-gray-50 hover:-translate-x-1 transition py-1 border-b last:border-0 border-b-gray-100 dark:border-b-gray-800">
                     <a

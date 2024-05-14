@@ -54,14 +54,16 @@ const hideElem = (el) => {
   el.style.display = "none";
 };
 
-const showModal = (modalID, display = "block") => {
+const showModal = (modalID) => {
   const modal = document.querySelector(`#${modalID}`);
-  showElem(modal, display);
+  modal.classList.remove("modal-close")
+  modal.classList.add("modal-open")
 };
 
 const hideModal = (modalID) => {
   const modal = document.querySelector(`#${modalID}`);
-  hideElem(modal);
+  modal.classList.add("modal-close")
+  modal.classList.remove("modal-open")
 };
 
 export {
