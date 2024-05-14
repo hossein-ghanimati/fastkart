@@ -1710,12 +1710,12 @@ input {
 
 .mobile-menu__item.active .mobile-menu__item-dropdown {
   display: block;
-  animation: mobile-dropdown-open 1s ease-out ;
+  animation: mobile-dropdown-open 0.75s ease-out ;
 }
 
 .parent:hover .child{
   display: block;
-  animation: mobile-dropdown-open 0.375s ease-out
+  animation: mobile-dropdown-open 0.18s ease-out
 }
 
 .modal-open {
@@ -1829,10 +1829,6 @@ input {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.group:hover .group-hover\:block {
-  display: block;
 }
 
 .group:hover .group-hover\:scale-75 {
