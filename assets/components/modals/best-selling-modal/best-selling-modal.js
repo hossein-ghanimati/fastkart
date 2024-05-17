@@ -151,7 +151,7 @@ class BestSellingModal extends HTMLElement {
         
     }
     connectedCallback(){
-        const elemClass = "modal backdrop-blur pointer-events-none hidden absolute z-60 h-full w-full mx-auto items-center justify-center"
+        const elemClass = "modal backdrop-blur pointer-events-none hidden fixed top-0 z-60 h-full w-full mx-auto items-center justify-center"
         
         this.className = elemClass
         this.setAttribute('id', "best-selling-modal")

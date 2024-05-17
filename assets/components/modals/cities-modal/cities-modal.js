@@ -1,11 +1,11 @@
 const citiesModalTemplate = document.createElement('template');
 citiesModalTemplate.innerHTML = `
 <div
-    class="pointer-events-auto  relative w-full h-full md:h-[405px] md:w-[500px] bg-white dark:bg-gray-900 shadow-lg rounded-0 md:rounded-xl p-[18px] border-b-4 border-b-theme-color-dark dark:border-b-theme-color-dark">
+    class="pointer-events-auto relative w-full h-full md:h-[405px] md:w-[500px] bg-white dark:bg-gray-900 shadow-lg rounded-0 md:rounded-xl p-[18px] border-b-4 border-b-theme-color-dark dark:border-b-theme-color-dark">
     
     <!-- Close Button -->
     <button
-        class="close-modal-btn size-8 rounded absolute -left-2 -top-2 flex items-center justify-center bg-theme-color-dark dark:bg-theme-color-dark"
+        class="close-modal-btn size-8 rounded absolute left-2 top-2  md:-left-2 md:-top-2 flex items-center justify-center bg-theme-color-dark dark:bg-theme-color-dark"
         data-target="cities-modal">
         <svg class="size-6">
             <use xlink:href="#close-icon" class="text-white"></use>
@@ -144,7 +144,7 @@ class CitiesModal extends HTMLElement {
     }
 
     connectedCallback(){
-        const classArr = "modal backdrop-blur pointer-events-none hidden absolute z-60 h-full w-full mx-auto items-center justify-center"
+        const classArr = "modal backdrop-blur pointer-events-none hidden fixed top-0 z-60 h-full w-full mx-auto items-center justify-center"
 
         this.className = classArr
         this.setAttribute('id', "cities-modal")        

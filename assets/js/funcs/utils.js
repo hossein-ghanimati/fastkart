@@ -66,6 +66,10 @@ const hideModal = (modalID) => {
   modal.classList.remove("modal-open")
 };
 
+const setStyle = (el, prop, value) => {
+  el.style[prop] = value
+}
+
 export {
   openMenu,
   closeMenu,
@@ -78,5 +82,6 @@ export {
   showElem,
   hideElem,
   showModal,
-  hideModal
+  hideModal,
+  setStyle
 };

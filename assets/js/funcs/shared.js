@@ -10,6 +10,7 @@ import {
   showElem,
   showModal,
   hideModal,
+  setStyle,
 } from "./utils.js";
 
 const renderMobileMenuOpention = () => {
@@ -53,6 +54,7 @@ const renderModalsOpention = () => {
   openModalBtns.forEach((openBtn) => {
     openBtn.addEventListener("click", () => {
       const modalID = openBtn?.dataset?.target;
+      setStyle(document.body, 'overflow', 'hidden');
       showModal(modalID);
     });
   });
@@ -60,6 +62,7 @@ const renderModalsOpention = () => {
   closeModalBtns.forEach((closeBtn) => {
     closeBtn.addEventListener("click", () => {
       const modalID = closeBtn?.dataset?.target;
+      setStyle(document.body, 'overflow', 'auto');
       hideModal(modalID);
     });
   });
