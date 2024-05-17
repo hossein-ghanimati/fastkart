@@ -461,6 +461,7 @@ video {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  cursor:n-resize;
 }
 
 @font-face {
@@ -1742,6 +1743,7 @@ input {
   right: 0;
   width: 100%;
   height: 100vh;
+  z-index: -1
 }
 
 .before\:absolute::before {
