@@ -252,7 +252,7 @@ navbarTemplate.innerHTML = `
 
         <!-- Profile -->
         <div
-            class="parent px-3 relative z-10">
+            class="parent px-3 relative z-20">
             <!-- Profile Button -->
             <button class="h-full flex items-center">
                 <svg class="size-9">
