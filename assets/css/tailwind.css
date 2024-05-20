@@ -1685,6 +1685,29 @@ input {
   transition-duration: 150ms;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  font-family: vazir;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+body:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+body{
+  direction: rtl;
+}
+
 .mobile-menu.open {
   transform: translateX(0);
 }
