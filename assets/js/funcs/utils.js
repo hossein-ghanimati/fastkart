@@ -1,11 +1,21 @@
 const getFromLocal = (key) => {
-  const value = localStorage.getItem(key);
+  const value = localStorage.getItem(`fastkart-${key}`);
   return JSON.parse(value);
 };
 
 const setToLocal = (key, value) => {
   const jsonValue = JSON.stringify(value);
-  localStorage.setItem(key, jsonValue);
+  localStorage.setItem(`fastkart-${key}`, jsonValue);
+};
+
+const getFromSession = (key) => {
+  const value = sessionStorage.getItem(`fastkart-${key}`);
+  return JSON.parse(value);
+};
+
+const setToSession = (key, value) => {
+  const jsonValue = JSON.stringify(value);
+  sessionStorage.setItem(`fastkart-${key}`, jsonValue);
 };
 
 const openMenu = (menu) => {
@@ -44,10 +54,11 @@ const setNewTheme = () => {
 };
 
 const showElem = (el, display = "block") => {
-  let elTransition = el.style.transition
-  el.style.transform = "translateX(40px)"
-  console.log(elTransition);
+  el.style.transform = "translateY(40px)"
+  el.style.transition = "300ms"
   el.style.display = display;
+  el.style.transform = "translateY(0)"
+  setTimeout(() => el.style.transition = 0, 300)
 };
 
 const hideElem = (el) => {
@@ -77,6 +88,8 @@ export {
   toggleMenuItem,
   getFromLocal,
   setToLocal,
+  getFromSession,
+  setToSession,
   setDefaultTheme,
   setNewTheme,
   showElem,
