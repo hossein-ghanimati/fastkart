@@ -48,7 +48,7 @@ const renderToggleTheme = () => {
 
 const renderModalsOpention = () => {
   const openModalBtns = document.querySelectorAll(".open-modal-btn");
-  const modals = document.querySelectorAll(".modal");
+  const overlys = document.querySelectorAll(".modal-overly");
   const closeModalBtns = document.querySelectorAll(".close-modal-btn");
 
   openModalBtns.forEach((openBtn) => {
@@ -66,6 +66,12 @@ const renderModalsOpention = () => {
       hideModal(modalID);
     });
   });
+
+  overlys.forEach((overly) => {
+    overly.addEventListener('click', () => {
+      console.log(overly)
+    })
+  })
 };
 
 export {

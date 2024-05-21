@@ -1754,6 +1754,70 @@ body{
   direction: rtl;
 }
 
+main {
+  width: 100%;
+}
+
+@media (min-width: 300px) {
+  main {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 390px) {
+  main {
+    max-width: 390px;
+  }
+}
+
+@media (min-width: 640px) {
+  main {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  main {
+    max-width: 1536px;
+  }
+}
+
+main {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 .mobile-menu.open {
   transform: translateX(0);
 }

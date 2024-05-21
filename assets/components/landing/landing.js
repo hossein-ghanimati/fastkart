@@ -75,7 +75,7 @@ class Landing extends HTMLElement {
     }
 
     connectedCallback(){
-        this.className = "container mx-auto mt-6 grid grid-cols-4 gap-6"
+        this.className = "mx-auto mt-6 grid grid-cols-4 gap-6"
     }
 }
 
