@@ -302,7 +302,6 @@ class NavBar extends HTMLElement {
 
     connectedCallback(){
         this.className = "w-full h-14 md:h-20 flex items-center  relative bg-gray-200 dark:bg-gray-700"
-        console.log(this.innerHTML)
     }
 }
 
