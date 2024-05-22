@@ -1972,15 +1972,13 @@ main {
   z-index: -1
 }
 
-.section {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1rem;
+section-header > h4 {
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
-  .section {
-    padding-top: 2.25rem;
+  section-header > h4 {
+    margin-top: 2.25rem;
   }
 }
 

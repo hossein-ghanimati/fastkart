@@ -84,10 +84,6 @@ class CategoriesSection extends HTMLElement {
     super()
     this.appendChild(template.content.cloneNode(true))
   }
-
-  connectedCallback(){
-    this.className = "section"
-  }
 }
 
 export {

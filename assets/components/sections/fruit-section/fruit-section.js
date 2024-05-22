@@ -249,9 +249,6 @@ class FriutSection extends HTMLElement {
     super()
     this.appendChild(template.content.cloneNode(true))
   }
-  connectedCallback(){
-    this.className = "section"
-  }
 }
 
 export {
