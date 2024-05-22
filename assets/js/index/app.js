@@ -1,5 +1,6 @@
-import { deleteSwiperBugs, renderSwiper } from "./funcs/shared.js";
+import { deleteSwiperBugs, renderCatsSlider, renderProductsSlider } from "./funcs/shared.js";
 
-renderSwiper()
+renderCatsSlider()
+renderProductsSlider()
 deleteSwiperBugs()
 

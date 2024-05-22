@@ -6,6 +6,7 @@ import { TopBar } from "../components/header/top-bar/top-bar.js";
 import { Landing } from "../components/landing/landing.js";
 import { BestSellingModal } from "../components/modals/best-selling-modal/best-selling-modal.js";
 import { CitiesModal } from "../components/modals/cities-modal/cities-modal.js";
+import { ProductBox } from "../components/product-box/product-box.js";
 import { SectionHeader } from "../components/section-header/section-header.js";
 import { CategoriesSection } from "../components/sections/categories-section/categories-section.js";
 import { OfferSection } from "../components/sections/offer-section/offer-section.js";
@@ -23,3 +24,4 @@ customElements.define('section-header', SectionHeader)
 customElements.define('cat-box', CatBox)
 customElements.define('categories-section', CategoriesSection)
 customElements.define('offer-section', OfferSection)
+customElements.define('product-box', ProductBox)

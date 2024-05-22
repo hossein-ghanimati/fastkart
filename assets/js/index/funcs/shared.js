@@ -1,4 +1,6 @@
-const renderSwiper = (selector = '.swiper') => {
+import { deleteProductsSwiperBugs } from "./utils.js"
+
+const renderCatsSlider = (selector = '.swiper') => {
   const swiper = new Swiper(selector, {    
     spaceBetween: 12,
     slidesPerView: 'auto',
@@ -16,6 +18,21 @@ const renderSwiper = (selector = '.swiper') => {
   })
 }
 
+const renderProductsSlider = () => {
+  const swiper = new Swiper(".swiper__products", {  
+    slidesPerView: "auto",
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+    pagination: {
+      el : '.swiper-pagination',
+      dynamicBullets : true,
+      clickable : true,
+    },
+  })
+}
+
 const deleteSwiperBugs = () => {
   const swiperInterval = setInterval(() =>{
     const boxs = document.querySelectorAll('cat-box')
@@ -26,11 +43,14 @@ const deleteSwiperBugs = () => {
   ,1000)
 
   setTimeout(() => {
-    removeInterval(swiperInterval)
-  }, 10_1000)
+    clearInterval(swiperInterval)
+  }, 10_000)
+
+  deleteProductsSwiperBugs()
 }
 
 export {
+  renderCatsSlider,
+  renderProductsSlider,
   deleteSwiperBugs,
-  renderSwiper
 }

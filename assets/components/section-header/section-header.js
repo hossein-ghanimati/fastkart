@@ -12,7 +12,7 @@ template.innerHTML = `
 </span>
 
 <!-- Section Subtitle -->
-<p class="text-gray-500 dark:text-gray-300"></p>
+<p class="text-gray-500 dark:text-gray-300 line-clamp-1 w-3/4"></p>
 
 `
 
