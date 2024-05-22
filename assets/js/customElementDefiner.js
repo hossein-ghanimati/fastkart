@@ -8,6 +8,7 @@ import { BestSellingModal } from "../components/modals/best-selling-modal/best-s
 import { CitiesModal } from "../components/modals/cities-modal/cities-modal.js";
 import { SectionHeader } from "../components/section-header/section-header.js";
 import { CategoriesSection } from "../components/sections/categories-section/categories-section.js";
+import { OfferSection } from "../components/sections/offer-section/offer-section.js";
 import { SvgPack } from "../components/svg-pack/svg-pack.js";
 
 customElements.define('svg-pack', SvgPack)
@@ -21,3 +22,4 @@ customElements.define('site-landing', Landing)
 customElements.define('section-header', SectionHeader)
 customElements.define('cat-box', CatBox)
 customElements.define('categories-section', CategoriesSection)
+customElements.define('offer-section', OfferSection)

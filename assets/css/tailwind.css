@@ -812,10 +812,6 @@ input {
   margin-right: 1rem;
 }
 
-.mr-\[50\%\] {
-  margin-right: 50%;
-}
-
 .mr-\[7px\] {
   margin-right: 7px;
 }
@@ -1071,11 +1067,6 @@ input {
   max-width: 16rem;
 }
 
-.translate-x-1\/2 {
-  --tw-translate-x: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .translate-x-full {
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1258,6 +1249,10 @@ input {
   border-top-width: 1px;
 }
 
+.border-dashed {
+  border-style: dashed;
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1271,6 +1266,11 @@ input {
 .border-orange-400 {
   --tw-border-opacity: 1;
   border-color: rgb(251 146 60 / var(--tw-border-opacity));
+}
+
+.border-stone-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(214 211 209 / var(--tw-border-opacity));
 }
 
 .border-theme-color-dark {
@@ -1496,6 +1496,10 @@ input {
   padding-bottom: 9px;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1522,10 +1526,6 @@ input {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -1751,6 +1751,7 @@ body {
   overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  padding-bottom: 2.5rem;
   font-family: vazir;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2070,6 +2071,28 @@ main {
 
 .cat-box:hover::before {
   opacity: 1;
+}
+
+.offer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: 0.375rem;
+  background-size: cover;
+  padding: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .offer {
+    padding: 1.5rem;
+  }
+}
+
+.offer{
+  background-image: url("../image/offer.jpg")
 }
 
 .before\:absolute::before {
@@ -2440,6 +2463,11 @@ main {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
