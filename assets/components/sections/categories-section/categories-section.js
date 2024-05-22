@@ -8,7 +8,7 @@ template.innerHTML =
 
     <!-- Section Content -->
     <!-- Slider main container -->
-    <div class="swiper mt-5">
+    <div class="swiper mt-5 pb-12">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -42,7 +42,39 @@ template.innerHTML =
           icon="#vegetable-icon"
           title="گوشت و پروتئین ها"
         ></cat-box>
+        <cat-box
+          class="swiper-slide"
+          icon="#vegetable-icon"
+            title="مروری بر دسته ها"
+        ></cat-box>
+        <cat-box
+          class="swiper-slide"
+          icon="#meat-icon"
+          title="مروری بر دسته ها"
+        ></cat-box>
+        <cat-box
+          class="swiper-slide"
+          icon="#vegetable-icon"
+          title="گوشت و پروتئین ها"
+        ></cat-box><cat-box
+        class="swiper-slide"
+        icon="#vegetable-icon"
+          title="مروری بر دسته ها"
+      ></cat-box>
+      <cat-box
+        class="swiper-slide"
+        icon="#meat-icon"
+        title="مروری بر دسته ها"
+      ></cat-box>
+      <cat-box
+        class="swiper-slide"
+        icon="#vegetable-icon"
+        title="گوشت و پروتئین ها"
+      ></cat-box>
       </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
     </div>
   `
 
