@@ -6,7 +6,7 @@ template.innerHTML = `
   </section-header>
 
   <!-- Section Content -->
-    <div class="swiper__products relative mt-5 border border-gray-400 dark:border-x-gray-200 rounded-lg overflow-hidden">
+    <div class="swiper__products relative mt-5 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->

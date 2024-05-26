@@ -6,7 +6,7 @@ template.innerHTML = `
       <img src="./assets/image/fruits/1.png" class="product-img w-3/4 mx-auto transition-5" alt="fruit">
     </a>
     <!-- Product Actions -->
-    <ul class="flex translate-y-2 opacity-0 transition-5 absolute mx-auto bottom-3  items-center justify-center bg-white dark:bg-gray-900 py-2  rounded-lg">
+    <ul class="flex translate-y-2 opacity-0 transition-5 absolute mx-auto bottom-3  items-center justify-center bg-white dark:bg-gray-900 py-2  rounded-lg z-10">
       <li class="parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none">
         <span class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4">نمایش</span>
         <svg class="size-6 scale-[0.65] text-gray-500 dark:text-gray-300">
@@ -29,7 +29,7 @@ template.innerHTML = `
   </div>
 
   <!-- Bottom -->
-  <div>
+  <div class="h-2/5">
     <a href="#" class="productLink productTitle line-clamp-1 font-bold text-sm"></a>
                 
     <!-- Points -->
@@ -57,8 +57,8 @@ template.innerHTML = `
         تومان
       </span>
 
-      <button type="button" class="px-3 py-2 flex items-center justify-center gap-1 bg-theme-color-dark rounded-md text-stone-50">
-        افزودن
+      <button type="button" class="parent relative p-1 mt-[3.5px] flex items-center justify-center gap-1 bg-theme-color-dark rounded-md text-stone-50">
+        <span class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[110%] right-2/4 translate-x-2/4 z-10">افزودن</span>
         <svg class="size-6 text-white">
           <use xlink:href="#plus-icon"></use>
         </svg>
@@ -102,7 +102,7 @@ class ProductBox extends HTMLElement {
     this.querySelector('.productAmount').innerHTML = this.getAttribute('amount')
     this.querySelector('.productPrice').innerHTML = Number(this.getAttribute('price')).toLocaleString()
 
-    this.className = "product block w-full 2xs:w-[220px] h-[302px] p-[10px] border border-gray-400 dark:border-x-gray-200"
+    this.className = "product block w-full 2xs:w-[220px] h-[302px] p-[10px] border-[0.1px] border-gray-200 dark:border-gray-700"
   }
 
   observedAttributes(){
