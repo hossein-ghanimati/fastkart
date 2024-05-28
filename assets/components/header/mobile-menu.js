@@ -28,10 +28,10 @@ mobileMenuTemplate.innerHTML = `
         <a href="./index.html">خانه</a>
     </li>
 
-    <li class="mobile-menu__item w-full">
+    <li class="mobile-menu__item w-full cursor-pointer">
         <p class="flex items-center justify-between">
             <span
-                class="mobile-menu__item-text cursor-pointer">فروشگاه</span>
+                class="mobile-menu__item-text">فروشگاه</span>
             <svg class="mobile-menu__item-icon size-5">
                 <use xlink:href="#angle"></use>
             </svg>
@@ -57,10 +57,10 @@ mobileMenuTemplate.innerHTML = `
         </ul>
     </li>
 
-    <li class="mobile-menu__item w-full">
+    <li class="mobile-menu__item w-full cursor-pointer">
         <p class="flex items-center justify-between">
             <span
-                class="mobile-menu__item-text cursor-pointer">محصولات
+                class="mobile-menu__item-text">محصولات
                 برتر</span>
             <svg class="mobile-menu__item-icon size-5">
                 <use xlink:href="#angle"></use>
@@ -95,10 +95,10 @@ mobileMenuTemplate.innerHTML = `
         </ul>
     </li>
 
-    <li class="mobile-menu__item w-full">
+    <li class="mobile-menu__item w-full cursor-pointer">
         <p class="flex items-center justify-between">
             <span
-                class="mobile-menu__item-text cursor-pointer">سبزیجات</span>
+                class="mobile-menu__item-text">سبزیجات</span>
             <svg class="mobile-menu__item-icon size-5">
                 <use xlink:href="#angle"></use>
             </svg>
@@ -124,10 +124,10 @@ mobileMenuTemplate.innerHTML = `
         </ul>
     </li>
 
-    <li class="mobile-menu__item w-full">
+    <li class="mobile-menu__item w-full cursor-pointer">
         <p class="flex items-center justify-between">
             <span
-                class="mobile-menu__item-text cursor-pointer">میوه
+                class="mobile-menu__item-text">میوه
                 ها</span>
             <svg class="mobile-menu__item-icon size-5">
                 <use xlink:href="#angle"></use>
@@ -158,10 +158,10 @@ mobileMenuTemplate.innerHTML = `
         </ul>
     </li>
 
-    <li class="mobile-menu__item w-full">
+    <li class="mobile-menu__item w-full cursor-pointer">
         <p class="flex items-center justify-between">
             <span
-                class="mobile-menu__item-text cursor-pointer">لبنیات</span>
+                class="mobile-menu__item-text">لبنیات</span>
             <svg class="mobile-menu__item-icon size-5">
                 <use xlink:href="#angle"></use>
             </svg>
@@ -191,10 +191,10 @@ mobileMenuTemplate.innerHTML = `
         </ul>
     </li>
 
-    <li class="mobile-menu__item w-full">
+    <li class="mobile-menu__item w-full cursor-pointer">
         <p class="flex items-center justify-between">
             <span
-                class="mobile-menu__item-text cursor-pointer">فروشندگان</span>
+                class="mobile-menu__item-text">فروشندگان</span>
             <svg class="mobile-menu__item-icon size-5">
                 <use xlink:href="#angle"></use>
             </svg>

@@ -1,17 +1,17 @@
-import { CatBox } from "../components/cat-box/cat-box.js";
-import { MainBar } from "../components/header/main-bar/main-bar.js";
-import { MobileMenu } from "../components/header/mobile-menu/mobile-menu.js";
-import { NavBar } from "../components/header/nav-bar/nav-bar.js";
-import { TopBar } from "../components/header/top-bar/top-bar.js";
-import { Landing } from "../components/landing/landing.js";
-import { BestSellingModal } from "../components/modals/best-selling-modal/best-selling-modal.js";
-import { CitiesModal } from "../components/modals/cities-modal/cities-modal.js";
-import { ProductBox } from "../components/product-box/product-box.js";
-import { SectionHeader } from "../components/section-header/section-header.js";
-import { CategoriesSection } from "../components/sections/categories-section/categories-section.js";
-import { FriutSection } from "../components/sections/fruit-section/fruit-section.js";
-import { OfferSection } from "../components/sections/offer-section/offer-section.js";
-import { SvgPack } from "../components/svg-pack/svg-pack.js";
+import { CatBox } from "../components/boxes/cat-box.js";
+import { MainBar } from "../components/header/main-bar.js";
+import { MobileMenu } from "../components/header/mobile-menu.js";
+import { NavBar } from "../components/header/nav-bar.js";
+import { TopBar } from "../components/header/top-bar.js";
+import { Landing } from "../components/landing.js";
+import { BestSellingModal } from "../components/modals/best-selling-modal.js";
+import { CitiesModal } from "../components/modals/cities-modal.js";
+import { ProductBox } from "../components/boxes/product-box.js";
+import { SectionHeader } from "../components/section-header.js";
+import { CategoriesSection } from "../components/sections/categories-section.js";
+import { FriutSection } from "../components/sections/fruit-section.js";
+import { OfferSection } from "../components/sections/offer-section.js";
+import { SvgPack } from "../components/svg-pack.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
