@@ -1,7 +1,8 @@
-const template = document.createElement('template');
+const template =document.createElement('template');
 template.innerHTML = `
+<!-- Dairy Section -->
   <section-header
-    title="میوه ها وسبزیجات"
+    title="صبحانه و لبنیات"
     subTitle="یک دستیار مجازی محصولات را از لیست شما جمع آوری می کند">
   </section-header>
 
@@ -13,44 +14,44 @@ template.innerHTML = `
         <div class="swiper-slide w-full 2xs:w-max">
           <product-box
             id="df786asdf08adf11"
-            src="fruits/1.png"
-            title="نارگیل قهوه ای تازه"
+            src="dairies/11.png"
+            title="وافل بلژیکی"
             stars="4"
             counts="32"
-            unit="کیلوگرم"
+            unit="عدد"
             amount="1"
-            price="150000"
+            price="28000"
           ></product-box>
           <product-box
             id="df786asdf08adf33"
-            src="fruits/3.png"
-            title="موز های درجه یک"
-            stars="5"
+            src="dairies/12.png"
+            title="بیسکوییت بسیار مغذی"
+            stars="3"
             counts="53"
-            unit="کیلوگرم"
+            unit="عدد"
             amount="1"
-            price="70000"
+            price="11000"
           ></product-box>
         </div>
     
         <div class="swiper-slide w-full 2xs:w-max">
           <product-box
             id="df786asdf08adf44"
-            src="fruits/4.png"
-            title="کیوی تمیز و درشت"
-            stars="3"
-            counts="12"
-            unit="کیلوگرم"
-            amount="1"
-            price="40000"
+            src="dairies/13.png"
+            title="کروسانت کره"
+            stars="5"
+            counts="28"
+            unit="عدد"
+            amount="5"
+            price="83000"
           ></product-box>
           <product-box
             id="df786asdf08adf55"
-            src="fruits/5.png"
-            title="لیمو ترش اعلی"
+            src="dairies/14.png"
+            title="نوشیدنی انبه فروتی"
             stars="1"
             counts="23"
-            unit="کیلوگرم"
+            unit="عدد"
             amount="1"
             price="50000"
           ></product-box>
@@ -59,184 +60,184 @@ template.innerHTML = `
         <div class="swiper-slide w-full 2xs:w-max">
           <product-box
             id="df786asdf08adf66"
-            src="fruits/6.png"
-            title="پرتغال تامسون شیرین"
+            src="dairies/15.png"
+            title="پاستا ماکارونی آرنج بامبینو"
             stars="4"
             counts="71"
-            unit="کیلوگرم"
+            unit="عدد"
             amount="1"
-            price="40"
+            price="40000"
           ></product-box>
           <product-box
             id="df786asdf08adf77"
-            src="fruits/7.png"
-            title="کلم بوروکلی تازه و طعم دار"
+            src="dairies/16.png"
+            title="نان برگر موفه"
             stars="3"
             counts="28"
-            unit="کیلوگرم"
+            unit="قرص"
             amount="1"
-            price="40000"
+            price="28000"
           ></product-box>
         </div>
     
         <div class="swiper-slide w-full 2xs:w-max">
           <product-box
             id="df786asdf08adf88"
-            src="fruits/8.png"
-            title="کدو تازه رسیده"
+            src="dairies/17.png"
+            title="پنیر تبریزی اعلی"
             stars="2"
             counts="5"
             unit="کیلوگرم"
-            amount="6"
+            amount="1"
             price="120000"
           ></product-box>
           <product-box
             id="df786asdf08adf99"
-            src="fruits/9.png"
-            title="فلفل دلمه ای ارگانیک"
+            src="dairies/18.png"
+            title="تخم مرغ"
             stars="4"
             counts="53"
-            unit="کیلوگرم"
+            unit="شانه"
             amount="1"
-            price="35000"
+            price="78000"
           ></product-box>
         </div>
     
         <div class="swiper-slide w-full 2xs:w-max">
           <product-box
             id="df786asdf08adf10"
-            src="fruits/10.png"
-            title="توت فرنگی شیرین"
+            src="dairies/19.png"
+            title="ماست تازه"
             stars="5"
             counts="89"
             unit="کیلوگرم"
             amount="1"
-            price="240000"
+            price="120000"
           ></product-box>
           <product-box
             id="df786asdf08adf44"
-            src="fruits/4.png"
-            title="کیوی تمیز و درشت"
+            src="dairies/20.png"
+            title="مربای پرتقال ارگانیک"
             stars="3"
             counts="12"
-            unit="کیلوگرم"
+            unit="عدد"
             amount="1"
-            price="40000"
+            price="56000"
           ></product-box>
         </div>
 
         <div class="swiper-slide w-full 2xs:w-max">
           <product-box
             id="df786asdf08adf11"
-            src="fruits/1.png"
-            title="نارگیل قهوه ای تازه"
+            src="dairies/11.png"
+            title="وافل بلژیکی"
             stars="4"
             counts="32"
-            unit="کیلوگرم"
+            unit="عدد"
             amount="1"
-            price="150000"
+            price="28000"
           ></product-box>
           <product-box
-            id="df786asdf08adf33"
-            src="fruits/3.png"
-            title="موز های درجه یک"
-            stars="5"
-            counts="53"
-            unit="کیلوگرم"
+            id="df786asdf08adf77"
+            src="dairies/16.png"
+            title="نان برگر موفه"
+            stars="3"
+            counts="28"
+            unit="قرص"
             amount="1"
-            price="70000"
+            price="28000"
           ></product-box>
         </div>
     
         <div class="swiper-slide w-full 2xs:w-max">
           <product-box
-            id="df786asdf08adf44"
-            src="fruits/4.png"
-            title="کیوی تمیز و درشت"
+            id="df786asdf08adf33"
+            src="dairies/12.png"
+            title="بیسکوییت بسیار مغذی"
             stars="3"
-            counts="12"
-            unit="کیلوگرم"
+            counts="53"
+            unit="عدد"
             amount="1"
-            price="40000"
+            price="11000"
           ></product-box>
           <product-box
-            id="df786asdf08adf55"
-            src="fruits/5.png"
-            title="لیمو ترش اعلی"
-            stars="1"
-            counts="23"
+            id="df786asdf08adf88"
+            src="dairies/17.png"
+            title="پنیر تبریزی اعلی"
+            stars="2"
+            counts="5"
             unit="کیلوگرم"
             amount="1"
-            price="50000"
+            price="120000"
           ></product-box>
         </div>
 
         <div class="swiper-slide w-full 2xs:w-max">
           <product-box
-            id="df786asdf08adf66"
-            src="fruits/6.png"
-            title="پرتغال تامسون شیرین"
-            stars="4"
-            counts="71"
-            unit="کیلوگرم"
-            amount="1"
-            price="40"
-          ></product-box>
-          <product-box
-            id="df786asdf08adf77"
-            src="fruits/7.png"
-            title="کلم بوروکلی تازه و طعم دار"
-            stars="3"
-            counts="28"
-            unit="کیلوگرم"
-            amount="1"
-            price="40000"
-          ></product-box>
-        </div>
-    
-        <div class="swiper-slide w-full 2xs:w-max">
-          <product-box
-            id="df786asdf08adf88"
-            src="fruits/8.png"
-            title="کدو تازه رسیده"
-            stars="2"
-            counts="5"
-            unit="کیلوگرم"
-            amount="6"
-            price="120000"
-          ></product-box>
-          <product-box
-            id="df786asdf08adf99"
-            src="fruits/9.png"
-            title="فلفل دلمه ای ارگانیک"
-            stars="4"
-            counts="53"
-            unit="کیلوگرم"
-            amount="1"
-            price="35000"
-          ></product-box>
-        </div>
-    
-        <div class="swiper-slide w-full 2xs:w-max">
-          <product-box
-            id="df786asdf08adf10"
-            src="fruits/10.png"
-            title="توت فرنگی شیرین"
+            id="df786asdf08adf44"
+            src="dairies/13.png"
+            title="کروسانت کره"
             stars="5"
-            counts="89"
-            unit="کیلوگرم"
-            amount="1"
-            price="240000"
+            counts="28"
+            unit="عدد"
+            amount="5"
+            price="83000"
           ></product-box>
           <product-box
             id="df786asdf08adf44"
-            src="fruits/4.png"
-            title="کیوی تمیز و درشت"
+            src="dairies/20.png"
+            title="مربای پرتقال ارگانیک"
             stars="3"
             counts="12"
+            unit="عدد"
+            amount="1"
+            price="56000"
+          ></product-box>
+        </div>
+    
+        <div class="swiper-slide w-full 2xs:w-max">
+          <product-box
+            id="df786asdf08adf77"
+            src="dairies/16.png"
+            title="نان برگر موفه"
+            stars="3"
+            counts="28"
+            unit="قرص"
+            amount="1"
+            price="28000"
+          ></product-box>
+          <product-box
+            id="df786asdf08adf88"
+            src="dairies/17.png"
+            title="پنیر تبریزی اعلی"
+            stars="2"
+            counts="5"
             unit="کیلوگرم"
             amount="1"
-            price="40000"
+            price="120000"
+          ></product-box>
+        </div>
+    
+        <div class="swiper-slide w-full 2xs:w-max">
+          <product-box
+            id="df786asdf08adf99"
+            src="dairies/18.png"
+            title="تخم مرغ"
+            stars="4"
+            counts="53"
+            unit="شانه"
+            amount="1"
+            price="78000"
+          ></product-box>
+          <product-box
+            id="df786asdf08adf99"
+            src="dairies/18.png"
+            title="تخم مرغ"
+            stars="4"
+            counts="53"
+            unit="شانه"
+            amount="1"
+            price="78000"
           ></product-box>
         </div>
   
@@ -244,7 +245,7 @@ template.innerHTML = `
     </div>
 `
 
-class FriutSection extends HTMLElement {
+class dairySection extends HTMLElement{
   constructor(){
     super()
     this.appendChild(template.content.cloneNode(true))
@@ -252,5 +253,5 @@ class FriutSection extends HTMLElement {
 }
 
 export {
-  FriutSection
+  dairySection
 }

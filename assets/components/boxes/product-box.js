@@ -93,7 +93,7 @@ class ProductBox extends HTMLElement {
 
   connectedCallback(){
     this.querySelectorAll('.productLink').forEach(link => link.href = `./productPreview.html?id=${this.getAttribute('id')}`)
-    this.querySelector('.product-img').src = `./assets/image/fruits/${this.getAttribute('src')}`
+    this.querySelector('.product-img').src = `./assets/image/${this.getAttribute('src')}`
     this.querySelector('.comparieLink').href = `./comparie.html?id=${this.getAttribute('id')}`
     this.querySelector('.productTitle').innerHTML = this.getAttribute('title')
     this.renderStars()
