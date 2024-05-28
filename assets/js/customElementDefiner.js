@@ -12,6 +12,7 @@ import { CategoriesSection } from "../components/sections/categories-section.js"
 import { FriutSection } from "../components/sections/fruit-section.js";
 import { OfferSection } from "../components/sections/offer-section.js";
 import { SvgPack } from "../components/svg-pack.js";
+import { OfferTimer } from "../components/sections/offer-timer.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
@@ -27,3 +28,4 @@ customElements.define('categories-section', CategoriesSection)
 customElements.define('offer-section', OfferSection)
 customElements.define('product-box', ProductBox)
 customElements.define('fruit-section', FriutSection)
+customElements.define('offer-timer', OfferTimer)
