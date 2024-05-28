@@ -6,7 +6,7 @@ mainBarTemplate.innerHTML = `
 <div class="parent relative">
     <!-- Category Button -->
     <button type="button"
-        class="flex items-center gap-1 justify-center py-[10px]  px-5 font-vazir-bold bg-gradient-to-r from-[#0e947a] to-theme-color-dark rounded text-gray-100">
+        class="flex items-center gap-1 justify-center py-[10px]  px-5 font-semibold bg-gradient-to-r from-[#0e947a] to-theme-color-dark rounded text-gray-100">
         <svg class="size-7">
             <use xlink:href="#category-icon"
                 class="text-gray-100"></use>
@@ -28,7 +28,7 @@ mainBarTemplate.innerHTML = `
                         class="dark:text-gray-100"></use>
                 </svg>
                 <span
-                    class="font-vazir-bold">میوه جنوب
+                    class="font-semibold">میوه جنوب
                 </span>
             </a>
 
@@ -48,7 +48,7 @@ mainBarTemplate.innerHTML = `
                         class="dark:text-gray-100"></use>
                 </svg>
                 <span
-                    class="font-vazir-bold">نوشیدنی
+                    class="font-semibold">نوشیدنی
                 </span>
             </a>
 
@@ -68,7 +68,7 @@ mainBarTemplate.innerHTML = `
                         class="dark:text-gray-100"></use>
                 </svg>
                 <span
-                    class="font-vazir-bold">گوشت و پروتئین
+                    class="font-semibold">گوشت و پروتئین
                 </span>
             </a>
 
@@ -90,7 +90,7 @@ mainBarTemplate.innerHTML = `
                 </svg>
                 
                 <span
-                    class="font-vazir-bold">صبحانه
+                    class="font-semibold">صبحانه
                 </span>
             </a>
 
@@ -113,7 +113,7 @@ mainBarTemplate.innerHTML = `
                 </svg>
 
                 <span
-                    class="font-vazir-bold">غذای منمجد
+                    class="font-semibold">غذای منمجد
                 </span>
             </a>
 
@@ -135,7 +135,7 @@ mainBarTemplate.innerHTML = `
                 </svg>
 
                 <span
-                    class="font-vazir-bold">بیسکوییت
+                    class="font-semibold">بیسکوییت
                 </span>
             </a>
 
@@ -158,7 +158,7 @@ mainBarTemplate.innerHTML = `
                 </svg>
 
                 <span
-                    class="font-vazir-bold">مکمل های غذایی
+                    class="font-semibold">مکمل های غذایی
                 </span>
             </a>
 
@@ -178,7 +178,7 @@ mainBarTemplate.innerHTML = `
 
         <li>
             <a href="./index.html"
-                class="font-vazir-medium hover:text-theme-color-dark dark:hover:text-theme-color-light transition">خانه</a>
+                class="font-medium hover:text-theme-color-dark dark:hover:text-theme-color-light transition">خانه</a>
         </li>
 
         <!-- Has Sub Menu -->
@@ -188,7 +188,7 @@ mainBarTemplate.innerHTML = `
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
 
                 <a href="./products"
-                    class="font-vazir-medium">فروشگاه</a>
+                    class="font-medium">فروشگاه</a>
 
                 <svg
                     class="size-5 -rotate-90">
@@ -223,7 +223,7 @@ mainBarTemplate.innerHTML = `
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a href="./products"
-                    class="font-vazir-medium">محصولات
+                    class="font-medium">محصولات
                     برتر</a>
                 <svg
                     class="size-5 -rotate-90">
@@ -265,7 +265,7 @@ mainBarTemplate.innerHTML = `
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a href="./products"
-                    class="font-vazir-medium">میوه
+                    class="font-medium">میوه
                     ها
                 </a>
 
@@ -305,7 +305,7 @@ mainBarTemplate.innerHTML = `
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a href="./products"
-                    class="font-vazir-medium">سبزیجات</a>
+                    class="font-medium">سبزیجات</a>
                     
                 <svg
                     class="size-5 -rotate-90">
@@ -342,7 +342,7 @@ mainBarTemplate.innerHTML = `
             class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
-                <a href="./products" class="font-vazir-medium">لبنیات</a>
+                <a href="./products" class="font-medium">لبنیات</a>
                 <svg
                     class="size-5 -rotate-90">
                     <use
@@ -384,7 +384,7 @@ mainBarTemplate.innerHTML = `
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a
                     href="./products"
-                    class="font-vazir-medium">
+                    class="font-medium">
                     فروشندگان
                 </a>
 

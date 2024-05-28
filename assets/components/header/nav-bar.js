@@ -111,7 +111,7 @@ navbarTemplate.innerHTML = `
 
             <!-- Cart List -->
             <div
-                class="child hidden group-hover:opacity-100 w-80 bg-white dark:bg-gray-900 shadow-l min-h-11 absolute z-20 left-0 p-3 rounded-xl font-vazir-medium">
+                class="child hidden group-hover:opacity-100 w-80 bg-white dark:bg-gray-900 shadow-l min-h-11 absolute z-20 left-0 p-3 rounded-xl font-medium">
                                 <!-- Cart Last Items -->
                 <ul class="w-full space-y-3 pb-3">
                     <li
@@ -130,7 +130,7 @@ navbarTemplate.innerHTML = `
                                 قهوه ای فرانسوی با ظرف شیشه
                                 ای</a>
                             <p
-                                class="dark:text-gray-200 text-[12px] font-vazir">
+                                class="dark:text-gray-200 text-[12px]">
                                 <span>1</span>
                                 <svg
                                     class="inline-block size-3">
@@ -164,7 +164,7 @@ navbarTemplate.innerHTML = `
                                 class="text-theme-color-dark dark:text-theme-color-light line-clamp-1">بیسکویت
                                 کره بادام زمینی 600 گرمی</a>
                             <p
-                                class="dark:text-gray-200 text-[12px] font-vazir">
+                                class="dark:text-gray-200 text-[12px]">
                                 <span>2</span>
                                 <svg
                                     class="inline-block size-3">
@@ -199,7 +199,7 @@ navbarTemplate.innerHTML = `
                                 قهوه ای فرانسوی با ظرف شیشه
                                 ای</a>
                             <p
-                                class="dark:text-gray-200 text-[12px] font-vazir">
+                                class="dark:text-gray-200 text-[12px]">
                                 <span>1</span>
                                 <svg
                                     class="inline-block size-3">
@@ -226,11 +226,11 @@ navbarTemplate.innerHTML = `
                     <div
                         class="w-full flex items-center justify-between">
                         <span
-                            class="dark:text-gray-200 font-vazir">جمع
+                            class="dark:text-gray-200">جمع
                             کل:</span>
 
                         <div
-                            class="text-theme-color-dark dark:text-theme-color-light space-x-1 font-vazir-bold">
+                            class="text-theme-color-dark dark:text-theme-color-light space-x-1 font-semibold">
                             <span>310.000</span>
                             <span>تومان</span>
                         </div>

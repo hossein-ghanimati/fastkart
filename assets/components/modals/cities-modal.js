@@ -17,7 +17,7 @@ citiesModalTemplate.innerHTML = `
         class="space-y-3">
         <!-- Modal Title -->
         <span
-            class="p-1 font-vazir-bold text-xl dark:text-gray-100">آدرس
+            class="p-1 font-semibold text-xl dark:text-gray-100">آدرس
             خود را انتخاب
             کنید</span>
 
@@ -35,7 +35,7 @@ citiesModalTemplate.innerHTML = `
         <!-- Search Button -->
         <button
             class="absolute right-0 top-0 h-full px-[15px] flex items-center justify-center">
-            <svg class="size-[17px] font-vazir-bold">
+            <svg class="size-[17px] font-semibold">
                 <use xlink:href="#search-icon"
                     class="text-gray-700 dark:text-gray-300"></use>
             </svg>

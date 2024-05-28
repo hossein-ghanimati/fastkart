@@ -6,7 +6,7 @@ template.innerHTML = `
   <div class="lg:w-1/2 text-center">
     <!-- Title -->
     <h6 class="w-full line-clamp-1 text-[22px] md:text-2xl">
-      تخفیف روز <span class="text-danger font-vazir-bold">دوشنبه !</span>
+      تخفیف روز <span class="text-danger font-semibold">دوشنبه !</span>
     </h6>
 
     <!-- Sub Title -->
@@ -15,10 +15,10 @@ template.innerHTML = `
 
   <!-- Left -->
   <ul class="flex w-full lg:w-1/2 justify-center items-center">
-    <li class="offer-timer__counter bg-danger text-stone-50 font-vazir-bold rounded flex items-center justify-center relative mr-4 first:mr-0">12</li>
-    <li class="offer-timer__counter bg-danger text-stone-50 font-vazir-bold rounded flex items-center justify-center relative mr-4 first:mr-0">10</li>
-    <li class="offer-timer__counter bg-danger text-stone-50 font-vazir-bold rounded flex items-center justify-center relative mr-4 first:mr-0">23</li>
-    <li class="offer-timer__counter bg-danger text-stone-50 font-vazir-bold rounded flex items-center justify-center relative mr-4 first:mr-0">28</li>
+    <li class="offer-timer__counter bg-danger text-stone-50 font-semibold rounded flex items-center justify-center relative mr-4 first:mr-0">12</li>
+    <li class="offer-timer__counter bg-danger text-stone-50 font-semibold rounded flex items-center justify-center relative mr-4 first:mr-0">10</li>
+    <li class="offer-timer__counter bg-danger text-stone-50 font-semibold rounded flex items-center justify-center relative mr-4 first:mr-0">23</li>
+    <li class="offer-timer__counter bg-danger text-stone-50 font-semibold rounded flex items-center justify-center relative mr-4 first:mr-0">28</li>
   </ul>
 </div>
 `

@@ -465,27 +465,33 @@ video {
 }
 
 @font-face {
-  font-family: vazir;
-
-  src: url(../font/vazir/Vazirmatn-Regular.ttf);
-}
-
-@font-face {
-  font-family: "vazir-medium";
-
-  src: url(../font/vazir/Vazirmatn-Medium.ttf);
-}
-
-@font-face {
-  font-family: "vazir-bold";
-
-  src: url(../font/vazir/Vazirmatn-Bold.ttf);
-}
-
-@font-face {
   font-family: aviny;
 
   src: url("../font/aviny/l1x0_aviny_(1).ttf");
+}
+
+@font-face {
+  font-family: shabnam;
+
+  font-weight: 400;
+
+  src: url('../font/shabnam/Shabnam-FD.woff') format("woff");
+}
+
+@font-face {
+  font-family: shabnam;
+
+  font-weight: 500;
+
+  src: url('../font/shabnam/Shabnam-Medium-FD.woff') format("woff");
+}
+
+@font-face {
+  font-family: shabnam;
+
+  font-weight: 600;
+
+  src: url('../font/shabnam/Shabnam-Bold-FD.woff') format("woff");
 }
 
 @keyframes mobile-dropdown-open {
@@ -1634,18 +1640,6 @@ input {
   font-family: aviny;
 }
 
-.font-vazir {
-  font-family: vazir;
-}
-
-.font-vazir-bold {
-  font-family: vazir-bold;
-}
-
-.font-vazir-medium {
-  font-family: vazir-medium;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1711,6 +1705,10 @@ input {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-black {
@@ -1870,7 +1868,7 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   padding-bottom: 2.5rem;
-  font-family: vazir;
+  font-family: shabnam;
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
@@ -2228,11 +2226,6 @@ section-header > h4 {
 }
 
 /* Swiper Styles */
-
-.swiper-pagination-bullet-active {
-  width: 1rem;
-  border-radius: 9999px;
-}
 
 .dark .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
   --tw-bg-opacity: 1;
@@ -2599,10 +2592,6 @@ section-header > h4 {
     display: block;
   }
 
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-
   .sm\:w-32 {
     width: 8rem;
   }
@@ -2732,14 +2721,6 @@ section-header > h4 {
 
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .lg\:text-nowrap {
-    text-wrap: nowrap;
   }
 
   .lg\:text-base {

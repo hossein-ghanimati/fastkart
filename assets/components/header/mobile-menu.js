@@ -22,7 +22,7 @@ mobileMenuTemplate.innerHTML = `
 
 <!-- Mobile Menu List -->
 <ul
-    class="w-full p-3 pb-5 border-b-2 border-b-gray-400 dark:border-b-gray-200 font-vazir-medium space-y-5 ">
+    class="w-full p-3 pb-5 border-b-2 border-b-gray-400 dark:border-b-gray-200 font-medium space-y-5 ">
     <!-- Dont Has Sub -->
     <li class="w-full flex tems-center justify-between">
         <a href="./index.html">خانه</a>

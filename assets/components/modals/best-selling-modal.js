@@ -15,7 +15,7 @@ bestSellingModalTemplate.innerHTML = `
         <div class="space-y-4">
             <!-- Modal Title -->
             <span
-                class="p-1 font-vazir-bold text-xl dark:text-gray-100">پر
+                class="p-1 font-semibold text-xl dark:text-gray-100">پر
                 فروشترین محصولات</span>
 
             <!-- Modal Sub Title -->
