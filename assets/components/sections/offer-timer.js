@@ -5,7 +5,7 @@ template.innerHTML = `
   <!-- Right -->
   <div class="lg:w-1/2 text-center">
     <!-- Title -->
-    <h6 class="w-full line-clamp-1 text-[22px] md:text-2xl">
+    <h6 class="w-full line-clamp-1 text-black text-[22px] md:text-2xl">
       تخفیف روز <span class="text-danger font-semibold">دوشنبه !</span>
     </h6>
 
