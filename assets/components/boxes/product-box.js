@@ -1,9 +1,9 @@
 const template = document.createElement('template');
 template.innerHTML = `
   <!-- Top -->
-  <div class="block relative h-3/5 p-5 ">
+  <div class="flex items-center justify-center relative h-3/5 p-5 ">
     <a href="#" class="productLink">
-      <img src="./assets/image/fruits/1.png" class="product-img w-3/4 mx-auto transition-5" alt="fruit">
+      <img src="./assets/image/fruits/1.png" class="product-img w-3/4 max-h-full  m-auto transition-5" alt="fruit">
     </a>
     <!-- Product Actions -->
     <ul class="flex translate-y-2 opacity-0 transition-5 absolute mx-auto bottom-3  items-center justify-center bg-white dark:bg-gray-900 py-2  rounded-lg z-10">

@@ -811,6 +811,10 @@ input {
   float: left;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1048,6 +1052,10 @@ input {
 
 .max-h-\[533px\] {
   max-height: 533px;
+}
+
+.max-h-full {
+  max-height: 100%;
 }
 
 .min-h-11 {
