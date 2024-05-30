@@ -15,6 +15,7 @@ import { SvgPack } from "../components/svg-pack.js";
 import { OfferTimer } from "../components/sections/offer-timer.js";
 import { dairySection } from "../components/sections/dairy-section.js";
 import { CatPicture } from "../components/boxes/cat-picture.js";
+import { CatsPicture } from "../components/sections/cats-picture.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
@@ -33,3 +34,4 @@ customElements.define('fruit-section', FriutSection)
 customElements.define('offer-timer', OfferTimer)
 customElements.define('dairy-section', dairySection)
 customElements.define('cat-picture', CatPicture)
+customElements.define('cats-picture', CatsPicture)
