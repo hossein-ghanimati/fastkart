@@ -16,6 +16,8 @@ import { OfferTimer } from "../components/sections/offer-timer.js";
 import { dairySection } from "../components/sections/dairy-section.js";
 import { CatPicture } from "../components/boxes/cat-picture.js";
 import { CatsPicture } from "../components/sections/cats-picture.js";
+import { LabelProduct } from "../components/boxes/label-product.js";
+import { LabelProducts } from "../components/sections/label-products.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
@@ -35,3 +37,5 @@ customElements.define('offer-timer', OfferTimer)
 customElements.define('dairy-section', dairySection)
 customElements.define('cat-picture', CatPicture)
 customElements.define('cats-picture', CatsPicture)
+customElements.define('label-product', LabelProduct)
+customElements.define('label-products', LabelProducts)

@@ -33,7 +33,7 @@ const renderCatsPictureSlider = () => {
   const windowSize = window.innerWidth
   const swiper = new Swiper(".swiper__catsPicture", {  
     slidesPerView: "auto",
-    spaceBetween: 12,
+    spaceBetween: 20,
     effect: windowSize < 640 ? "fade" : undefined,
 
     breakpoints: {

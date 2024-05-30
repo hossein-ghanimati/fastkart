@@ -53,7 +53,7 @@ class CatsPicture extends HTMLElement {
   }
 
   connectedCallback(){
-    this.className = "block swiper__catsPicture overflow-hidden mt-9 md:mt-10"
+    this.className = "block swiper__catsPicture overflow-hidden mt-9 md:mt-15"
   }
 }
 
