@@ -26,6 +26,22 @@ const renderProductsSlider = () => {
       delay: 2000,
     }
   })
+
+}
+
+const renderCatsPictureSlider = () => {
+  const windowSize = window.innerWidth
+  const swiper = new Swiper(".swiper__catsPicture", {  
+    slidesPerView: "auto",
+    spaceBetween: 12,
+    effect: windowSize < 640 ? "fade" : undefined,
+
+    breakpoints: {
+      1536: {
+        slidesPerView: 4,
+      }
+    }
+  })
 }
 
 const deleteSwiperBugs = () => {
@@ -47,5 +63,6 @@ const deleteSwiperBugs = () => {
 export {
   renderCatsSlider,
   renderProductsSlider,
+  renderCatsPictureSlider,
   deleteSwiperBugs,
 }

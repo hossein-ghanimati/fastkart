@@ -248,6 +248,54 @@ svgPackTemplate.innerHTML = `
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
     </symbol>
 
+    <symbol id="arrow-icon" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" height="24"
+        viewBox="0 0 24 24" width="24"><filter id="a"
+          color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"
+          height="18" width="20" x="2.5" y="3.5"><feflood flood-opacity="0"
+            result="BackgroundImageFix" /><feblend in="SourceGraphic"
+            in2="BackgroundImageFix" mode="normal"
+            result="shape" /><fecolormatrix in="SourceAlpha" result="hardAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" /><feoffset /><fegaussianblur
+            stdDeviation=".25" /><fecomposite in2="hardAlpha" k2="-1" k3="1"
+            operator="arithmetic" /><fecolormatrix type="matrix"
+            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0" /><feblend
+            in2="shape" mode="normal"
+            result="effect1_innerShadow_19_309" /><fecolormatrix
+            in="SourceAlpha" result="hardAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" /><feoffset
+            dx="-1" dy="1" /><fegaussianblur stdDeviation="1" /><fecomposite
+            in2="hardAlpha" k2="-1" k3="1"
+            operator="arithmetic" /><fecolormatrix type="matrix"
+            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" /><feblend
+            in2="effect1_innerShadow_19_309" mode="normal"
+            result="effect2_innerShadow_19_309" /><fecolormatrix
+            in="SourceAlpha" result="hardAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" /><feoffset
+            dx="2" /><fegaussianblur stdDeviation="2" /><fecomposite
+            in2="hardAlpha" k2="-1" k3="1"
+            operator="arithmetic" /><fecolormatrix type="matrix"
+            values="0 0 0 0 0.220833 0 0 0 0 0.220833 0 0 0 0 0.220833 0 0 0 0.28 0" /><feblend
+            in2="effect2_innerShadow_19_309" mode="normal"
+            result="effect3_innerShadow_19_309" /><fecolormatrix
+            in="SourceAlpha" result="hardAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" /><feoffset
+            dx="1" dy="1" /><fegaussianblur stdDeviation="1.5" /><fecomposite
+            in2="hardAlpha" k2="-1" k3="1"
+            operator="arithmetic" /><fecolormatrix type="matrix"
+            values="0 0 0 0 0.2 0 0 0 0 0.199167 0 0 0 0 0.199217 0 0 0 0.1 0" /><feblend
+            in2="effect3_innerShadow_19_309" mode="normal"
+            result="effect4_innerShadow_19_309" /></filter><pattern id="b"
+          height="1.01786" patternContentUnits="objectBoundingBox"
+          width="1.35714" /><g filter="url(#a)" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2"><path
+            d="m19 12h-14m0 0 7 7m-7-7 7-7" stroke="currentColor" /><path
+            d="m19 12h-14m0 0 7 7m-7-7 7-7" stroke="url(#b)"
+            stroke-opacity="currentOpacity" /></g>
+      </symbol>
+
+
 </svg>
 `;
 
