@@ -18,6 +18,7 @@ import { CatPicture } from "../components/boxes/cat-picture.js";
 import { CatsPicture } from "../components/sections/cats-picture.js";
 import { LabelProduct } from "../components/boxes/label-product.js";
 import { LabelProducts } from "../components/sections/label-products.js";
+import { BlogBox } from "../components/boxes/blog-box.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
@@ -39,3 +40,4 @@ customElements.define('cat-picture', CatPicture)
 customElements.define('cats-picture', CatsPicture)
 customElements.define('label-product', LabelProduct)
 customElements.define('label-products', LabelProducts)
+customElements.define('blog-box', BlogBox)

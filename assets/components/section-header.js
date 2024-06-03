@@ -2,7 +2,7 @@ const template = document.createElement('template');
 template.innerHTML = `
 
 <!-- Section Title -->
-<h4 class="font-aviny text-3xl md:text-4xl dark:text-stone-50 mt-4 md:mt-9">مروری بر دسته ها</h4>
+<h4 class="font-aviny text-3xl md:text-4xl dark:text-stone-50">مروری بر دسته ها</h4>
 
 <!-- Section Line -->
 <span class="section__header-line">
@@ -25,11 +25,11 @@ class SectionHeader extends HTMLElement {
 
   connectedCallback(){
     this.querySelector('h4').innerHTML = this.getAttribute('title')
-    this.querySelector('p').innerHTML = this.getAttribute('subTitle')
+    this.querySelector('p').innerHTML = this.getAttribute('subtitle')
   }
 
   observedAttributes(){
-    return [title, subTitle]
+    return [title, subtitle]
   }
 }
 

@@ -3,7 +3,7 @@ template.innerHTML =
   `  
     <section-header
       title="مروری بر دسته ها"
-      subTitle="بهترین انتخاب در این هفته"
+      subtitle="بهترین انتخاب در این هفته"
     ></section-header>
 
     <!-- Section Content -->

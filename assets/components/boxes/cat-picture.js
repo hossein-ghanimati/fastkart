@@ -1,7 +1,7 @@
 const template = document.createElement('template')
 template.innerHTML = `
   <a href="#" class="block rounded-xl overflow-hidden">
-    <img src="./assets/image/main-cats/2.jpg" class="transition group-hover:scale-110 group-hover:rotate-[4deg] w-full xs:w-[390px] sm:w-[410px] shadow-md border border-gray-200 dark:border-gray-800" alt="category-picture">
+    <img src="./assets/image/main-cats/2.jpg" class="transition group-hover:scale-110 group-hover:rotate-[4deg] w-full sm:w-[410px] shadow-md border border-gray-200 dark:border-gray-800" alt="category-picture">
   </a>
 
   <div class="cat-pic__content relative z-10 backd w-[90%] rounded-[5px] backdrop-blur-sm bg-[#ffffffcc] dark:bg-[#1d1d22cc] shadow">
