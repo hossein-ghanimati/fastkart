@@ -20,6 +20,7 @@ import { LabelProduct } from "../components/boxes/label-product.js";
 import { LabelProducts } from "../components/sections/label-products.js";
 import { BlogBox } from "../components/boxes/blog-box.js";
 import { BlogNews } from "../components/sections/blog-news.js";
+import { NewsLetter } from "../components/sections/news-letter.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
@@ -43,3 +44,4 @@ customElements.define('label-product', LabelProduct)
 customElements.define('label-products', LabelProducts)
 customElements.define('blog-box', BlogBox)
 customElements.define('blog-news', BlogNews)
+customElements.define('news-letter', NewsLetter)
