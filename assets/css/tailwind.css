@@ -1009,6 +1009,16 @@ input {
   height: 75px;
 }
 
+.size-\[38px\] {
+  width: 38px;
+  height: 38px;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
 .h-11 {
   height: 2.75rem;
 }
@@ -1027,6 +1037,10 @@ input {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .h-\[105px\] {
@@ -1074,6 +1088,10 @@ input {
   height: max-content;
 }
 
+.h-\[38px\] {
+  height: 38px;
+}
+
 .max-h-\[533px\] {
   max-height: 533px;
 }
@@ -1084,6 +1102,10 @@ input {
 
 .min-h-11 {
   min-height: 2.75rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-11\/12 {
@@ -1151,6 +1173,10 @@ input {
   width: max-content;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
 .max-w-64 {
   max-width: 16rem;
 }
@@ -1209,6 +1235,10 @@ input {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -1381,6 +1411,10 @@ input {
 
 .border-l-0 {
   border-left-width: 0px;
+}
+
+.border-r-2 {
+  border-right-width: 2px;
 }
 
 .border-t {
@@ -1968,7 +2002,6 @@ body {
   overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-  padding-bottom: 2.5rem;
   font-family: shabnam;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2051,6 +2084,111 @@ main {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+}
+
+footer {
+  position: relative;
+  height: 500px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+footer:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+footer{
+  padding-top: calc(30px + 20*(100vw - 320px) / 1600)
+}
+
+footer > * {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 300px) {
+  footer > * {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 400px) {
+  footer > * {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 640px) {
+  footer > * {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer > * {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer > * {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer > * {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1280px) {
+  footer > * {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  footer > * {
+    max-width: 1536px;
+  }
+}
+
+footer > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  footer > * {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+footer::before,
+  footer::after{
+  content: "";
+  background-image: url("../image/footer/footer-shape-2.png");
+  position: absolute;
+  inset: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+}
+
+footer::before {
+  background-position: right;
+}
+
+footer::after {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-position: right;
 }
 
 section-header > h4 {
@@ -3037,6 +3175,16 @@ section-header > h4 {
   .xl\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .\32xl\:w-1\/4 {
+    width: 25%;
+  }
+
+  .\32xl\:border-r-2 {
+    border-right-width: 2px;
   }
 }
 
