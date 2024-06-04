@@ -22,6 +22,7 @@ import { BlogBox } from "../components/main/boxes/blog-box.js";
 import { BlogNews } from "../components/main/sections/blog-news.js";
 import { NewsLetter } from "../components/main/sections/news-letter.js";
 import { FooterTop } from "../components/share/footer/footer-top.js";
+import { FooterMain } from "../components/share/footer/footer-main.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
@@ -47,3 +48,4 @@ customElements.define('blog-box', BlogBox)
 customElements.define('blog-news', BlogNews)
 customElements.define('news-letter', NewsLetter)
 customElements.define('footer-top', FooterTop)
+customElements.define('footer-main', FooterMain)
