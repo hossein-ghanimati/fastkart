@@ -24,11 +24,13 @@ import { NewsLetter } from "../components/main/sections/news-letter.js";
 import { FooterTop } from "../components/share/footer/footer-top.js";
 import { FooterMain } from "../components/share/footer/footer-main.js";
 import { FooterBottom } from "../components/share/footer/footer-bottom.js";
+import { MobileNav } from "../components/share/header/mobile-nav.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
 customElements.define('best-selling-modal', BestSellingModal)
 customElements.define('mobile-menu', MobileMenu)
+customElements.define('mobile-nav', MobileNav)
 customElements.define('top-bar', TopBar)
 customElements.define('nav-bar', NavBar)
 customElements.define('main-bar', MainBar)
