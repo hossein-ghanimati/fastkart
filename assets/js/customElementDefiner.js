@@ -23,6 +23,7 @@ import { BlogNews } from "../components/main/sections/blog-news.js";
 import { NewsLetter } from "../components/main/sections/news-letter.js";
 import { FooterTop } from "../components/share/footer/footer-top.js";
 import { FooterMain } from "../components/share/footer/footer-main.js";
+import { FooterBottom } from "../components/share/footer/footer-bottom.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
@@ -49,3 +50,4 @@ customElements.define('blog-news', BlogNews)
 customElements.define('news-letter', NewsLetter)
 customElements.define('footer-top', FooterTop)
 customElements.define('footer-main', FooterMain)
+customElements.define('footer-bottom', FooterBottom)
