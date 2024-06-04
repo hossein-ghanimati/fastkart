@@ -17,7 +17,7 @@ class FooterBottom extends HTMLElement{
   }
 
   connectedCallback(){
-    this.className = "text-gray-500 dark:text-gray300 text-xs sm:text-sm pb-9 md:pb-[104px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-2"
+    this.className = "text-gray-500 dark:text-gray300 text-xs sm:text-sm pb-[104px] md:pb-9 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-2"
   }
 }
 

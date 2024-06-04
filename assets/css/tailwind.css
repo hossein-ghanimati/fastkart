@@ -783,6 +783,10 @@ input {
   top: 0.5rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -797,6 +801,10 @@ input {
 
 .z-60 {
   z-index: 60;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .col-span-4 {
@@ -1025,6 +1033,11 @@ input {
   height: 75px;
 }
 
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
 .h-11 {
   height: 2.75rem;
 }
@@ -1092,6 +1105,10 @@ input {
 .h-max {
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-\[68px\] {
+  height: 68px;
 }
 
 .max-h-\[533px\] {
@@ -1786,6 +1803,10 @@ input {
 
 .pb-9 {
   padding-bottom: 2.25rem;
+}
+
+.pb-\[104px\] {
+  padding-bottom: 104px;
 }
 
 .text-center {
@@ -3003,8 +3024,16 @@ section-header > h4 {
     width: max-content;
   }
 
+  .xs\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .xs\:gap-1 {
     gap: 0.25rem;
+  }
+
+  .xs\:p-2 {
+    padding: 0.5rem;
   }
 
   .xs\:px-4 {
@@ -3019,6 +3048,11 @@ section-header > h4 {
   .xs\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -3060,6 +3094,10 @@ section-header > h4 {
     width: max-content;
   }
 
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .sm\:gap-y-4 {
     row-gap: 1rem;
   }
@@ -3068,6 +3106,10 @@ section-header > h4 {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:p-3 {
+    padding: 0.75rem;
   }
 
   .sm\:px-8 {
@@ -3153,6 +3195,10 @@ section-header > h4 {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:size-9 {
     width: 2.25rem;
     height: 2.25rem;
@@ -3213,6 +3259,10 @@ section-header > h4 {
 
   .md\:pb-\[104px\] {
     padding-bottom: 104px;
+  }
+
+  .md\:pb-9 {
+    padding-bottom: 2.25rem;
   }
 
   .md\:text-2xl {

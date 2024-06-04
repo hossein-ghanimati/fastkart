@@ -7,7 +7,7 @@ mainBarTemplate.innerHTML = `
     <!-- Category Button -->
     <button type="button"
         class="flex items-center gap-1 justify-center py-[10px]  px-5 font-semibold bg-gradient-to-r from-[#0e947a] to-theme-color-dark rounded text-gray-100">
-        <svg class="size-7">
+        <svg class="size-6">
             <use xlink:href="#category-icon"
                 class="text-gray-100"></use>
         </svg>
