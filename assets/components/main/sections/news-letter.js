@@ -15,7 +15,7 @@ template.innerHTML = `
       <input type="text" class="p-2 text-sm xs:text-base" placeholder="ایمیل خود را وارد کنید...">
 
       <button type="button" class="bg-danger text-white rounded px-1 xs:px-4 py-2  flex items-center justify-center xs:gap-1 absolute left-1">
-        <span class="hidden xs:inline">خرید</span>
+        <span class="hidden xs:inline">عضویت</span>
         <svg class="size-5 text-xl scale-75">
           <use xlink:href="#arrow-icon" class="text-white"></use>
         </svg>
