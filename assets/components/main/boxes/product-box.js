@@ -102,7 +102,7 @@ class ProductBox extends HTMLElement {
     this.querySelector('.productAmount').innerHTML = this.getAttribute('amount')
     this.querySelector('.productPrice').innerHTML = Number(this.getAttribute('price')).toLocaleString()
 
-    this.className = "product block w-full 2xs:w-[220px] h-[302px] p-[10px] border-[0.1px] border-gray-200 dark:border-gray-700"
+    this.className = "product block w-full 3xs:w-[220px] h-[302px] p-[10px] border-[0.1px] border-gray-200 dark:border-gray-700"
   }
 
   observedAttributes(){

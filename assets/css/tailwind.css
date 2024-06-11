@@ -645,6 +645,12 @@ input {
   }
 }
 
+@media (min-width: 350px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
 @media (min-width: 400px) {
   .container {
     max-width: 400px;
@@ -2077,6 +2083,12 @@ main {
   }
 }
 
+@media (min-width: 350px) {
+  main {
+    max-width: 350px;
+  }
+}
+
 @media (min-width: 400px) {
   main {
     max-width: 400px;
@@ -2155,6 +2167,12 @@ footer > div {
 @media (min-width: 300px) {
   footer > div {
     max-width: 300px;
+  }
+}
+
+@media (min-width: 350px) {
+  footer > div {
+    max-width: 350px;
   }
 }
 
@@ -2998,11 +3016,11 @@ section-header > h4 {
 }
 
 @media (min-width: 300px) {
-  .\32xs\:w-\[220px\] {
+  .\33xs\:w-\[220px\] {
     width: 220px;
   }
 
-  .\32xs\:w-max {
+  .\33xs\:w-max {
     width: -moz-max-content;
     width: max-content;
   }

@@ -10,7 +10,7 @@ template.innerHTML = `
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf11"
             src="fruits/1.png"
@@ -33,7 +33,7 @@ template.innerHTML = `
           ></product-box>
         </div>
     
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf44"
             src="fruits/4.png"
@@ -56,7 +56,7 @@ template.innerHTML = `
           ></product-box>
         </div>
     
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf66"
             src="fruits/6.png"
@@ -79,7 +79,7 @@ template.innerHTML = `
           ></product-box>
         </div>
     
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf88"
             src="fruits/8.png"
@@ -102,7 +102,7 @@ template.innerHTML = `
           ></product-box>
         </div>
     
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf10"
             src="fruits/10.png"
@@ -125,7 +125,7 @@ template.innerHTML = `
           ></product-box>
         </div>
 
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf11"
             src="fruits/1.png"
@@ -148,7 +148,7 @@ template.innerHTML = `
           ></product-box>
         </div>
     
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf44"
             src="fruits/4.png"
@@ -171,7 +171,7 @@ template.innerHTML = `
           ></product-box>
         </div>
 
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf66"
             src="fruits/6.png"
@@ -194,7 +194,7 @@ template.innerHTML = `
           ></product-box>
         </div>
     
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf88"
             src="fruits/8.png"
@@ -217,7 +217,7 @@ template.innerHTML = `
           ></product-box>
         </div>
     
-        <div class="swiper-slide w-full 2xs:w-max">
+        <div class="swiper-slide w-full 3xs:w-max">
           <product-box
             id="df786asdf08adf10"
             src="fruits/10.png"
