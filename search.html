@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/tailwind.css">
-  <link rel="icon" href="./assets/image/icon.png" format="image/png">
-  <title>نتیجه جستجو</title>
-</head>
-<body">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="icon" href="./assets/image/icon.png" format="image/png">
+    <title>نتیجه جستجو</title>
+  </head>
+  <body">
 
-  <svg-pack class="hidden"></svg-pack>
+    <svg-pack></svg-pack>
 
-      <!-- Modals -->
-  <cities-modal></cities-modal>
-  <best-selling-modal></best-selling-modal>
+    <!-- Modals -->
+    <cities-modal></cities-modal>
+    <best-selling-modal></best-selling-modal>
 
-  <header>
-    <mobile-menu></mobile-menu>
+    <header>
+      <mobile-menu></mobile-menu>
 
-    <top-bar></top-bar>
+      <mobile-nav></mobile-nav>
 
-    <nav-bar></nav-bar>
+      <mobile-cat-menu></mobile-cat-menu>
 
-    <!-- Desktop Menu And Some Other -->
-    <main-bar></main-bar>
-  </header>
+      <top-bar></top-bar>
 
-  <main>
+      <nav-bar></nav-bar>
 
-  </main>
-  
-  <script type="module" src="./assets/js/customElementDefiner.js"></script>
-  <script type="module" src="./assets/js/search/app.js"></script>
-  <script type="module" src="./assets/js/funcs/shared-app.js"></script>
-</body>
+      <!-- Desktop Menu And Some Other -->
+      <main-bar></main-bar>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+      <div>
+        <footer-top></footer-top>
+
+        <footer-main></footer-main>
+
+        <footer-bottom></footer-bottom>
+      </div>
+    </footer>
+
+    <script type="module" src="./assets/js/customElementDefiner.js"></script>
+    <script type="module" src="./assets/js/search/app.js"></script>
+    <script type="module" src="./assets/js/funcs/shared-app.js"></script>
+  </body>
 </html>
