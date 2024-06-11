@@ -2,9 +2,11 @@ import {
   renderMobileMenuOpention,
   renderMobileMenuItemOpention,
   renderToggleTheme,
-  renderModalsOpention
+  renderModalsOpention,
+  renderMobileFooterItemOpention
 } from "./shared.js";
 renderToggleTheme();
 renderMobileMenuOpention();
 renderMobileMenuItemOpention();
 renderModalsOpention()
+renderMobileFooterItemOpention()

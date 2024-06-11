@@ -37,6 +37,19 @@ const renderMobileMenuItemOpention = () => {
   });
 };
 
+const renderMobileFooterItemOpention = () => {
+  const footerMenuItems = document.querySelectorAll(".footer-main__content-part");
+
+  footerMenuItems.forEach((menuItem) => {
+    menuItem.addEventListener("click", () => {
+      closeOtherMenuItems(footerMenuItems, menuItem);
+      toggleMenuItem(menuItem);
+    });
+  });
+};
+
+
+
 const renderToggleTheme = () => {
   setDefaultTheme();
 
@@ -79,4 +92,5 @@ export {
   renderMobileMenuItemOpention,
   renderToggleTheme,
   renderModalsOpention,
+  renderMobileFooterItemOpention
 };

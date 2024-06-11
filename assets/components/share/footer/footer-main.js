@@ -1,6 +1,6 @@
 const template = document.createElement('template');
 template.innerHTML = `
-<div class="footer-main__content border-y border-dashed border-gray-500 dark:border-gray-300 grid grid-cols-4 xl:grid-cols-5 gap-x-2 gap-y-7 sm:gap-y-4">
+<div class="footer-main__content border-y border-dashed border-gray-500 dark:border-gray-300 grid grid-cols-4 xl:grid-cols-5 gap-x-2 gap-y-4">
   <div class="footer-main__content-part col-span-4 sm:col-span-2 lg:col-span-1">
     <a href="./index.html" class="font-aviny inline-flex text-3xl">
       <span class="text-theme-color-dark dark:text-theme-color-light">فست</span>
@@ -27,8 +27,12 @@ template.innerHTML = `
   </div>
 
   <div class="footer-main__content-part col-span-4 sm:col-span-2 lg:col-span-1">
-    <h5 class="font-bold">دسته بندی</h5>
-    <ul class="pr-2 xs:pr-4 sm:pr-0 sm:space-y-2 text-gray-500 dark:text-gray-300">
+    <h5 class="font-bold flex items-center justify-start gap-1">دسته بندی
+      <svg class="sm:hidden size-5 -rotate-90 transition">
+        <use xlink:href="#angle"></use>
+      </svg>
+    </h5>
+    <ul class="pr-2 xs:pr-4 sm:pr-0 sm:space-y-2 text-gray-500 dark:text-gray-300 hidden sm:block">
       <li>
         <a href="#">میوه جنوب</a>
       </li>
@@ -57,8 +61,13 @@ template.innerHTML = `
   </div>
 
   <div class="footer-main__content-part col-span-4 sm:col-span-1 lg:col-span-1">
-    <h5 class="font-bold">دسترسی سریع</h5>
-    <ul class="pr-2 xs:pr-4 sm:pr-0 sm:space-y-2 text-gray-500 dark:text-gray-200">
+    <h5 class="font-bold flex items-center justify-start gap-1">دسترسی سریع
+      <svg class="sm:hidden size-5 -rotate-90 transition">
+        <use xlink:href="#angle"></use>
+      </svg>
+    </h5>
+
+    <ul class="pr-2 xs:pr-4 sm:pr-0 sm:space-y-2 text-gray-500 dark:text-gray-200 hidden sm:block">
       <li>
         <a href="./index.html">خانه</a>
       </li>
@@ -82,8 +91,12 @@ template.innerHTML = `
   </div>
 
   <div class="footer-main__content-part col-span-4 sm:col-span-1 lg:col-span-1">
-    <h5 class="font-bold">لینک های مهم</h5>
-    <ul class="pr-2 xs:pr-4 sm:pr-0 sm:space-y-2 text-gray-500 dark:text-gray-200">
+    <h5 class="font-bold flex items-center justify-start gap-1">لینک های مهم
+      <svg class="sm:hidden size-5 -rotate-90 transition">
+        <use xlink:href="#angle"></use>
+      </svg>
+    </h5>
+    <ul class="pr-2 xs:pr-4 sm:pr-0 sm:space-y-2 text-gray-500 dark:text-gray-200 hidden sm:block">
       <li>
         <a href="./userPanel/basket.html">خرید راحت</a>
       </li>
@@ -110,8 +123,13 @@ template.innerHTML = `
   </div>
 
   <div class="footer-main__content-part col-span-4 sm:col-span-2 lg:col-span-1">
-    <h5 class="font-bold">تماس با ما</h5>
-    <ul>
+    <h5 class="font-bold flex items-center justify-start gap-1">تماس با ما
+      <svg class="sm:hidden size-5 -rotate-90 transition">
+        <use xlink:href="#angle"></use>
+      </svg>
+    </h5>
+
+    <ul class="hidden sm:block">
       <li class="flex gap-2 pb-2 md:pb-4">
         <svg class="size-6">
           <use xlink:href="#phone-icon" class="text-gray-500 dark:text-gray-200"></use>
