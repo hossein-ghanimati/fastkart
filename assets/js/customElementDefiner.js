@@ -25,6 +25,7 @@ import { FooterTop } from "../components/share/footer/footer-top.js";
 import { FooterMain } from "../components/share/footer/footer-main.js";
 import { FooterBottom } from "../components/share/footer/footer-bottom.js";
 import { MobileNav } from "../components/share/header/mobile-nav.js";
+import { mobileCatMenu } from "../components/share/header/mobile-cat-menu.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
@@ -53,3 +54,4 @@ customElements.define('news-letter', NewsLetter)
 customElements.define('footer-top', FooterTop)
 customElements.define('footer-main', FooterMain)
 customElements.define('footer-bottom', FooterBottom)
+customElements.define('mobile-cat-menu', mobileCatMenu)

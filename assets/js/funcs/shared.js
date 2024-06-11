@@ -26,6 +26,19 @@ const renderMobileMenuOpention = () => {
   });
 };
 
+const renderMobileCatMenuOpention = () => {
+  const mobileCatMenu = document.querySelector(".mobile-cat-menu");
+  const openCatMenuBtn = document.querySelector("#open-cat-menu-btn");
+  const closeCatMenuBtn = document.querySelector("#close-cat-menu-btn");
+
+  openCatMenuBtn.addEventListener("click", () => {
+    openMenu(mobileCatMenu);
+  });
+  closeCatMenuBtn.addEventListener("click", () => {
+    closeMenu(mobileCatMenu);
+  });
+}
+
 const renderMobileMenuItemOpention = () => {
   const mobileMenuItems = document.querySelectorAll(".mobile-menu__item");
 
@@ -89,6 +102,7 @@ const renderModalsOpention = () => {
 
 export {
   renderMobileMenuOpention,
+  renderMobileCatMenuOpention,
   renderMobileMenuItemOpention,
   renderToggleTheme,
   renderModalsOpention,

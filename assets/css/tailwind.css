@@ -801,12 +801,12 @@ input {
   z-index: 20;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
 .z-40 {
   z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .z-60 {
@@ -1357,6 +1357,12 @@ input {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-\[6px\] > :not([hidden]) ~ :not([hidden]) {
@@ -2289,7 +2295,8 @@ section-header > h4 {
   margin-top: calc(30px + 20*(100vw - 320px) / 1600);
 }
 
-.mobile-menu.open {
+.mobile-menu.open,
+  .mobile-cat-menu.open{
   transform: translateX(0);
 }
 

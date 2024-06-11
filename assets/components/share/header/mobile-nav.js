@@ -2,7 +2,7 @@ const template = document.createElement('template')
 template.innerHTML = `
 <ul class="mx-auto flex w-full h-full xs:w-[90%] sm:w-[80%] items-center justify-center text-xs xs:text-sm sm:text-base">
   <li class="w-full">
-    <a href="#" class="flex flex-col items-center">
+    <a href="./index.html" class="flex flex-col items-center">
       <svg class="size-5">
         <use xlink:href="#home-icon"></use>
       </svg>
@@ -11,7 +11,7 @@ template.innerHTML = `
   </li>
 
   <li class="w-full">
-    <button class="flex flex-col items-center size-full">
+    <button class="flex flex-col items-center size-full" id="open-cat-menu-btn">
       <svg class="size-5">
         <use xlink:href="#category-icon"></use>
       </svg>
@@ -20,7 +20,7 @@ template.innerHTML = `
   </li>
 
   <li class="w-full">
-    <a href="#" class="flex flex-col items-center">
+    <a href="./search.html" class="flex flex-col items-center">
       <svg class="size-5">
         <use xlink:href="#search-icon"></use>
       </svg>
@@ -29,7 +29,7 @@ template.innerHTML = `
   </li>
 
   <li class="w-full">
-    <a href="#" class="flex flex-col items-center">
+    <a href="./userPanel/favorites.html" class="flex flex-col items-center">
       <svg class="size-5">
         <use xlink:href="#heart-icon"></use>
       </svg>
@@ -38,7 +38,7 @@ template.innerHTML = `
   </li>
 
   <li class="w-full">
-    <a href="#" class="flex flex-col items-center">
+    <a href="./userPanel/basket.html" class="flex flex-col items-center">
       <svg class="size-5">
         <use xlink:href="#shopping-cart-icon"></use>
       </svg>

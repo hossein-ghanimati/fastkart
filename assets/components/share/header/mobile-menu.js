@@ -247,7 +247,7 @@ class MobileMenu extends HTMLElement {
     }
 
     connectedCallback(){
-        this.className = "mobile-menu transition-all fixed inset-0 translate-x-full max-w-64 h-full bg-gray-50 dark:bg-gray-900 z-30 space-y-4"
+        this.className = "mobile-menu transition-all fixed inset-0 translate-x-full max-w-64 h-full bg-gray-50 dark:bg-gray-900 z-50 space-y-4"
     }
 }
 
