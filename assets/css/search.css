@@ -1,0 +1,24 @@
+main{
+  margin-bottom: 2.5rem;
+}
+
+#searched-data-wrapper{
+  margin-top: calc(30px + 20*(100vw - 320px) / 1600);
+  margin-bottom: calc(30px + 20*(100vw - 320px) / 1600)
+}
+
+/*Swiper Styles */
+
+.swiper-pagination-bullet{
+  transition: 300ms !important;
+}
+.swiper-pagination-bullet-active {
+  width: 1.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 164 135 / var(--tw-bg-opacity));
+}
+
+.swiper-pagination-bullet-active:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 213 176 / var(--tw-bg-opacity));
+}

@@ -1,5 +1,5 @@
-import { loadSearchedValue, renderSearching, searchAsUrlParam } from "./funcs/shared.js"
-
-// searchAsUrlParam()
-// loadSearchedValue()
-// renderSearching()
+import { loadSearchedValue, renderSearching, searchAsUrlParam, renderBreadcrumb } from "./funcs/shared.js"
+loadSearchedValue()
+renderBreadcrumb()
+searchAsUrlParam()
+renderSearching()

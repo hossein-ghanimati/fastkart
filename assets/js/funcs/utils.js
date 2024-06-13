@@ -47,28 +47,65 @@ const setStyle = (el, prop, value) => {
 }
 
 const getUrlParam = param => {
-  const urlParams = new URLSearchParams(location.href)
+  const urlParams = new URLSearchParams(location.search)
   return urlParams.get(param)
 }
 
 const setUrlParam = (param, value) => {
   const url = new URL(location.href)
-  const urlParams = url.searchParams;
+  const searchParams = url.searchParams;
 
-  urlParams.set(param, value)
+  searchParams.set(param, value)
   url.search = searchParams.toString()
 
   location.href = url.toString()
 }
 
 const removeParam = param => {
-  const urlParams = new URLSearchParams(location.href)
+  const searchParams = new URLSearchParams(location.search)
   const url = new URL(location.href)
 
-  urlParams.delete(param)
-  url.search = urlParams.toString()
+  searchParams.delete(param)
+  url.search = searchParams.toString()
 
   location.href = url.toString()
+}
+
+const removeParamWithotRefresh = param => {
+  const searchParams = new URLSearchParams(location.search)
+  const url = new URL(location.href)
+
+  searchParams.delete(param)
+  url.search = searchParams.toString()
+
+  history.pushState({}, "", url.toString())
+}
+
+const setParamWithotRefresh = (param, value) => {
+  const url = new URL(location.href)
+  const searchParams = url.searchParams;
+
+  searchParams.set(param, value)
+  url.search = searchParams.toString()
+
+  history.pushState({}, "", url.toString())
+}
+
+const handleBredcrumb = (title, list) => {
+  const breadcrumbTitle = document.querySelector('#breadcrumb-title')
+  const breadcrumbList = document.querySelector('#breadcrumb-list')
+  breadcrumbTitle.innerHTML = title;
+  
+  list.forEach(item => {
+    breadcrumbList.insertAdjacentHTML('beforeend', ` 
+      <li class="flex items-center gap-1 text-sm sm:text-base font-medium text-nowrap w-max">
+        <svg class="size-5">
+          <use xlink:href="#angle"></use>
+        </svg>
+        <a href="${item.href}">${item.value}</a>
+      </li>
+    `)
+  });
 }
 
 export {
@@ -84,4 +121,7 @@ export {
   getUrlParam,
   setUrlParam,
   removeParam,
+  removeParamWithotRefresh,
+  setParamWithotRefresh,
+  handleBredcrumb
 };

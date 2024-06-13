@@ -35,7 +35,7 @@ const setNewTheme = () => {
   }
 };
 
-const searchHandel = searchedValue => {
+const searchhandle = searchedValue => {
   location.href = `./search.html?searchedValue=${searchedValue}`;
 }
 
@@ -46,5 +46,5 @@ export {
   toggleMenuItem,
   setDefaultTheme,
   setNewTheme,
-  searchHandel
+  searchhandle
 };

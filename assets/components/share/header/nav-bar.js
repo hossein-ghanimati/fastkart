@@ -40,7 +40,7 @@ navbarTemplate.innerHTML = `
                 class="hidden w-[527px] h-[50px] xl:flex">
                 <!-- Search Input -->
                 <input type="text"
-                    class="w-[90%] h-full border border-l-0 bg-transparent p-1 px-3 border-gray-300  placeholder-gray-400 dark:placeholder-gray-200 rounded-search-input "
+                    class="w-[90%] h-full border border-l-0 bg-transparent p-1 px-3 border-gray-300  placeholder-gray-400 dark:placeholder-gray-200 rounded-search-input focus:border-theme-color-dark"
                     id="search-input"
                     placeholder="جستجو برای ...">
 
@@ -62,14 +62,15 @@ navbarTemplate.innerHTML = `
         class="w-[38%] md:w-[50%] xl:w-[25%] flex items-center justify-end">
 
         <!-- Search Button -->
-        <button
+        <a
+            href="./search.html"
             class="hidden md:block xl:hidden px-3 border-l border-gray-500 dark:border-x-gray-300">
             <svg
                 class="size-7">
                 <use xlink:href="#search-icon"
                     class="text-gray-700 dark:text-gray-300"></use>
             </svg>
-        </button>
+        </a>
 
         <!-- Contact Us Button -->
         <button

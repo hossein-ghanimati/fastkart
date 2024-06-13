@@ -12,6 +12,8 @@ import { FooterMain } from "../components/share/footer/footer-main.js";
 import { FooterBottom } from "../components/share/footer/footer-bottom.js";
 import { MobileNav } from "../components/share/header/mobile-nav.js";
 import { mobileCatMenu } from "../components/share/header/mobile-cat-menu.js";
+import { Breadcrumb } from "../components/share/header/breadcrumb.js";
+import { ProductBox2 } from "../components/main/boxes/product-box2.js";
 
 customElements.define('svg-pack', SvgPack)
 customElements.define('cities-modal', CitiesModal)
@@ -26,3 +28,5 @@ customElements.define('footer-top', FooterTop)
 customElements.define('footer-main', FooterMain)
 customElements.define('footer-bottom', FooterBottom)
 customElements.define('mobile-cat-menu', mobileCatMenu)
+customElements.define('bread-crumb', Breadcrumb)
+customElements.define('product-box-2', ProductBox2)

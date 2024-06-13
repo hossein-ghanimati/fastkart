@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper.css">
     <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="./assets/css/search.css">
     <link rel="icon" href="./assets/image/icon.png" format="image/png">
     <title>نتیجه جستجو</title>
   </head>
@@ -28,10 +30,14 @@
 
       <!-- Desktop Menu And Some Other -->
       <main-bar></main-bar>
+
+      <bread-crumb></bread-crumb>
     </header>
 
     <main>
+      <new-searching></new-searching>
 
+      <searched-products></searched-products>
     </main>
 
     <footer>
@@ -44,7 +50,9 @@
       </div>
     </footer>
 
+    <script src="./assets/vendor/swiper/swiper.js"></script>
     <script type="module" src="./assets/js/customElementDefiner.js"></script>
+    <script type="module" src="./assets/js/search/customElementDefiner.js"></script>
     <script type="module" src="./assets/js/search/app.js"></script>
     <script type="module" src="./assets/js/funcs/shared-app.js"></script>
   </body>

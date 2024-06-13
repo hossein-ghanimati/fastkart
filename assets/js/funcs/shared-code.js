@@ -12,7 +12,7 @@ import {
   toggleMenuItem,
   setDefaultTheme,
   setNewTheme,
-  searchHandel
+  searchhandle
 } from "./shared-utils.js"
 
 const renderMobileMenuOpention = () => {
@@ -109,14 +109,14 @@ const renderSearching = () => {
   searchInput.addEventListener('keyup', e => {
     const searchedValue = searchInput.value.trim()
     if (e.keyCode === 13 && searchedValue) {
-      searchHandel(searchedValue)
+      searchhandle(searchedValue)
     }
   })
 
   searchBtn.addEventListener('click', () => {
     const searchedValue = searchInput.value.trim()
     if (searchedValue) {
-      searchHandel(searchedValue)
+      searchhandle(searchedValue)
     }    
   })
 }

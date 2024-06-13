@@ -1,5 +1,5 @@
 const getSearchedData = async searchedValue => {
-  return ["Searching..."]
+  return ["Searching...", searchedValue]
 }
 const generateSearchedItem = item => {
   return item
