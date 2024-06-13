@@ -860,10 +860,6 @@ input {
   margin-bottom: 1rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1418,6 +1414,14 @@ input {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -1827,6 +1831,10 @@ input {
   padding-bottom: 0.75rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1857,10 +1865,6 @@ input {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -2501,12 +2505,12 @@ section-header > h4 {
   font-size: calc(35px + 6 * ((100vw - 320px) / 1600))
 }
 
-#breadcrumb-list::-webkit-scrollbar{
+.breadcrumb__main-list::-webkit-scrollbar{
   width: 0;
 }
 
-#breadcrumb-list::-webkit-scrollbar,
-  #breadcrumb-list::-webkit-scrollbar-thumb {
+.breadcrumb__main-list::-webkit-scrollbar,
+  .breadcrumb__main-list::-webkit-scrollbar-thumb {
   height: 0;
   width: 0;
   background-image: none

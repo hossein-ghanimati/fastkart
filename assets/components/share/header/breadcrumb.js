@@ -7,7 +7,7 @@ template.innerHTML = `
       جستجو
     </h4>
 
-    <ul class="w-full sm:w-max flex item-center justify-start 2xs:justify-center line-clamp-1">
+    <ul class="breadcrumb__main-list w-full sm:w-max flex item-center justify-start 2xs:justify-center line-clamp-1  overflow-x-auto overflow-y-hidden">
       <li class="flex items-center gap[2px] w-max">
         <a href="./">
           <svg class="size-5">
@@ -17,7 +17,7 @@ template.innerHTML = `
       </li>
 
       <li>
-        <ul class="flex item-center justify-start 2xs:justify-center line-clamp-1 overflow-x-auto overflow-y-hidden" id="breadcrumb-list"">
+        <ul class="flex item-center justify-start 2xs:justify-center line-clamp-1" id="breadcrumb-list"">
         </ul>
       </li>
     </ul>
