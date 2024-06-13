@@ -1,4 +1,4 @@
-const getFromLocal = (key) => {
+const getFromLocal = key => {
   const value = localStorage.getItem(`fastkart-${key}`);
   return JSON.parse(value);
 };
@@ -8,7 +8,7 @@ const setToLocal = (key, value) => {
   localStorage.setItem(`fastkart-${key}`, jsonValue);
 };
 
-const getFromSession = (key) => {
+const getFromSession = key => {
   const value = sessionStorage.getItem(`fastkart-${key}`);
   return JSON.parse(value);
 };
@@ -16,41 +16,6 @@ const getFromSession = (key) => {
 const setToSession = (key, value) => {
   const jsonValue = JSON.stringify(value);
   sessionStorage.setItem(`fastkart-${key}`, jsonValue);
-};
-
-const openMenu = (menu) => {
-  menu.classList.add("open");
-};
-
-const closeMenu = (menu) => {
-  menu.classList.remove("open");
-};
-
-const closeOtherMenuItems = (mobileMenuItems, menuItem) => {
-  mobileMenuItems.forEach(
-    (item) =>
-      menuItem.classList.contains("active") || item.classList.remove("active")
-  );
-};
-
-const toggleMenuItem = (menuItem) => {
-  menuItem.classList.toggle("active");
-};
-
-const setDefaultTheme = () => {
-  const htmlEl = document.querySelector("html");
-  const darkTheme = getFromLocal("dark-theme")?.dark;
-  if (darkTheme) htmlEl.classList.add("dark");
-};
-
-const setNewTheme = () => {
-  const htmlEl = document.querySelector("html");
-  htmlEl.classList.toggle("dark");
-  if (htmlEl.classList.contains("dark")) {
-    setToLocal("dark-theme", { dark: true });
-  } else {
-    setToLocal("dark-theme", { dark: false });
-  }
 };
 
 const showElem = (el, display = "block") => {
@@ -61,17 +26,17 @@ const showElem = (el, display = "block") => {
   setTimeout(() => el.style.transition = 0, 300)
 };
 
-const hideElem = (el) => {
+const hideElem = el => {
   el.style.display = "none";
 };
 
-const showModal = (modalID) => {
+const showModal = modalID => {
   const modal = document.querySelector(`#${modalID}`);
   modal.classList.remove("modal-close")
   modal.classList.add("modal-open")
 };
 
-const hideModal = (modalID) => {
+const hideModal = modalID => {
   const modal = document.querySelector(`#${modalID}`);
   modal.classList.add("modal-close")
   modal.classList.remove("modal-open")
@@ -81,20 +46,42 @@ const setStyle = (el, prop, value) => {
   el.style[prop] = value
 }
 
+const getUrlParam = param => {
+  const urlParams = new URLSearchParams(location.href)
+  return urlParams.get(param)
+}
+
+const setUrlParam = (param, value) => {
+  const url = new URL(location.href)
+  const urlParams = url.searchParams;
+
+  urlParams.set(param, value)
+  url.search = searchParams.toString()
+
+  location.href = url.toString()
+}
+
+const removeParam = param => {
+  const urlParams = new URLSearchParams(location.href)
+  const url = new URL(location.href)
+
+  urlParams.delete(param)
+  url.search = urlParams.toString()
+
+  location.href = url.toString()
+}
+
 export {
-  openMenu,
-  closeMenu,
-  closeOtherMenuItems,
-  toggleMenuItem,
   getFromLocal,
   setToLocal,
   getFromSession,
   setToSession,
-  setDefaultTheme,
-  setNewTheme,
   showElem,
   hideElem,
   showModal,
   hideModal,
-  setStyle
+  setStyle,
+  getUrlParam,
+  setUrlParam,
+  removeParam,
 };

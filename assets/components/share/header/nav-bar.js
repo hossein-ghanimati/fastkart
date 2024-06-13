@@ -41,11 +41,13 @@ navbarTemplate.innerHTML = `
                 <!-- Search Input -->
                 <input type="text"
                     class="w-[90%] h-full border border-l-0 bg-transparent p-1 px-3 border-gray-300  placeholder-gray-400 dark:placeholder-gray-200 rounded-search-input "
+                    id="search-input"
                     placeholder="جستجو برای ...">
 
                 <!-- Search Button -->
                 <button
-                    class="w-[10%] h-full flex items-center justify-center border border-orange-400 bg-orange-400 rounded-search-button">
+                    class="w-[10%] h-full flex items-center justify-center border border-orange-400 bg-orange-400 rounded-search-button"
+                    id="search-btn">
                     <svg class="size-5">
                         <use xlink:href="#search-icon"
                             class="text-gray-100"></use>

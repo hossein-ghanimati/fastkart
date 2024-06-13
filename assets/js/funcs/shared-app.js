@@ -1,11 +1,13 @@
 import {
+  renderSearching,
   renderMobileMenuOpention,
   renderMobileMenuItemOpention,
   renderToggleTheme,
   renderModalsOpention,
   renderMobileFooterItemOpention,
   renderMobileCatMenuOpention
-} from "./shared.js";
+} from "./shared-code.js";
+renderSearching()
 renderToggleTheme();
 renderMobileMenuOpention();
 renderMobileCatMenuOpention();

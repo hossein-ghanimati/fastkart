@@ -59,7 +59,6 @@ const deleteSwiperBugs = () => {
 
   deleteProductsSwiperBugs()
 }
-
 export {
   renderCatsSlider,
   renderProductsSlider,

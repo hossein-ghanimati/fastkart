@@ -1,17 +1,19 @@
 import {
-  openMenu,
-  closeMenu,
-  closeOtherMenuItems,
-  toggleMenuItem,
-  getFromLocal,
-  setDefaultTheme,
-  setNewTheme,
-  hideElem,
-  showElem,
   showModal,
   hideModal,
   setStyle,
 } from "./utils.js";
+
+
+import {
+  openMenu,
+  closeMenu,
+  closeOtherMenuItems,
+  toggleMenuItem,
+  setDefaultTheme,
+  setNewTheme,
+  searchHandel
+} from "./shared-utils.js"
 
 const renderMobileMenuOpention = () => {
   const mobileMenu = document.querySelector(".mobile-menu");
@@ -100,7 +102,27 @@ const renderModalsOpention = () => {
   })
 };
 
+const renderSearching = () => {
+  const searchInput = document.querySelector('#search-input')
+  const searchBtn = document.querySelector('#search-btn')
+
+  searchInput.addEventListener('keyup', e => {
+    const searchedValue = searchInput.value.trim()
+    if (e.keyCode === 13 && searchedValue) {
+      searchHandel(searchedValue)
+    }
+  })
+
+  searchBtn.addEventListener('click', () => {
+    const searchedValue = searchInput.value.trim()
+    if (searchedValue) {
+      searchHandel(searchedValue)
+    }    
+  })
+}
+
 export {
+  renderSearching,
   renderMobileMenuOpention,
   renderMobileCatMenuOpention,
   renderMobileMenuItemOpention,
