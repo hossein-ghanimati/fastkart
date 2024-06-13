@@ -7,13 +7,18 @@ template.innerHTML = `
       جستجو
     </h4>
 
-    <ul class="w-full sm:w-max flex item-center justify-start 2xs:justify-center line-clamp-1 overflow-x-scroll" id="breadcrumb-list">
+    <ul class="w-full sm:w-max flex item-center justify-start 2xs:justify-center line-clamp-1">
       <li class="flex items-center gap[2px] w-max">
         <a href="./">
           <svg class="size-5">
             <use xlink:href="#home-icon" class="text-black dark:text-white font-bold"></use>
           </svg>
         </a>
+      </li>
+
+      <li>
+        <ul class="flex item-center justify-start 2xs:justify-center line-clamp-1 overflow-x-auto overflow-y-hidden" id="breadcrumb-list"">
+        </ul>
       </li>
     </ul>
   </div>

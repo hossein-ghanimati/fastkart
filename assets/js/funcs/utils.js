@@ -94,7 +94,9 @@ const setParamWithotRefresh = (param, value) => {
 const handleBredcrumb = (title, list) => {
   const breadcrumbTitle = document.querySelector('#breadcrumb-title')
   const breadcrumbList = document.querySelector('#breadcrumb-list')
+  
   breadcrumbTitle.innerHTML = title;
+  breadcrumbList.innerHTML = ''
   
   list.forEach(item => {
     breadcrumbList.insertAdjacentHTML('beforeend', ` 
