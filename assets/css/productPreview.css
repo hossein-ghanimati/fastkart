@@ -1,0 +1,6 @@
+/* Swiper Styles */
+.swiper-slide-thumb-active,
+.swiper-2 .swiper-slide:hover{
+  filter: none;
+  opacity: 1;
+}

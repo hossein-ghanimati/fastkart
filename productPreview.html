@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper.css">
     <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="./assets/css/productPreview.css">
     <link rel="icon" href="./assets/image/icon.png" format="image/png">
     <title>جزئیات محصول</title>
   </head>
@@ -44,10 +46,64 @@
               <!-- Product Pictures -->
               <div class="col-span-2 2xl:col-span-1 grid grid-cols-10 gap-1">
                 <!-- Product Main Picture -->
-                <div class="bg-blue-700 h-20 col-span-10 sm:col-span-8 2xl:col-span-10 3xl:col-span-8 sm:order-1 2xl:order-none 3xl:order-1"></div>
+                <!-- <div class="swiper w-full col-span-10 sm:col-span-8 2xl:col-span-10 3xl:col-span-8 sm:order-1 2xl:order-none 3xl:order-1"> -->
+                <div class="swiper w-full col-span-10">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide cursor-grab">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/1.jpg" alt="عکس کوچک">
+                    </div>
+  
+                    <div class="swiper-slide cursor-grab">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/2.jpg" alt="عکس کوچک">
+                    </div>
+  
+                    <div class="swiper-slide cursor-grab">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/3.jpg" alt="عکس کوچک">
+                    </div>
+  
+                    <div class="swiper-slide cursor-grab">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/4.jpg" alt="عکس کوچک">
+                    </div>
+  
+                    <div class="swiper-slide cursor-grab">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/5.jpg" alt="عکس کوچک">
+                    </div>
+  
+                    <div class="swiper-slide cursor-grab">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/6.jpg" alt="عکس کوچک">
+                    </div>
+                  </div>
+                </div>
 
                 <!-- Product Other Pictures -->
-                <div class="bg-blue-300 h-20 col-span-10 sm:col-span-2 2xl:col-span-10 3xl:col-span-2"></div>
+                <!-- <div class="swiper-2 overflow-hidden col-span-10 sm:col-span-2 2xl:col-span-10 3xl:col-span-2"> -->
+                <div class="swiper-2 overflow-hidden col-span-10">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide size-24 cursor-grab blur-[1px] rounded opacity-40 transition">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/1.jpg" alt="عکس کوچک">
+                    </div>
+
+                    <div class="swiper-slide size-24 cursor-grab blur-[1px] rounded opacity-40 transition">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/2.jpg" alt="عکس کوچک">
+                    </div>
+
+                    <div class="swiper-slide size-24 cursor-grab blur-[1px] rounded opacity-40 transition">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/3.jpg" alt="عکس کوچک">
+                    </div>
+
+                    <div class="swiper-slide size-24 cursor-grab blur-[1px] rounded opacity-40 transition">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/4.jpg" alt="عکس کوچک">
+                    </div>
+
+                    <div class="swiper-slide size-24 cursor-grab blur-[1px] rounded opacity-40 transition">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/5.jpg" alt="عکس کوچک">
+                    </div>
+
+                    <div class="swiper-slide size-24 cursor-grab blur-[1px] rounded opacity-40 transition">
+                      <img src="./assets/image/products/کیک شکلاتی خامه ای/6.jpg" alt="عکس کوچک">
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <!-- Product Description -->
@@ -77,6 +133,7 @@
       </div>
     </footer>
 
+    <script src="./assets/vendor/swiper/swiper.js"></script>
     <script type="module" src="./assets/js/customElementDefiner.js"></script>
     <script type="module" src="./assets/js/productPreview/app.js"></script>
     <script type="module" src="./assets/js/funcs/shared-app.js"></script>

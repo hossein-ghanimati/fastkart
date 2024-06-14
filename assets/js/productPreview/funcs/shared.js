@@ -7,6 +7,33 @@ const renderBreadcrumb = () => {
   ])
 }
 
+const handlePicsSliders = pics => {
+  console.log("Hi slider");
+  // const mainSlider = document.querySelector('#main-slider-wrapper')
+  // const secondSlider = document.querySelector('#secend-slider-wrapper')
+
+  // pics.forEach(pic => {
+  //   mainSlider.insertAdjacentHTML('beforeend', generatePicSlidTemplate(pic))
+  //   secondSlider.insertAdjacentHTML('beforeend', generatePicSlidTemplate(pic))
+  // })
+
+  const secondSliderConfig = new Swiper('.swiper-2', {
+    spaceBetween: 10,
+    rewind: true,
+    slidesPerView: "auto",
+    whatchSlidesProgress: true,
+  })
+
+  const mainSliderConfig = new Swiper('.swiper', {
+    rewind: true,
+    efect: "fade",
+    thumbs:{
+     swiper: secondSliderConfig
+    }
+  })
+}
+
 export{
-  renderBreadcrumb
+  renderBreadcrumb,
+  handlePicsSliders
 }
