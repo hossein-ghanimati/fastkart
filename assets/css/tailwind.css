@@ -3276,6 +3276,10 @@ section-header > h4 {
     border-radius: 0.75rem;
   }
 
+  .md\:rounded-md {
+    border-radius: 0.375rem;
+  }
+
   .md\:p-7 {
     padding: 1.75rem;
   }

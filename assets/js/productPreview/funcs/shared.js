@@ -21,6 +21,7 @@ const handlePicsSliders = pics => {
     spaceBetween: 10,
     rewind: true,
     slidesPerView: "auto",
+    freeMode: true,
     whatchSlidesProgress: true,
   })
 
