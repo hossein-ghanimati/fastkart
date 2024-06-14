@@ -1,9 +1,9 @@
 const template = document.createElement('template');
 template.innerHTML = `
 <div class="breadcrumb container mx-auto text-black dark:text-white">
-  <div class="relative flex flex-col sm:flex-row-reverse justify-center items-center gap-2">
+  <div class="relative flex flex-col md:flex-row-reverse justify-center items-center gap-2">
     <!-- Breadcrumb Title -->
-    <h4 class="sm:absolute right-0 font-medium font-aviny" id="breadcrumb-title">
+    <h4 class="md:absolute right-0 font-medium font-aviny" id="breadcrumb-title">
       جستجو
     </h4>
 
