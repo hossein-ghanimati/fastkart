@@ -58,8 +58,8 @@ const renderSearching = () => {
   pageSearchInput.addEventListener("keyup", (e) => {
     const searchedValue = pageSearchInput.value.trim();
     if (e.keyCode === 13) {
-      renderSearchedData(searchedValue);
       setParamWithotRefresh("searchedValue", searchedValue);
+      renderSearchedData(searchedValue);
       renderBreadcrumb(searchedValue)
     }
   });
@@ -67,8 +67,8 @@ const renderSearching = () => {
   pageSearchBtn.addEventListener("click", () => {
     const searchedValue = pageSearchInput.value.trim();
 
-    renderSearchedData(searchedValue);
     setParamWithotRefresh("searchedValue", searchedValue);
+    renderSearchedData(searchedValue);
     renderBreadcrumb(searchedValue)
   });
 };
