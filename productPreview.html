@@ -298,7 +298,34 @@
                     </ul>
                 </div>
 
-                
+                <!-- Product Basket Actions -->
+                <div class="w-full flex items-center md:flex-row gap-1 xs:gap-3 mt-3 sm:mt-5 lg:mt-7">
+                  <!-- Plus And Minus Actions -->
+                  <div class="flex items-center justify-center h-9 p-1 bg-gray-200 dark:bg-gray-700 rounded">
+                    <!-- Plus Action -->
+                    <button type="button">
+                      <svg class="p-1 size-8 bg-gray-100 dark:bg-gray-800 rounded">
+                        <use xlink:href="#plus-icon" class="text-theme-color-dark dark:bg-theme-color-light"></use>
+                      </svg>
+                    </button>
+
+                    <!-- Item Count In Basket -->
+                    <span class="h-full w-20 flex items-center justify-center">0</span>
+
+                    <!-- Minus Actions -->
+                    <button type="button">
+                      <svg class="p-1 size-8 bg-gray-100 dark:bg-gray-800 rounded">
+                        <use xlink:href="#minus-icon" class="text-theme-color-dark dark:bg-theme-color-light"></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- Add Btn -->
+                  <button class="w-full p-2 md:p-4 py-2 md:py-3 bg-black rounded sm:rounded-md text-white">
+                    افزودن
+                    <span class="hidden 2xs:inline">به سبد خرید</span>
+                  </button>
+                </div>
               </div>
             </div>
 
