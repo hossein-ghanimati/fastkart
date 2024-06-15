@@ -39,7 +39,7 @@
         <div class="grid grid-cols-10 gap-2 xl:gap-3">
           <!-- Product Info -->
           <section
-            class="col-span-10 lg:col-span-6 xl:col-span-7 p-1 space-y-2 xl:space-y-3">
+            class="col-span-10 lg:col-span-6 xl:col-span-7 p-1 space-y-8 sm:space-y-10 3xl:space-y-14">
             <!-- Product Main Details -->
             <div class="grid grid-cols-2 gap-4 sm:gap-6 2xl:gap-4">
               <!-- Product Pictures -->
@@ -205,8 +205,7 @@
                 </p>
 
                 <!-- Product Shopping Fields -->
-                <div
-                  class="mt-2 sm:mt-4 lg:mt-6 flex flex-col items-center md:items-start gap-1 sm:gap-2 lg:gap-3">
+                <div class="mt-2 sm:mt-4 lg:mt-6 flex flex-col items-center md:items-start gap-1 sm:gap-2 lg:gap-3">
                   <span id="shopping-fields-title"
                     class="font-semibold">وزن</span>
                   <ul id="shopping-fields-list"
@@ -328,8 +327,7 @@
                 </div>
 
                 <!-- Product Actions -->
-                <div
-                  class="w-full py-2 sm:py-3 lg:py-4 border-y border-gray-300 dark:border-gray-500 flex items-center gap-1 2xs:gap-2 text-gray-500 dark:text-gray-300">
+                <div class="w-full py-3 sm:py-4 border-y border-gray-300 dark:border-gray-500 flex items-center gap-1 2xs:gap-2 text-gray-500 dark:text-gray-300">
                   <button class="flex items-center gap-[2px] 2xs:gap-1">
                     <svg class="size-5">
                       <use xlink:href="#heart-icon" class="text-gray-500 dark:text-gray-300"></use>
@@ -346,7 +344,55 @@
                     <span>مقایسه</span>
                   </button>
                 </div>
-                <div></div>
+
+                <!-- Product Seller Info -->
+                <div class="w-full mt-2 sm:mt-4 lg:mt-6 pb-2 sm:pb-4 lg:pb-6 border-b border-gray-300 dark:border-gray-500">
+                  <span
+                    class="font-semibold">اطلاعات فروشگاه</span>
+
+                  <ul class="flex flex-col gap-2 xs:gap-3 mt-2 xs:mt-3 mx-2 px-2 xs:px-3 pr-6 xs:pr-7 py-4 xs:py-6 bg-gray-200 dark:bg-gray-700 rounded-md shadow-md list-disc w-full sm:w-4/5">
+                    <li class="list-disk">
+                      <div class="w-max flex items-center gap-1 xs:gap-3 translate-x-1">
+                        <span class="text-gray-500 dark:text-gray-300">نوع:</span>
+                        <span class="font-medium">کیک شکلاتی</span>
+                      </div>
+                    </li>
+
+                    <li class="list-disk">
+                      <div class="w-max flex items-center gap-1 xs:gap-3 translate-x-1">
+                        <span class="text-gray-500 dark:text-gray-300">کد محصول:</span>
+                        <span class="font-medium">SDFVW65467</span>
+                      </div>
+                    </li>
+
+                    <li class="list-disk">
+                      <div class="w-max flex items-center gap-1 xs:gap-3 translate-x-1">
+                        <span class="text-gray-500 dark:text-gray-300">تاریخ ثبت:</span>
+                        <span class="font-medium">2 هفته پیش</span>
+                      </div>
+                    </li>
+
+                    <li class="list-disk">
+                      <div class="w-max flex items-center gap-1 xs:gap-3 translate-x-1">
+                        <span class="text-gray-500 dark:text-gray-300">موجود در انبار:</span>
+                        <span class="font-medium">2</span>
+                      </div>
+                    </li>
+
+                    <li class="list-disk">
+                      <div class="w-max flex items-center gap-1 xs:gap-3 translate-x-1">
+                        <span class="text-gray-500 dark:text-gray-300">برچسب ها:</span>
+                        <span class="font-medium">کیک, شکلات</span>
+                      </div>
+                    </li>
+
+                  </ul>                 
+                </div>
+
+                <div class="mt-2 sm:mt-4 lg:mt-6">
+                  <span class="font-semibold">پرداخت ایمن با:</span>
+                  <img src="./assets/image/app-img/1.png" alt="app" class="mt-2 xs:mt-3 mx-2">
+                </div>
               </div>
             </div>
 
