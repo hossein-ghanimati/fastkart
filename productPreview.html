@@ -47,7 +47,7 @@
                 class="2xl:sticky top-3 col-span-2 2xl:col-span-1 grid grid-cols-10 gap-1 sm:h-[475px] md:h-[451px] lg:h-[390px] xl:h-[552px] 2xl:h-max 3xl:h-[366px]">
                 <!-- Product Main Picture -->
                 <div
-                  class="swiper w-full h-max col-span-10 sm:col-span-8 2xl:col-span-10 3xl:col-span-8 sm:order-1 2xl:order-none 3xl:order-1">
+                  class="swiper rounded-md shadow-md w-full h-max col-span-10 sm:col-span-8 2xl:col-span-10 3xl:col-span-8 sm:order-1 2xl:order-none 3xl:order-1">
                   <!-- <div class="swiper w-full col-span-10 shadow rounded md:rounded-md"> -->
                   <div class="swiper-wrapper">
                     <div class="swiper-slide cursor-grab">
@@ -210,7 +210,7 @@
                   <span id="shopping-fields-title"
                     class="font-semibold">وزن</span>
                   <ul id="shopping-fields-list"
-                    class="gap-1 md:gap-2 flex justify-center md:justify-between items-center flex-wrap">
+                    class="gap-1 md:gap-2 flex justify-center md:justify-between items-center flex-wrap px-2">
                     <li>
                       <input checked type="radio" name="shopping-field"
                         id="shopping-field-1" class="shopping-field__input hidden">
@@ -269,7 +269,7 @@
                   <span
                     class="font-semibold">عجله کنید زمان محدود است!</span>
 
-                    <ul class="p-3 md:p-5 rounded 2xs:rounded-md w-full 3xs:w-72 bg-gray-200 dark:bg-gray-700 flex flex-row-reverse justify-between font-medium">
+                    <ul class="p-3 mx-2 md:p-5 rounded 2xs:rounded-md w-full 3xs:w-72 bg-gray-200 dark:bg-gray-700 flex flex-row-reverse justify-between font-medium">
                       <li class="flex flex-col items-center justify-between">
                         <span>14</span>
                         <span>روز</span>
@@ -299,7 +299,7 @@
                 </div>
 
                 <!-- Product Basket Actions -->
-                <div class="w-full flex items-center md:flex-row gap-1 xs:gap-3 mt-3 sm:mt-5 lg:mt-7">
+                <div class="w-full flex items-center md:flex-row gap-1 xs:gap-3 mt-3 sm:mt-5 lg:mt-7 pb-2 sm:pb-4 lg:pb-6">
                   <!-- Plus And Minus Actions -->
                   <div class="flex items-center justify-center h-9 p-1 bg-gray-200 dark:bg-gray-700 rounded">
                     <!-- Plus Action -->
@@ -326,6 +326,27 @@
                     <span class="hidden 2xs:inline">به سبد خرید</span>
                   </button>
                 </div>
+
+                <!-- Product Actions -->
+                <div
+                  class="w-full py-2 sm:py-3 lg:py-4 border-y border-gray-300 dark:border-gray-500 flex items-center gap-1 2xs:gap-2 text-gray-500 dark:text-gray-300">
+                  <button class="flex items-center gap-[2px] 2xs:gap-1">
+                    <svg class="size-5">
+                      <use xlink:href="#heart-icon" class="text-gray-500 dark:text-gray-300"></use>
+                    </svg>                    
+
+                    <span>علاقه مندی ها</span>
+                  </button>
+
+                  <button class="flex items-center gap-[2px] 2xs:gap-1">
+                    <svg class="size-6 scale-[0.65]">
+                      <use xlink:href="#change-icon" class="text-gray-500 dark:text-gray-300"></use>
+                    </svg>
+
+                    <span>مقایسه</span>
+                  </button>
+                </div>
+                <div></div>
               </div>
             </div>
 
