@@ -248,6 +248,11 @@ svgPackTemplate.innerHTML = `
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
     </symbol>
 
+    <symbol id="minus-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+    </symbol>
+
+
     <symbol id="arrow-icon" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" height="24"
         viewBox="0 0 24 24" width="24"><filter id="a"

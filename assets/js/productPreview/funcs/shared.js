@@ -23,6 +23,20 @@ const handlePicsSliders = pics => {
     slidesPerView: "auto",
     freeMode: true,
     whatchSlidesProgress: true,
+
+    breakpoints: {
+      640:{
+        direction: "vertical",
+      },
+
+      1280:{
+        direction: "horizontal",
+      },
+
+      1536: {
+        direction: "vertical",
+      }
+    }
   })
 
   const mainSliderConfig = new Swiper('.swiper', {

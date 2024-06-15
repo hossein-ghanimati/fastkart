@@ -1,6 +1,19 @@
+.shopping-field__input:checked ~ label {
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 164 135 / var(--tw-bg-opacity));
+  color: white;
+}
+
+.shopping-field__input:checked ~ label:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 213 176 / var(--tw-bg-opacity));
+}
+
 /* Swiper Styles */
+
 .swiper-slide-thumb-active,
-.swiper-2 .swiper-slide:hover{
-  filter: none;
+  .swiper-2 .swiper-slide:hover {
   opacity: 1;
+  filter: none;
 }
