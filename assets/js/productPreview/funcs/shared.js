@@ -41,7 +41,7 @@ const handlePicsSliders = pics => {
 
   const mainSliderConfig = new Swiper('.swiper', {
     rewind: true,
-    efect: "fade",
+    effect: "fade",
     thumbs:{
      swiper: secondSliderConfig
     }
