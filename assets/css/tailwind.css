@@ -1763,6 +1763,11 @@ input {
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -2617,10 +2622,6 @@ section-header > h4 {
 
 #breadcrumb-title{
   font-size: calc(25px + 6 * ((100vw - 320px) / 1600))
-}
-
-.breadcrumb__main-list::-webkit-scrollbar{
-  width: 0;
 }
 
 .breadcrumb__main-list::-webkit-scrollbar,
