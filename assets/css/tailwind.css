@@ -884,6 +884,11 @@ input {
   margin-bottom: 1rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -942,6 +947,22 @@ input {
 
 .mt-\[3\.5px\] {
   margin-top: 3.5px;
+}
+
+.mt-\[22px\] {
+  margin-top: 22px;
+}
+
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .line-clamp-1 {
@@ -1087,6 +1108,13 @@ input {
   height: 100%;
 }
 
+.size-max {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -1192,12 +1220,20 @@ input {
   height: max-content;
 }
 
+.h-\[543px\] {
+  height: 543px;
+}
+
 .max-h-\[533px\] {
   max-height: 533px;
 }
 
 .max-h-full {
   max-height: 100%;
+}
+
+.max-h-\[95px\] {
+  max-height: 95px;
 }
 
 .min-h-11 {
@@ -1309,6 +1345,22 @@ input {
   width: max-content;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-3\/12 {
+  width: 25%;
+}
+
 .min-w-\[10\%\] {
   min-width: 10%;
 }
@@ -1388,6 +1440,10 @@ input {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-copy {
+  cursor: copy;
 }
 
 .resize {
@@ -1878,6 +1934,14 @@ input {
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
 .fill-theme-color-dark {
   fill: #0da487;
 }
@@ -2002,6 +2066,16 @@ input {
   padding-bottom: 9px;
 }
 
+.px-\[22px\] {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2056,6 +2130,10 @@ input {
 
 .pl-3 {
   padding-left: 0.75rem;
+}
+
+.pb-\[14px\] {
+  padding-bottom: 14px;
 }
 
 .text-center {
@@ -2119,6 +2197,10 @@ input {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[33px\] {
+  font-size: 33px;
 }
 
 .font-bold {
