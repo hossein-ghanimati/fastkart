@@ -16,11 +16,11 @@ template.innerHTML = `
       class="flex items-center justify-start gap-2 max-w-[60%] overflow-hidden line-clamp-1">
       <!-- Name -->
       <span
-        class="userName font-medium text-theme-color-dark dark:text-theme-color-light text-nowrap">محمد
+        class="userName font-medium text-theme-color-dark dark:text-theme-color-light whitespace-nowrap text-nowrap">محمد
         امین سعیدی</span>
 
       <!-- Date -->
-      <span class="commentDate text-nowrap text-xs">سه هفته پیش
+      <span class="commentDate whitespace-nowrap text-nowrap text-xs">سه هفته پیش
       </span>
     </div>
 

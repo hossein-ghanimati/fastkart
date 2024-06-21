@@ -6,7 +6,7 @@ template.innerHTML = `
       <img src="./assets/image/fruits/1.png" class="product-img w-3/4 max-h-full  m-auto transition-5" alt="fruit">
     </a>
     <!-- Product Actions -->
-    <ul class="flex translate-y-2 opacity-0 transition-5 absolute mx-auto bottom-3  items-center justify-center bg-white dark:bg-gray-900 py-2  rounded-lg z-10">
+    <ul class="flex translate-y-2 opacity-0 transition-5 absolute mx-auto bottom-3  items-center justify-center bg-white dark:bg-gray-900 py-2  rounded-lg z-20">
       <li class="parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none">
         <span class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4">نمایش</span>
         <svg class="size-6 scale-[0.65] text-gray-500 dark:text-gray-300">

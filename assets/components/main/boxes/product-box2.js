@@ -8,27 +8,27 @@ template.innerHTML = `
     </a>
     <!-- Product Actions -->
     <ul
-      class="flex translate-y-2 opacity-0 transition-5 absolute mx-auto bottom-3  items-center justify-center bg-white dark:bg-gray-900 py-2  rounded-lg z-10">
+      class="flex translate-y-2 opacity-0 transition-5 absolute mx-auto bottom-3  items-center justify-center bg-white dark:bg-gray-900 py-2  rounded-lg z-20">
       <li
-        class="parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none">
+        class="parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none z-20">
         <span
-          class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4">نمایش</span>
+          class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4 z-20">نمایش</span>
         <svg class="size-6 scale-[0.65] text-gray-500 dark:text-gray-300">
           <use xlink:href="#eye-icon"></use>
         </svg>
       </li>
       <a href="./comparie.html?id=df786asdf08adf10"
-        class="comparieLink parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none">
+        class="comparieLink parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none z-20">
         <span
-          class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4">مقایسه</span>
+          class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4 z-20">مقایسه</span>
         <svg class="size-6 scale-[0.65] text-gray-500 dark:text-gray-300">
           <use xlink:href="#change-icon"></use>
         </svg>
       </a>
       <li
-        class="parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none">
+        class="parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none z-20">
         <span
-          class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4">لیست
+          class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4 z-20">لیست
           علاقه مندی</span>
         <svg class="size-5 text-gray-500 dark:text-gray-300">
           <use xlink:href="#heart-icon"></use>

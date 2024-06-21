@@ -1309,6 +1309,10 @@ input {
   width: max-content;
 }
 
+.min-w-\[10\%\] {
+  min-width: 10%;
+}
+
 .max-w-64 {
   max-width: 16rem;
 }
@@ -1331,6 +1335,10 @@ input {
 
 .max-w-\[60\%\] {
   max-width: 60%;
+}
+
+.max-w-8 {
+  max-width: 2rem;
 }
 
 .translate-x-1 {
@@ -1561,6 +1569,10 @@ input {
 
 .overflow-y-hidden {
   overflow-y: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .text-nowrap {
