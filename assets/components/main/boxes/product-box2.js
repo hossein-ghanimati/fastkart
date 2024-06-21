@@ -17,14 +17,7 @@ template.innerHTML = `
           <use xlink:href="#eye-icon"></use>
         </svg>
       </li>
-      <a href="./comparie.html?id=df786asdf08adf10"
-        class="comparieLink parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none z-20">
-        <span
-          class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4 z-20">مقایسه</span>
-        <svg class="size-6 scale-[0.65] text-gray-500 dark:text-gray-300">
-          <use xlink:href="#change-icon"></use>
-        </svg>
-      </a>
+      
       <li
         class="parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none z-20">
         <span
@@ -34,6 +27,15 @@ template.innerHTML = `
           <use xlink:href="#heart-icon"></use>
         </svg>
       </li>
+
+      <a href="./comparie.html?id=df786asdf08adf10"
+        class="comparieLink parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none z-20">
+        <span
+          class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4 z-20">مقایسه</span>
+        <svg class="size-6 scale-[0.65] text-gray-500 dark:text-gray-300">
+          <use xlink:href="#change-icon"></use>
+        </svg>
+      </a>
     </ul>
   </div>
 
