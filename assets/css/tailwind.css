@@ -817,6 +817,10 @@ input {
   z-index: 20;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -1018,6 +1022,11 @@ input {
   aspect-ratio: 1 / 1;
 }
 
+.size-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .size-11 {
   width: 2.75rem;
   height: 2.75rem;
@@ -1207,6 +1216,10 @@ input {
   height: 72px;
 }
 
+.h-\[90px\] {
+  height: 90px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1214,10 +1227,6 @@ input {
 .h-max {
   height: -moz-max-content;
   height: max-content;
-}
-
-.h-\[90px\] {
-  height: 90px;
 }
 
 .max-h-\[533px\] {
@@ -1278,6 +1287,10 @@ input {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .w-48 {
@@ -2039,6 +2052,10 @@ input {
   padding-bottom: 9px;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2061,10 +2078,6 @@ input {
 
 .pb-6 {
   padding-bottom: 1.5rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .pb-\[104px\] {
@@ -2101,10 +2114,6 @@ input {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -2294,6 +2303,10 @@ input {
 
 .opacity-40 {
   opacity: 0.4;
+}
+
+.bg-blend-multiply {
+  background-blend-mode: multiply;
 }
 
 .mix-blend-multiply {

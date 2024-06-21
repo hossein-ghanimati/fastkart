@@ -154,6 +154,7 @@ label-product:first-child{
   height: calc(80px + 20*(100vw - 320px) / 1600);
 }
 
+
 /* Swiper Styles */
 
 .swiper-slide-thumb-active,
