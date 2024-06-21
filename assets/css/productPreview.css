@@ -162,6 +162,20 @@ label-product:first-child{
   filter: none;
 }
 
+.swiper-pagination-bullet{
+  transition: 300ms !important;
+}
+.swiper-pagination-bullet-active {
+  width: 1.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 164 135 / var(--tw-bg-opacity));
+}
+
+.swiper-pagination-bullet-active:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 213 176 / var(--tw-bg-opacity));
+}
+
 @keyframes other-details__animation {
   from {
     opacity: 0;

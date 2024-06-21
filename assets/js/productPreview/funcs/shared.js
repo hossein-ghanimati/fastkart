@@ -52,6 +52,22 @@ const renderPicsSliders = (pics) => {
   });
 };
 
+const renderRelatedSlider = () => {
+  const swiper = new Swiper(".swiper__related", {
+    spaceBetween: 12,
+    slidesPerView: "auto",
+    // loop: true,
+    autoplay: {
+      delay: 1500,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    rewind: true,
+  });
+};
+
 const renderOtheDescriptionTabsOpention = () => {
   const tabItems = document.querySelectorAll(".other-details__tab-item");
 
@@ -63,4 +79,4 @@ const renderOtheDescriptionTabsOpention = () => {
   });
 };
 
-export { renderBreadcrumb, renderPicsSliders, renderOtheDescriptionTabsOpention };
+export { renderBreadcrumb, renderPicsSliders, renderOtheDescriptionTabsOpention, renderRelatedSlider };

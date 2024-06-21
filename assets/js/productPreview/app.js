@@ -1,5 +1,6 @@
-import { renderPicsSliders, renderBreadcrumb, renderOtheDescriptionTabsOpention } from "./funcs/shared.js";
+import { renderPicsSliders, renderBreadcrumb, renderOtheDescriptionTabsOpention, renderRelatedSlider } from "./funcs/shared.js";
 
 renderBreadcrumb()
 renderPicsSliders()
 renderOtheDescriptionTabsOpention()
+renderRelatedSlider()
