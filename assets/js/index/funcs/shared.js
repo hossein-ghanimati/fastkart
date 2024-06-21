@@ -23,7 +23,7 @@ const renderProductsSlider = () => {
     slidesPerView: "auto",
     loop: true,
     autoplay: {
-      delay: 4500,
+      delay: 4000,
     }
   })
 
