@@ -1,5 +1,5 @@
 import { closeOtherMenuItems, toggleMenuItem } from "../../funcs/shared-utils.js";
-import { handleBredcrumb } from "../../funcs/utils.js";
+import { handleBredcrumb, setStyle } from "../../funcs/utils.js";
 
 const renderBreadcrumb = () => {
   handleBredcrumb("جزئیات محصول", [
@@ -78,5 +78,18 @@ const renderOtheDescriptionTabsOpention = () => {
     });
   });
 };
+const handleBasketBottomBarActions = () => {
+  const mainActions = document.querySelector('#basket-main-actions');
+  const seconderyActions = document.querySelector('#basket-secondery-actions');
+  const mainActionsLoc = mainActions.offsetTop + mainActions.offsetHeight - parseInt(getComputedStyle(mainActions).paddingBottom);
 
-export { renderBreadcrumb, renderPicsSliders, renderOtheDescriptionTabsOpention, renderRelatedSlider };
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > mainActionsLoc) {
+      setStyle(seconderyActions, 'transform', "translateY(0)");
+    }else{
+      setStyle(seconderyActions, 'transform', "translateY(100%)");
+    }
+  })
+}
+
+export { renderBreadcrumb, renderPicsSliders, renderOtheDescriptionTabsOpention, renderRelatedSlider, handleBasketBottomBarActions };

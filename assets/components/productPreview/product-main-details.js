@@ -260,6 +260,7 @@ template.innerHTML = `
 
   <!-- Product Basket Actions -->
   <div
+    id="basket-main-actions"
     class="w-full flex items-center md:flex-row gap-1 xs:gap-3 mt-3 sm:mt-5 lg:mt-7 pb-2 sm:pb-4 lg:pb-6">
     <!-- Plus And Minus Actions -->
     <div

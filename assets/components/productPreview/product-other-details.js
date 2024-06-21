@@ -9,6 +9,15 @@ template.innerHTML = `
       class="transition absolute top-0 right-0 opacity-0 w-0 h-[2px] sm:h-[3px] bg-theme-color-dark dark:bg-theme-color-light block"></i>
     <label
       class="other-details__tab-label block whitespace-nowrap text-nowrap cursor-grab"
+      for="comments">بازخورد</label>
+  </li>
+
+  <li
+    class="other-details__tab-item w-max relative bg-gray-200 dark:bg-gray-700 cursor-grab">
+    <i
+      class="transition absolute top-0 right-0 opacity-0 w-0 h-[2px] sm:h-[3px] bg-theme-color-dark dark:bg-theme-color-light block"></i>
+    <label
+      class="other-details__tab-label block whitespace-nowrap text-nowrap cursor-grab"
       for="product-description">توضیحات</label>
   </li>
 
@@ -29,15 +38,6 @@ template.innerHTML = `
       class="other-details__tab-label block whitespace-nowrap text-nowrap cursor-grab"
       for="guide">راهنمای استفاده</label>
   </li>
-
-  <li
-    class="other-details__tab-item w-max relative bg-gray-200 dark:bg-gray-700 cursor-grab">
-    <i
-      class="transition absolute top-0 right-0 opacity-0 w-0 h-[2px] sm:h-[3px] bg-theme-color-dark dark:bg-theme-color-light block"></i>
-    <label
-      class="other-details__tab-label block whitespace-nowrap text-nowrap cursor-grab"
-      for="comments">بازخورد</label>
-  </li>
 </ul>
 
 <!-- Other Details Bodys -->
@@ -47,7 +47,7 @@ template.innerHTML = `
   <div>
     <input type="radio" name="other-details"
       id="product-description"
-      class="hidden other-details__tab-input" checked>
+      class="hidden other-details__tab-input">
     <!-- Content -->
     <div
       class="product-description__container hidden w-full transition text-gray-500 dark:text-gray-300">
@@ -249,7 +249,7 @@ template.innerHTML = `
   </div>
 
   <div>
-    <input type="radio" name="other-details" id="comments"
+    <input type="radio" name="other-details" id="comments" checked
       class="hidden other-details__tab-input">
     <!-- Content -->
     <div class="hidden w-full transition">

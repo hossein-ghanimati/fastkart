@@ -4,6 +4,7 @@ import ProductOtherDetails from "../../components/productPreview/product-other-d
 import SideBar from "../../components/productPreview/side-bar.js";
 import { LabelProduct } from "../../components/main/boxes/label-product.js"
 import RelatedProducts from "../../components/productPreview/related-products.js";
+import BasketBottomActions from "../../components/productPreview/basket-bottom-actions.js";
 
 customElements.define('product-main-details', ProductMainDetails)
 customElements.define('comment-box', CommentBox)
@@ -11,3 +12,4 @@ customElements.define('product-other-details', ProductOtherDetails)
 customElements.define('label-product', LabelProduct)
 customElements.define('side-bar', SideBar)
 customElements.define('related-products', RelatedProducts)
+customElements.define('basket-bottom-actions', BasketBottomActions)
