@@ -84,6 +84,10 @@
   color: white;
 }
 
+.comment-box{
+  padding: calc(16px + 4*(100vw - 320px) / 1600) calc(16px + 10*(100vw - 320px) / 1600);
+}
+
 
 /* Swiper Styles */
 
