@@ -13,7 +13,7 @@ template.innerHTML = `
       <div class="flex items-center gap-2">
         <span class="text-gray-700 dark:text-gray-200">70.000</span>
         <span class="text-red-500 line-through">100.000</span>
-        <span class="text-theme-color-dark dark:bg-theme-color-light">55%
+        <span class="text-theme-color-dark dark:text-theme-color-light">55%
           تخفیف</span>
       </div>
     </div>
@@ -40,7 +40,7 @@ template.innerHTML = `
       <button type="button">
         <svg class="p-1 size-8 bg-gray-100 dark:bg-gray-800 rounded">
           <use xlink:href="#plus-icon"
-            class="text-theme-color-dark dark:bg-theme-color-light"></use>
+            class="text-theme-color-dark dark:text-theme-color-light"></use>
         </svg>
       </button>
 
@@ -51,7 +51,7 @@ template.innerHTML = `
       <button type="button">
         <svg class="p-1 size-8 bg-gray-100 dark:bg-gray-800 rounded">
           <use xlink:href="#minus-icon"
-            class="text-theme-color-dark dark:bg-theme-color-light"></use>
+            class="text-theme-color-dark dark:text-theme-color-light"></use>
         </svg>
       </button>
     </div>
@@ -75,7 +75,7 @@ export default class BasketBottomActions extends HTMLElement {
   }
 
   connectedCallback(){
-    this.className = "hidden transition translate-y-full md:block w-full h-[90px] fixed bottom-0 z-30 bg-gray-100 dark:bg-gray-800 border-t border-gray-300 dark:border-gray-500"
+    this.className = "hidden transition translate-y-full lg:block w-full h-[90px] fixed bottom-0 z-30 bg-gray-100 dark:bg-gray-800 border-t border-gray-300 dark:border-gray-500"
     this.setAttribute('id', "basket-secondery-actions")
   }
 }

@@ -361,7 +361,8 @@ template.innerHTML = `
               ثبت بازخورد خود در خرید دیگران راهنمایی خوبی باشید</p>
 
             <button
-              class="w-full rounded xs:rounded-md flex items-center gap-1 justify-center py-[10px] bg-gray-200 dark:bg-gray-700 mt-1 lg:mt-2 shadow">
+              class="open-modal-btn w-full rounded xs:rounded-md flex items-center gap-1 justify-center py-[10px] bg-gray-200 dark:bg-gray-700 mt-1 lg:mt-2 shadow"
+              data-target="register-comment-modal">
               ثبت دیدگاه <span class="hidden 3xs:inline-block"> شما</span>
             </button>
           </div>
