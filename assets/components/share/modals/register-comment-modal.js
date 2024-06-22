@@ -73,7 +73,7 @@ temlpate.innerHTML = `
 </div>
 `
 
-export default class RegisterCommentModal extends HTMLElement(){
+export default class RegisterCommentModal extends HTMLElement {
   constructor(){
     super()
     this.appendChild(temlpate.content.cloneNode(true));
