@@ -6,3 +6,18 @@ main{
   background-color: rgb(13 164 135 / 1);
   color: rgb(240, 240, 240);
 }
+
+#filtering-modal__input:checked ~ div{
+  display: flex;
+  animation: show-filtering-modal__animation 0.7s ease-out;
+  
+}
+
+@keyframes show-filtering-modal__animation {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+} 

@@ -3,7 +3,7 @@ template.innerHTML = `
 <!-- Filstering -->
 <div>
   <button>
-    <label for="filsters-modal__input"
+    <label for="filtering-modal__input"
       class="bg-gray-200 dark:bg-gray-700 py-2 px-5 rounded text-gray-500 dark:text-gray-300 flex items-center justify-center gap-2 cursor-pointer">
       <svg class="size-6">
         <use xlink:href="#funnel-icon"
@@ -12,8 +12,6 @@ template.innerHTML = `
 
       <span>فیلتر ها</span>
     </label>
-    <input type="radio" name="filters-modal__input" id="filters-modal__input"
-      class="hidden">
   </button>
 </div>
 
