@@ -14,9 +14,9 @@ template.innerHTML = `
     <ul class="w-full pl-1 sm:pl-2 overflow-x-hidden overflow-y-auto h-[190px]">
       <li class="flex items-center justify-between p-2">
         <div class="flex items-center gap-1">
-          <input type="checkbox" name="cat-selector" class="cat-selector"
+          <input type="checkbox" name="cat-selector" data-cat="fruits" class="cat-selector"
             id="cat-1">
-          <label for="cat-1" class="line-clamp-1 max-h-[82px]">میوه ها</label>
+          <label for="cat-1" class="line-clamp-1 max-h-[82px] cursor-pointer">میوه ها</label>
         </div>
         <div class="text-gray-500 dark:text-gray-300">
           (
@@ -27,9 +27,9 @@ template.innerHTML = `
 
       <li class="flex items-center justify-between p-2">
         <div class="flex items-center gap-1">
-          <input type="checkbox" name="cat-selector" class="cat-selector"
+          <input type="checkbox" name="cat-selector" data-cat="vegetables" class="cat-selector"
             id="cat-2">
-          <label for="cat-2" class="line-clamp-1 max-h-[82px]">میوه ها</label>
+          <label for="cat-2" class="line-clamp-1 max-h-[82px] cursor-pointer">سبزیجات</label>
         </div>
         <div class="text-gray-500 dark:text-gray-300">
           (
@@ -40,9 +40,9 @@ template.innerHTML = `
 
       <li class="flex items-center justify-between p-2">
         <div class="flex items-center gap-1">
-          <input type="checkbox" name="cat-selector" class="cat-selector"
+          <input type="checkbox" name="cat-selector" data-cat="dairies" class="cat-selector"
             id="cat-3">
-          <label for="cat-3" class="line-clamp-1 max-h-[82px]">میوه ها</label>
+          <label for="cat-3" class="line-clamp-1 max-h-[82px] cursor-pointer">لبنیات</label>
         </div>
         <div class="text-gray-500 dark:text-gray-300">
           (
@@ -53,9 +53,9 @@ template.innerHTML = `
 
       <li class="flex items-center justify-between p-2">
         <div class="flex items-center gap-1">
-          <input type="checkbox" name="cat-selector" class="cat-selector"
+          <input type="checkbox" name="cat-selector" data-cat="drinks" class="cat-selector"
             id="cat-4">
-          <label for="cat-4" class="line-clamp-1 max-h-[82px]">میوه ها</label>
+          <label for="cat-4" class="line-clamp-1 max-h-[82px] cursor-pointer">نوشیدنی</label>
         </div>
         <div class="text-gray-500 dark:text-gray-300">
           (
@@ -66,9 +66,9 @@ template.innerHTML = `
 
       <li class="flex items-center justify-between p-2">
         <div class="flex items-center gap-1">
-          <input type="checkbox" name="cat-selector" class="cat-selector"
+          <input type="checkbox" name="cat-selector" data-cat="beans" class="cat-selector"
             id="cat-5">
-          <label for="cat-5" class="line-clamp-1 max-h-[82px]">میوه ها</label>
+          <label for="cat-5" class="line-clamp-1 max-h-[82px] cursor-pointer">حبوبات</label>
         </div>
         <div class="text-gray-500 dark:text-gray-300">
           (
@@ -79,9 +79,9 @@ template.innerHTML = `
 
       <li class="flex items-center justify-between p-2">
         <div class="flex items-center gap-1">
-          <input type="checkbox" name="cat-selector" class="cat-selector"
+          <input type="checkbox" name="cat-selector" data-cat="snacks" class="cat-selector"
             id="cat-6">
-          <label for="cat-6" class="line-clamp-1 max-h-[82px]">میوه ها</label>
+          <label for="cat-6" class="line-clamp-1 max-h-[82px] cursor-pointer">تنقلات</label>
         </div>
         <div class="text-gray-500 dark:text-gray-300">
           (
@@ -102,55 +102,49 @@ template.innerHTML = `
     <ul class="w-full pl-1 sm:pl-2 overflow-x-hidden overflow-y-auto h-[190px]">
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="min-price-selector"
+          <input type="radio" name="min-price-selector" data-price="25000"
             class="min-price-selector" id="min-price-1">
-          <label for="min-price-1" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="min-price-1" class="line-clamp-1 cursor-pointer max-h-[82px]">25,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="min-price-selector"
+          <input type="radio" name="min-price-selector" data-price="50000"
             class="min-price-selector" id="min-price-2">
-          <label for="min-price-2" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="min-price-2" class="line-clamp-1 cursor-pointer max-h-[82px]">50,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="min-price-selector"
+          <input type="radio" name="min-price-selector" data-price="100000"
             class="min-price-selector" id="min-price-3">
-          <label for="min-price-3" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="min-price-3" class="line-clamp-1 cursor-pointer max-h-[82px]">100,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="min-price-selector"
+          <input type="radio" name="min-price-selector" data-price="200000"
             class="min-price-selector" id="min-price-4">
-          <label for="min-price-4" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="min-price-4" class="line-clamp-1 cursor-pointer max-h-[82px]">200,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="min-price-selector"
+          <input type="radio" name="min-price-selector" data-price="300000"
             class="min-price-selector" id="min-price-5">
-          <label for="min-price-5" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="min-price-5" class="line-clamp-1 cursor-pointer max-h-[82px]">300,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="min-price-selector"
+          <input type="radio" name="min-price-selector" data-price="500000"
             class="min-price-selector" id="min-price-6">
-          <label for="min-price-6" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="min-price-6" class="line-clamp-1 cursor-pointer max-h-[82px]">500,000</label>
         </div>
       </li>
 
@@ -165,55 +159,49 @@ template.innerHTML = `
     <ul class="w-full pl-1 sm:pl-2 overflow-x-hidden overflow-y-auto h-[190px]">
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="max-price-selector"
+          <input type="radio" name="max-price-selector" data-price="50000"
             class="max-price-selector" id="max-price-1">
-          <label for="max-price-1" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="max-price-1" class="line-clamp-1 cursor-pointer max-h-[82px]">50,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="max-price-selector"
+          <input type="radio" name="max-price-selector" data-price="150000"
             class="max-price-selector" id="max-price-2">
-          <label for="max-price-2" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="max-price-2" class="line-clamp-1 cursor-pointer max-h-[82px]">150,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="max-price-selector"
+          <input type="radio" name="max-price-selector" data-price="250000"
             class="max-price-selector" id="max-price-3">
-          <label for="max-price-3" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="max-price-3" class="line-clamp-1 cursor-pointer max-h-[82px]">250,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="max-price-selector"
+          <input type="radio" name="max-price-selector" data-price="400000"
             class="max-price-selector" id="max-price-4">
-          <label for="max-price-4" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="max-price-4" class="line-clamp-1 cursor-pointer max-h-[82px]">400,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="max-price-selector"
+          <input type="radio" name="max-price-selector" data-price="650000"
             class="max-price-selector" id="max-price-5">
-          <label for="max-price-5" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="max-price-5" class="line-clamp-1 cursor-pointer max-h-[82px]">650,000</label>
         </div>
       </li>
 
       <li class="flex items-center p-2">
         <div class="flex items-center gap-1">
-          <input type="radio" name="max-price-selector"
+          <input type="radio" name="max-price-selector" data-price="500000"
             class="max-price-selector" id="max-price-6">
-          <label for="max-price-6" class="line-clamp-1 max-h-[82px]">میوه
-            ها</label>
+          <label for="max-price-6" class="line-clamp-1 cursor-pointer max-h-[82px]">500,000</label>
         </div>
       </li>
 

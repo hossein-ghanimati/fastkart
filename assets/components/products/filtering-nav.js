@@ -34,7 +34,7 @@ template.innerHTML = `
   <!-- Display Mode -->
   <div class="hidden sm:flex items-center justify-center gap-1 sm:gap-2">
     <div class="w-max">
-      <input type="radio" name="display-mode" id="col-display"
+      <input type="radio" name="display-mode" id="col-display" data-display="col"
         class="display-mode__input hidden" checked>
       <label for="col-display"
         class="block w-max h-max p-1 rounded bg-gray-200 dark:bg-gray-700 cursor-pointer">
@@ -44,7 +44,7 @@ template.innerHTML = `
       </label>
     </div>
     <div class="w-max">
-      <input type="radio" name="display-mode" id="row-display"
+      <input type="radio" name="display-mode" id="row-display" data-display="row"
         class="display-mode__input hidden">
       <label for="row-display"
         class="block w-max h-max p-1 rounded bg-gray-200 dark:bg-gray-700 cursor-pointer">
