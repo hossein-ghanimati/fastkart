@@ -1,6 +1,7 @@
 import { handleBreadcrumb } from "../../funcs/utils.js";
 
 let mainProducts = [];
+let lastSelectedCats = [];
 let selectedCats = [];
 let catChanged = true;
 let selectedMinPrice = 0;
@@ -48,55 +49,10 @@ const renderCategoryFiltering = () => {
           selectedCats.push(selector.dataset.cat)
         }
       })
-
-      catChanged = true;      
-      const products = await applyFilters()
-      insertProducts(products);
     })
   });
 }
 
-
-const renderMinPriceFiltering = () => {
-  const minPriceSelectors = document.querySelectorAll('.min-price-selector');
-  minPriceSelectors.forEach(selector => {
-    selector.addEventListener('change', () => {
-      const nowSelectedValue = +selector.dataset.price;
-
-      if (selectedMaxPrice <= nowSelectedValue) {
-        minPriceSelectors.forEach(sl => {
-          sl.checked = false;          
-          selectedMinPrice = 0
-        })        
-      }else{
-        selectedMinPrice = nowSelectedValue;
-      }
-      const products = applyFilters();
-      insertProducts(products);
-    })
-  })
-}
-
-
-const renderMaxFiltering = () => {
-  const maxPriceSelectors = document.querySelectorAll('.max-price-selector');
-  maxPriceSelectors.forEach(selector => {
-    selector.addEventListener('change', () => {
-      const nowSelectedValue = +selector.dataset.price;
-
-      if (nowSelectedValue<= selectedMinPrice) {
-        maxPriceSelectors.forEach(sl => {
-          sl.checked = false;          
-          selectedMaxPrice = 1_000_000
-        })        
-      }else{
-        selectedMaxPrice = nowSelectedValue
-      }
-      const products = applyFilters();
-      insertProducts(products);
-    })
-  })
-}
 
 const renderSorting = () => {
   const sortOptionSelector = document.querySelector('#sort-by')
@@ -107,10 +63,25 @@ const renderSorting = () => {
   })
 }
 
+const applyFilstersClickHandler = () => {
+  const minPriceInput = document.querySelector('.min-price-input')
+  const maxPriceInput = document.querySelector('.max-price-input')
+  const areCatsChanged = !(JSON.stringify(selectedCats) == JSON.stringify(lastSelectedCats))
+
+  catChanged = areCatsChanged ? true : false
+
+  lastSelectedCats = [...selectedCats]
+
+  selectedMinPrice = +minPriceInput.value;
+  selectedMaxPrice = +maxPriceInput.value;
+
+  const products = applyFilters(...mainProducts)
+  insertProducts(products)
+
+}
+
 const renderFiltering = () => {
   renderCategoryFiltering()
-  renderMinPriceFiltering()
-  renderMaxFiltering()
   renderSorting()
 }
 
@@ -139,9 +110,33 @@ const renserProducts = async () => {
   insertProducts(products)
 }
 
+const range = () => {
+
+  return {
+    minprice: 0, 
+    maxprice: 1_000_000,
+    min: 0, 
+    max: 1_000_000,
+    minthumb: 0,
+    maxthumb: 0, 
+    
+    mintrigger() {   
+      this.minprice = Math.min(this.minprice, this.maxprice - 500)
+      this.minthumb = ((this.minprice - this.min) / (this.max - this.min)) * 100
+    },
+     
+    maxtrigger() {
+      this.maxprice = Math.max(this.maxprice, this.minprice + 500)
+      this.maxthumb = 100 - (((this.maxprice - this.min) / (this.max - this.min)) * 100)
+    }, 
+  }
+}
+
 export{
   renderBreadcrumb,
   renderFiltering,
   renderDisplayMood,
-  renserProducts
+  renserProducts,
+  range,
+  applyFilstersClickHandler
 }
