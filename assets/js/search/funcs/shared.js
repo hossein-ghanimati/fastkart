@@ -1,6 +1,6 @@
 import {
   getUrlParam,
-  handleBredcrumb,
+  handleBreadcrumb,
   removeParamWithotRefresh,
   setParamWithotRefresh,
 } from "../../funcs/utils.js";
@@ -86,7 +86,7 @@ const renderBreadcrumb = (searchedValue) => {
     });
   }
 
-  handleBredcrumb("جستجو", breadcrumbList);
+  handleBreadcrumb("جستجو", breadcrumbList);
 };
 
 export {

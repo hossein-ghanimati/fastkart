@@ -91,7 +91,7 @@ const setParamWithotRefresh = (param, value) => {
   history.pushState({}, "", url.toString())
 }
 
-const handleBredcrumb = (title, list) => {
+const handleBreadcrumb = (title, list) => {
   const breadcrumbTitle = document.querySelector('#breadcrumb-title')
   const breadcrumbList = document.querySelector('#breadcrumb-list')
   
@@ -125,5 +125,5 @@ export {
   removeParam,
   removeParamWithotRefresh,
   setParamWithotRefresh,
-  handleBredcrumb
+  handleBreadcrumb
 };

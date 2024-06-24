@@ -1,8 +1,8 @@
 import { closeOtherMenuItems, toggleMenuItem } from "../../funcs/shared-utils.js";
-import { handleBredcrumb, setStyle } from "../../funcs/utils.js";
+import { handleBreadcrumb, setStyle } from "../../funcs/utils.js";
 
 const renderBreadcrumb = () => {
-  handleBredcrumb("جزئیات محصول", [
+  handleBreadcrumb("جزئیات محصول", [
     { href: "./products.html?cat=cakes", value: "کیک ها" },
     {
       href: "./productpreview.html?id=12sd234sd22q34-01",
