@@ -1,3 +1,8 @@
 main{
   margin-bottom: 2.5rem;
 }
+
+.display-mode__input:checked ~ label{
+  background-color: rgb(13 164 135 / 1);
+  color: rgb(240, 240, 240);
+}
