@@ -7,7 +7,7 @@ let catChanged = true;
 let selectedMinPrice = 0;
 let selectedMaxPrice = 1_000_000;
 let sortOption = "last";
-let displayMode = 'row';
+let displayMode = 'col';
 
 const filterByCategory = async () => {
   console.log("Selected Cats =>", selectedCats);
@@ -29,7 +29,7 @@ const sortProducts = products => {
 }
 
 const applyFilters = async () => {
-  console.clear()
+  // console.clear()
   let products = catChanged ? await filterByCategory() : mainProducts;
   products = filterByMinPrice(products)
   products = filterByMaxPrice(products)
