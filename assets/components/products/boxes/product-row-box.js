@@ -1,10 +1,13 @@
 const template = document.createElement('template');
 template.innerHTML = `
 <!-- Img Box -->
-<div class="w-full 3xs:min-w-[180px] 3xs:w-[180px]">
-  <a href="#" class="prodcutLink relative">
+<div class="w-full relative flex items-center justify-center 3xs:min-w-[250px] 3xs:w-[250px]">
+  <a href="#" class="productLink block 3xs:min-w-[180px] 3xs:w-[180px]">
     <img src="./assets/image/fruits/1.png" alt="img" class="product-img w-full">
-    <ul class="flex translate-y-2 opacity-0 transition-5 absolute mx-auto bottom-3  items-center justify-center bg-white dark:bg-gray-900 py-2  rounded-lg z-20">
+    
+  </a>
+
+  <ul class="flex translate-y-2 opacity-0 transition-5 absolute mx-auto bottom-3  items-center justify-center bg-white dark:bg-gray-900 py-2  rounded-lg z-20">
       <li class="parent cursor-pointer relative px-4 border-gray-400 dark:border-x-gray-200 border-l last:border-none">
         <span class="hidden is-tippy child absolute w-max bg-theme-color-light text-stone-50 px-4 py-1 rounded -top-[180%] right-2/4 translate-x-2/4">نمایش</span>
         <svg class="size-6 scale-[0.65] text-gray-500 dark:text-gray-300">
@@ -26,12 +29,11 @@ template.innerHTML = `
         </svg>
       </a>
     </ul>
-  </a>
 </div>
 
 <!-- Info Box -->
 <div>
-  <a href="#" class="productTitle prodcutLink line-clamp-2 font-bold">بیسکویت کره بادام زمینی پرمیوم کره
+  <a href="#" class="productTitle productLink line-clamp-2 font-bold">بیسکویت کره بادام زمینی پرمیوم کره
     600 گرم</a>
   <p class="productDescription mt-2 text-sm line-clamp-6 text-gray-500 dark:text-gray-300">لورم
     ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان

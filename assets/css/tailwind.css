@@ -3281,8 +3281,24 @@ section-header > h4 {
     width: 180px;
   }
 
+  .\33xs\:w-\[150px\] {
+    width: 150px;
+  }
+
+  .\33xs\:w-\[250px\] {
+    width: 250px;
+  }
+
   .\33xs\:min-w-\[180px\] {
     min-width: 180px;
+  }
+
+  .\33xs\:min-w-\[150px\] {
+    min-width: 150px;
+  }
+
+  .\33xs\:min-w-\[250px\] {
+    min-width: 250px;
   }
 
   .\33xs\:p-4 {
