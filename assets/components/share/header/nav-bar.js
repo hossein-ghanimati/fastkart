@@ -270,7 +270,7 @@ navbarTemplate.innerHTML = `
                 <ul
                     class="w-32 flex flex-col gap-1 text-gray-700 dark:text-gray-100 divide-y">
                     <li class="py-1 group">
-                        <a href="#" class="transition-all flex items-center justify-between group-hover:pr-1">
+                        <a href="./auth.html?label=ورود به حساب&form=login" class="transition-all flex items-center justify-between group-hover:pr-1">
                             <span>ورود</span>
                             <svg class="size-5">
                                 <use xlink:href="#login-icon" class="text-gray-700 dark:text-gray-300 block"></use>
@@ -278,7 +278,7 @@ navbarTemplate.innerHTML = `
                         </a>
                     </li>
                     <li class="py-1 group">
-                        <a href="#" class="transition-all flex items-center justify-between group-hover:pr-1">
+                        <a href="./auth.html?label=عضویت در سایت&form=register" class="transition-all flex items-center justify-between group-hover:pr-1">
                             <span>عضویت</span>
                             <svg class="size-5">
                                 <use xlink:href="#register-icon" class="text-gray-700 dark:text-gray-300 block"></use>
@@ -286,7 +286,7 @@ navbarTemplate.innerHTML = `
                         </a>
                     </li>
                     <li class="py-1 group">
-                        <a href="#">
+                        <a href="./auth.html?label=فراموشی رمز عبور&form=forgot-password">
                             <span class="transition-all group-hover:scale-75">فراموشی رمز عبور</span>
                         </a>
                     </li>

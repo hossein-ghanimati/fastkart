@@ -1,0 +1,37 @@
+main{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.forms-wrapper::before{
+  content: "";
+  background-image: url("../image/auth/bg.png");
+  background-position: center;    
+  position : absolute;
+  inset:0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  mix-blend-mode: multiply;  
+  background-size: cover;
+}
+.dark .forms-wrapper::before{
+  opacity: 0.25;
+}
+
+.breadcrumb{
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .forms-wrapper .container{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+  }
+}

@@ -187,7 +187,7 @@ mainBarTemplate.innerHTML = `
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
 
-                <a href="./products"
+                <a href="./products.html"
                     class="font-medium">فروشگاه</a>
 
                 <svg
@@ -222,7 +222,7 @@ mainBarTemplate.innerHTML = `
             class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
-                <a href="./products"
+                <a href="./products.html"
                     class="font-medium">محصولات
                     برتر</a>
                 <svg
@@ -264,7 +264,7 @@ mainBarTemplate.innerHTML = `
             class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
-                <a href="./products"
+                <a href="./products.html"
                     class="font-medium">میوه
                     ها
                 </a>
@@ -304,7 +304,7 @@ mainBarTemplate.innerHTML = `
             class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
-                <a href="./products"
+                <a href="./products.html"
                     class="font-medium">سبزیجات</a>
                     
                 <svg
@@ -342,7 +342,7 @@ mainBarTemplate.innerHTML = `
             class="parent group relative text-gray-800 dark:text-gray-50">
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
-                <a href="./products" class="font-medium">لبنیات</a>
+                <a href="./products.html" class="font-medium">لبنیات</a>
                 <svg
                     class="size-5 -rotate-90">
                     <use
@@ -383,7 +383,7 @@ mainBarTemplate.innerHTML = `
             <div
                 class="flex items-center group-hover:text-theme-color-dark dark:group-hover:text-theme-color-light transition">
                 <a
-                    href="./products"
+                    href="./products.html"
                     class="font-medium">
                     فروشندگان
                 </a>
