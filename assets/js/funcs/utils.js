@@ -110,6 +110,26 @@ const handleBreadcrumb = (title, list) => {
   });
 }
 
+const handlePagination = (items, itemsPerPage, currentPage) => {
+  const paginattionWrapper = document.querySelector('#pagination-wrapper')
+  paginattionWrapper.innerHTML = ''
+  const pagesCount = Math.ceil(items.length / itemsPerPage)
+  const currentPageItems = items.splice(itemsPerPage * currentPage - itemsPerPage, itemsPerPage)
+
+  for (let i = 1; i <= pagesCount; i++) {    
+    paginattionWrapper.insertAdjacentHTML('beforeend', `
+      <button class="px-3 py-1 sm:px-4 sm:py-2 rounded sm:rounded-md border border-opacity-40 border-theme-color-dark dark:border-theme-color-light ${
+        currentPage == i ? 'bg-theme-color-dark dark:bg-theme-color-light text-stone-50' : 'bg-gray-200 dark:bg-gray-700'
+      }"
+       onclick="paginationBtnClickHandler(${i})">
+        ${i}
+      </button>
+    `)
+  }
+
+  return currentPageItems
+}
+
 export {
   getFromLocal,
   setToLocal,
@@ -125,5 +145,6 @@ export {
   removeParam,
   removeParamWithotRefresh,
   setParamWithotRefresh,
-  handleBreadcrumb
+  handleBreadcrumb,
+  handlePagination
 };

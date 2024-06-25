@@ -3,7 +3,7 @@ mainBarTemplate.innerHTML = `
 
 
 <!-- category -->
-<div class="parent relative">
+<div class="parent relative z-20">
     <!-- Category Button -->
     <button type="button"
         class="flex items-center gap-1 justify-center py-[10px]  px-5 font-semibold bg-gradient-to-r from-[#0e947a] to-theme-color-dark rounded text-gray-100">

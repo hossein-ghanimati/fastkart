@@ -123,12 +123,14 @@ class ProductBox2 extends HTMLElement {
     this.querySelector('.productAmount').innerHTML = this.getAttribute('amount')
     this.querySelector('.productPrice').innerHTML = Number(this.getAttribute('price')).toLocaleString()
     this.querySelector('.productCategory').innerHTML = this.getAttribute('category')
+    const customClass = this.getAttribute("customClass")
 
-    this.className = "swiper-slide product  block w-full 3xs:w-[220px] h-max p-[10px] rounded bg-[#ebebeb] dark:bg-[#1d1d22]"
+    this.className = `${customClass || 'swiper-slide block w-full 3xs:w-[220px]'} product h-max p-[10px] rounded bg-[#ebebeb] dark:bg-[#1d1d22]`
   }
 
   observedAttributes(){
     return [
+      "customClass",
       "id",
       "src",
       "title",

@@ -130,11 +130,12 @@ export default class productRowBox extends HTMLElement{
     this.querySelector('.productAmount').innerHTML = this.getAttribute('amount')
     this.querySelector('.mainPrice').innerHTML = Number(this.getAttribute('mainPrice')).toLocaleString()
     this.querySelector('.percentedPrice').innerHTML = Number(this.getAttribute('percentedPrice')).toLocaleString()
-
-    this.className = "product flex flex-col items-center justify-center md:justify-start md:flex-row gap-6 md:gap-4 bg-[#ebebeb] dark:bg-[#1d1d22] p-3 3xs:p-6 md:p-8 rounded-md md:rounded-lg shadow-md"
+    const customClass = this.getAttribute("customClass")
+    this.className = `${customClass || ''} product flex flex-col items-center justify-center md:justify-start md:flex-row gap-6 md:gap-4 bg-[#ebebeb] dark:bg-[#1d1d22] p-3 3xs:p-6 md:p-8 rounded-md md:rounded-lg shadow-md`
   }
   observedAttributes(){
     return [
+      "customClass",
       "id",
       "src",
       "title",

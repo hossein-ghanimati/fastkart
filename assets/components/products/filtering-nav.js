@@ -24,7 +24,7 @@ template.innerHTML = `
     <select name="sort-by" id="sort-by"
       class="bg-gray-200 dark:bg-gray-700 py-2 px-4 rounded cursor-pointer">
       <option value="last">آخرین ها</option>
-      <option value="fisrt">اولین ها</option>
+      <option value="first">اولین ها</option>
       <option value="stars">پرامتیاز ترین</option>
       <option value="expensive">گرانترین ها</option>
       <option value="lowest">ارزانترین ها</option>
