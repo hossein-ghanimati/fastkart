@@ -30,8 +30,10 @@ const showForm = () => {
 
 }
 
-const changeForm = formID => {
+const changeForm = (formID, formTitle) => {
   setParamWithotRefresh("form", formID)
+  setParamWithotRefresh("label", formTitle)
+  renderBreadcrumb()
   showForm()
 }
 
