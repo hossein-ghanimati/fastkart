@@ -22,9 +22,9 @@ const showForm = () => {
   forms.forEach(form => {
     const formID = form.getAttribute('id')
     if (formID == mainFormID) {
-      form.classList.replace('hidden', "flex")
+      form.classList.replace('hidden', "grid")
     }else{
-      form.classList.replace('flex', "hidden")
+      form.classList.replace('grid', "hidden")
     }
   })
 
