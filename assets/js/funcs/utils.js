@@ -114,6 +114,7 @@ const handlePagination = (items, itemsPerPage, currentPage) => {
   const paginattionWrapper = document.querySelector('#pagination-wrapper')
   paginattionWrapper.innerHTML = ''
   const pagesCount = Math.ceil(items.length / itemsPerPage)
+  if (pagesCount == 1) return items
   const currentPageItems = items.splice(itemsPerPage * currentPage - itemsPerPage, itemsPerPage)
 
   for (let i = 1; i <= pagesCount; i++) {    
@@ -126,6 +127,7 @@ const handlePagination = (items, itemsPerPage, currentPage) => {
       </button>
     `)
   }
+
 
   return currentPageItems
 }

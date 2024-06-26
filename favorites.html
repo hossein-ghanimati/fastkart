@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="./assets/css/favorites.css">
+    <link rel="icon" href="./assets/image/icon.png" format="image/png">
+    <title>لیست علاقه مندی ها</title>
+  </head>
+  <body>
+
+    <svg-pack></svg-pack>
+
+    <!-- Modals -->
+    <cities-modal></cities-modal>
+    <best-selling-modal></best-selling-modal>
+
+    <header>
+      <mobile-menu></mobile-menu>
+
+      <mobile-nav></mobile-nav>
+
+      <mobile-cat-menu></mobile-cat-menu>
+
+      <top-bar></top-bar>
+
+      <nav-bar></nav-bar>
+
+      <!-- Desktop Menu And Some Other -->
+      <main-bar></main-bar>
+
+      <bread-crumb></bread-crumb>
+    </header>
+
+    <main class="mt-2 mb-4">
+      
+
+      <section class="mt-4 sm:mt-7 grid grid-cols-12 gap-4" id="products-wrapper"></section>
+
+      <!-- Pagination -->
+      <section class="w-full flex items-center justify-center gap-1 3xs:gap-2 xs:gap-4 sm:gap-5 mt-4 sm:mt-7 overflow-auto pb-2" id="pagination-wrapper"></section>
+    </main>
+
+    <footer>
+      <div>
+        <footer-top></footer-top>
+
+        <footer-main></footer-main>
+
+        <footer-bottom></footer-bottom>
+      </div>
+    </footer>
+    <script type="module" src="./assets/js/customElementDefiner.js"></script>
+    <script type="module"
+      src="./assets/js/favorites/customElementDefiner.js"></script>
+    <script type="module" src="./assets/js/favorites/app.js"></script>
+    <script type="module" src="./assets/js/funcs/shared-app.js"></script>
+  </body>
+</html>
