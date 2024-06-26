@@ -29,7 +29,7 @@ template.innerHTML = `
   </li>
 
   <li class="w-full">
-    <a href="./userPanel/favorites.html" class="flex flex-col items-center">
+    <a href="./favorites.html" class="flex flex-col items-center">
       <svg class="size-5">
         <use xlink:href="#heart-icon"></use>
       </svg>

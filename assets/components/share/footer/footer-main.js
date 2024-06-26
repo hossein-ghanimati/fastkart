@@ -110,7 +110,7 @@ template.innerHTML = `
       </li>
 
       <li>
-        <a href="./userPanel/favorites">علاقه مندی ها</a>
+        <a href="./favorites.html">علاقه مندی ها</a>
       </li>
 
       <li>

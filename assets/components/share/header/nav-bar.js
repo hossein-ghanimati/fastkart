@@ -86,13 +86,13 @@ navbarTemplate.innerHTML = `
         <div
             class="hidden md:block">
             <!-- Favorites Button -->
-            <button
+            <a href="./favorites.html"
                 class="h-full px-3 flex items-center border-l border-gray-500 dark:border-x-gray-300">
                 <svg class="size-7">
                     <use xlink:href="#heart-icon"
                         class="text-gray-700 dark:text-gray-300"></use>
                 </svg>
-            </button>
+            </a>
         </div>
 
         <!-- Cart -->
