@@ -242,7 +242,7 @@ navbarTemplate.innerHTML = `
                                     <!-- Cart Actions -->
                     <div
                         class="flex items-center justify-between">
-                        <a href="#"
+                        <a href="./cart.html"
                             class="p-1 px-2 border-2 border-theme-color-dark dark:border-theme-color-light text-theme-color-dark dark:text-theme-color-light hover:bg-theme-color-dark hover:text-white dark:hover:text-white rounded">سبد
                             خرید</a>
                         <a href="#"
