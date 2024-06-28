@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="icon" href="./assets/image/icon.png" format="image/png">
+    <title>پرداخت نهایی</title>
+  </head>
+  <body>
+
+    <svg-pack></svg-pack>
+
+    <!-- Modals -->
+    <cities-modal></cities-modal>
+    <best-selling-modal></best-selling-modal>
+
+    <header>
+      <mobile-menu></mobile-menu>
+
+      <mobile-nav></mobile-nav>
+
+      <mobile-cat-menu></mobile-cat-menu>
+
+      <top-bar></top-bar>
+
+      <nav-bar></nav-bar>
+
+      <!-- Desktop Menu And Some Other -->
+      <main-bar></main-bar>
+
+      <bread-crumb></bread-crumb>
+    </header>
+
+    <main class="my-4 sm:my-8 grid grid-cols-10 gap-4 lg:gap-8">
+      <section class="col-span-10 lg:col-span-7 space-y-3 xs:space-y-6">
+        <div class="bg-gray-200 dark:bg-gray-700 rounded-lg shadow-lg px-3 py-6">
+           <p class="font-bold text-lg">آدرس پستی</p>
+           <!-- Locations -->
+           <div class="grid grid-cols-2 gap-4 mt-3">
+            <div class="col-span-2 md:col-span-1 lg:col-span-2 3xl:col-span-1 bg-gray-100 dark:bg-gray-800 p-5 rounded-md flex items-start gap-2">
+              <div class="inline-block h-full p-1">
+                <input type="radio" name="locations-selector__input" id="locations-selector__input-1" data-location="1" class="radio-input bg-center bg-no-repeat bg-contain checked:appearance-none size-4 rounded-full" checked>
+              </div>
+              <label for="locations-selector__input-1" class="block w-full space-y-1 cursor-pointer">
+                <div class="flex items-center justify-between">
+                  <span class="font-medium text-lg">حسین غنیمتی</span>
+                  <span class="bg-theme-color-dark dark:bg-theme-color-light text-stone-50 px-2 rounded text-[12px]">خانه</span>
+                </div>
+
+                <div class="line-clamp-1">
+                  <span class="font-medium">آدرس:</span>
+                  <span class="text-sm text-gray-500 dark:text-gray-300">زنجان اسلام آباد ، خیابان شهید محمدی پلاک 526</span>
+                </div>
+
+                <div class="line-clamp-1">
+                  <span class="font-medium">کدپستی :</span>
+                  <span class="text-sm text-gray-500 dark:text-gray-300">1234567890</span>
+                </div>
+                
+                <div class="line-clamp-1">
+                  <span class="font-medium">شماره تماس:</span>
+                  <span class="text-sm text-gray-500 dark:text-gray-300 cursor-copy">09915823411</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="col-span-2 md:col-span-1 lg:col-span-2 3xl:col-span-1 bg-gray-100 dark:bg-gray-800 p-5 rounded-md flex items-start gap-2">
+              <div class="inline-block h-full p-1">
+                <input type="radio" name="locations-selector__input" id="locations-selector__input-2" data-location="2" class="radio-input bg-center bg-no-repeat bg-contain checked:appearance-none size-4 rounded-full">
+              </div>
+              <label for="locations-selector__input-2" class="block w-full space-y-1 cursor-pointer">
+                <div class="flex items-center justify-between">
+                  <span class="font-medium text-lg">مهدی شاهی</span>
+                  <span class="bg-theme-color-dark dark:bg-theme-color-light text-stone-50 px-2 rounded text-[12px]">محل کار</span>
+                </div>
+
+                <div class="line-clamp-1">
+                  <span class="font-medium">آدرس:</span>
+                  <span class="text-sm text-gray-500 dark:text-gray-300">زنجان اسلام آباد ، خیابان شهید محمدی پلاک 526</span>
+                </div>
+
+                <div class="line-clamp-1">
+                  <span class="font-medium">کدپستی :</span>
+                  <span class="text-sm text-gray-500 dark:text-gray-300">1234567890</span>
+                </div>
+                
+                <div class="line-clamp-1">
+                  <span class="font-medium">شماره تماس:</span>
+                  <span class="text-sm text-gray-500 dark:text-gray-300 cursor-copy">09915823411</span>
+                </div>
+              </label>
+            </div>
+           </div>
+        </div>
+
+        <div class="bg-gray-200 dark:bg-gray-700 rounded-lg shadow-lg px-3 py-6">
+          <p class="font-bold text-lg">زمان ارسال</p>
+
+          <div class="space-y-4 mt-3">
+            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded-md flex items-start gap-2">
+              <div class="inline-block h-full p-1">
+                <input type="radio" name="date-selector__input" id="date-selector__input-1" data-date="1" class="radio-input bg-center bg-no-repeat bg-contain checked:appearance-none size-4 rounded-full" checked>
+              </div>
+              <label for="date-selector__input-1" class="block w-full space-y-1 cursor-pointer">
+                <div class="flex items-center">
+                  <span class="font-medium">ارسال در تاریخ امروز</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded-md flex items-center gap-2">
+              <div class="h-full p-1 inline-flex items-center">
+                <input type="radio" name="date-selector__input" id="date-selector__input-2" data-date="2" class="radio-input bg-center bg-no-repeat bg-contain checked:appearance-none size-4 rounded-full">
+              </div>
+              <label for="date-selector__input-2" class="block w-full space-y-1 cursor-pointer">
+                <div class="flex items-center flex-wrap gap-4">
+                  <span class="font-medium">ارسال در تاریخ :</span>
+
+                  <div class="border border-gray-300 dark:border-x-gray-500 max-w[60%] relative rounded mr-1 2xs:mr-3">
+                    <span class="bg-gray-100 dark:bg-gray-800 absolute -top-3 right-4 text-[12px] text-gray-500 dark:text-gray-300">زمان ارسال</span>
+                    <input type="date" class="w-full py-2 px-3  flex items-center justify-start bg-transparent">
+                  </div>
+                </div>
+              </label>
+            </div>
+           </div>
+        </div>
+      </section>
+      
+      
+      <section class="col-span-10 lg:col-span-3 h-max lg:sticky top-2 space-y-3 lg:space-y-6">
+        <div class="p-4 rounded-md 3xl:rounded shadow-lg bg-gray-200 dark:bg-gray-700">
+          <div class="pb-2 border-b border-gray-300 dark:border-gray-500 font-medium text-lg">
+            <span>سبد خرید</span>
+          </div>
+
+          <div class="my-3">
+            <ul class="text-gray-500 dark:text-gray-300 text-[15px] max-h-40 overflow-auto pl-2">
+              <li class="flex items-center justify-between py-3 first:pt-0 last:pb-0">
+                <div class="flex items-center gap-1">
+                  <img src="./assets/image/cart-item-1.png" alt="product-img" class="w-12">
+                  <span>ناگت مرغ</span>
+                  <span class="font-bold">
+                    <span>1</span>
+                    <span>عدد</span>
+                  </span>
+                </div>
+
+                <span>70,000</span>
+              </li>
+              <li class="flex items-center justify-between py-3 first:pt-0 last:pb-0">
+                <div class="flex items-center gap-1">
+                  <img src="./assets/image/cart-item-1.png" alt="product-img" class="w-12">
+                  <span>ناگت مرغ</span>
+                  <span class="font-bold">
+                    <span>1</span>
+                    <span>عدد</span>
+                  </span>
+                </div>
+
+                <span>70,000</span>
+              </li>
+              <li class="flex items-center justify-between py-3 first:pt-0 last:pb-0">
+                <div class="flex items-center gap-1">
+                  <img src="./assets/image/cart-item-1.png" alt="product-img" class="w-12">
+                  <span>ناگت مرغ</span>
+                  <span class="font-bold">
+                    <span>1</span>
+                    <span>عدد</span>
+                  </span>
+                </div>
+
+                <span>70,000</span>
+              </li>
+              <li class="flex items-center justify-between py-3 first:pt-0 last:pb-0">
+                <div class="flex items-center gap-1">
+                  <img src="./assets/image/cart-item-1.png" alt="product-img" class="w-12">
+                  <span>ناگت مرغ</span>
+                  <span class="font-bold">
+                    <span>1</span>
+                    <span>عدد</span>
+                  </span>
+                </div>
+
+                <span>70,000</span>
+              </li>
+            </ul>
+          </div>
+  
+          <div>       
+            <div class="space-y-1 py-4 border-y border-gray-300 dark:border-gray-500">
+              <div class="flex items-center justify-between">
+                <span>جمع کالاها</span>
+                <span class="text-gray-500 dark:text-gray-300">280,000</span>
+              </div>
+    
+              <div class="flex items-center justify-between">
+                <span>تخفیف</span>
+                <span class="text-gray-500 dark:text-gray-300">00</span>
+              </div>
+    
+              <div class="6 flex items-center justify-between">
+                <span>هزینه پست</span>
+                <span class="text-gray-500 dark:text-gray-300">70,000</span>
+              </div>
+            </div>
+  
+            <div class="mt-4  flex flex-col gap-4">
+              <p class="flex items-center justify-between text-lg font-bold text-theme-color-dark dark:text-theme-color-light">
+                <span>جمع نهایی</span>
+                <span>350,000</span>
+              </p>              
+            </div>
+          </div>
+        </div>
+
+        <button class="block w-full py-2 bg-theme-color-dark dark:bg-theme-color-light text-stone-50 rounded-md sm:rounded-lg lg:rounded-md">ثبت سفارش</button>
+      </section>      
+    </main>
+
+    <footer>
+      <div>
+        <footer-top></footer-top>
+
+        <footer-main></footer-main>
+
+        <footer-bottom></footer-bottom>
+      </div>
+    </footer>
+    <script type="module" src="./assets/js/customElementDefiner.js"></script>
+    <script type="module"
+      src="./assets/js/checkout/customElementDefiner.js"></script>
+    <script type="module" src="./assets/js/checkout/app.js"></script>
+    <script type="module" src="./assets/js/funcs/shared-app.js"></script>
+  </body>
+</html>

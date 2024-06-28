@@ -98,7 +98,7 @@ template.innerHTML = `
     </h5>
     <ul class="pr-2 xs:pr-4 sm:pr-0 sm:space-y-2 text-gray-500 dark:text-gray-200 hidden sm:block">
       <li>
-        <a href="./userPanel/basket.html">خرید راحت</a>
+        <a href="./cart.html">خرید راحت</a>
       </li>
 
       <li>

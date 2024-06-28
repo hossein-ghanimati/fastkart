@@ -38,7 +38,7 @@ template.innerHTML = `
   </li>
 
   <li class="w-full">
-    <a href="./userPanel/basket.html" class="flex flex-col items-center">
+    <a href="./cart.html" class="flex flex-col items-center">
       <svg class="size-5">
         <use xlink:href="#shopping-cart-icon"></use>
       </svg>
