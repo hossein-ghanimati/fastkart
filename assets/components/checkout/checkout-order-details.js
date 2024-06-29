@@ -75,7 +75,7 @@ template.innerHTML = `
         </div>
       </label>
     </div>
-    <div class="col-span-2 overflow-hidden aspect-video" id="map"></div>
+    <div class="col-span-2 overflow-hidden aspect-video z-20" id="map"></div>
   </div>
 </div>
 
