@@ -92,9 +92,9 @@ template.innerHTML = `
   </div>
 </div>
 
-<button
-  class="block w-full py-2 bg-theme-color-dark dark:bg-theme-color-light text-stone-50 rounded-md sm:rounded-lg lg:rounded-md">ثبت
-  سفارش</button>
+<a href="./success-purchase.html"
+  class="block w-full py-2 bg-theme-color-dark dark:bg-theme-color-light text-stone-50 rounded-md sm:rounded-lg lg:rounded-md text-center">ثبت
+  سفارش</a>
 `
 
 export default class CheckoutProductsDetails extends HTMLElement{
