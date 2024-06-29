@@ -1086,6 +1086,10 @@ input {
   aspect-ratio: 1 / 1;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .size-11 {
   width: 2.75rem;
   height: 2.75rem;
@@ -1306,6 +1310,10 @@ input {
   height: max-content;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .max-h-40 {
   max-height: 10rem;
 }
@@ -1465,18 +1473,6 @@ input {
 
 .min-w-\[1000px\] {
   min-width: 1000px;
-}
-
-.min-w-\[100px\] {
-  min-width: 100px;
-}
-
-.min-w-\[200px\] {
-  min-width: 200px;
-}
-
-.min-w-\[150px\] {
-  min-width: 150px;
 }
 
 .min-w-\[160px\] {

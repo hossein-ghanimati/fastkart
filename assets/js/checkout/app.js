@@ -1,3 +1,4 @@
-import { renderPagination } from "./funcs/shared.js";
+import { renderMap, renderPagination } from "./funcs/shared.js";
 
+renderMap()
 renderPagination();
