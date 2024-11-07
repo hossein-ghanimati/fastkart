@@ -12,7 +12,7 @@
 <h2>Front End Languages : </h2>
 <ul>
   <li>
-  <img src="https://skillicons.dev/icons?i=js,html,css,tailwind" data-canonical-src="https://skillicons.dev/icons?i=js,html,css,tailwind" style="max-width: 100%;">
+  <img src="https://skillicons.dev/icons?i=js,html,tailwind" data-canonical-src="https://skillicons.dev/icons?i=js,html,tailwind" style="max-width: 100%;">
   </li>
 </ul>
 
