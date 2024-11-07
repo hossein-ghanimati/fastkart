@@ -27,19 +27,17 @@
 <p>
   <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/1.png" />
   <br>
-  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/2.png" />
-  <br>
   <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/3.png" />
   <br>
-  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/4.png" />
+  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/9.png" />
   <br>
-  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/5.png" />
+  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/13.png" />
   <br>
-  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/6.png" />
+  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/14.png" />
   <br>
-  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/7.png" />
+  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/15.png" />
   <br>
-  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/8.png" />
+  <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/17.png" />
 </p>
 
 
