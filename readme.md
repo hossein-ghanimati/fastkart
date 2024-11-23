@@ -9,7 +9,7 @@
 <br/>
 
 <h2 align="center">
-  <a href="https://hossein-ghanimati.github.io/divar/"><img src="https://img.shields.io/badge/See%20Demo-8A2BE2" /></a>
+  <a href="https://hossein-ghanimati.github.io/fastkart/"><img src="https://img.shields.io/badge/See%20Demo-8A2BE2" /></a>
 </h2>
 
 <br/>
@@ -44,12 +44,3 @@
   <br>
   <img src="https://raw.githubusercontent.com/hossein-ghanimati/fastkart/refs/heads/main/demo/17.png" />
 </p>
-
-
-<br/>
-<br/>
-
-
-<h2 align="center">
-  <a href="https://hossein-ghanimati.github.io/fastkart/"><img src="https://img.shields.io/badge/See%20Demo-8A2BE2" /></a>
-</h2>
